@@ -1,0 +1,378 @@
+% !Mode:: "TeX:UTF-8"
+
+% !TEX encoding = UTF-8 Unicode
+
+
+%basic cover letter template
+\documentclass[11pt]{article}
+\usepackage[a4paper]{geometry}
+\usepackage{fancyhdr,lastpage}
+\usepackage{amssymb,amsmath,graphicx}
+
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{jhublue}{RGB}{0,105,175}
+\usepackage[bookmarks, colorlinks, breaklinks, pdftitle={UConn letter}]{hyperref}
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=jhublue}
+
+\usepackage{multicol}
+\usepackage{soul}
+
+%Margins and Header/Footer
+\geometry{letterpaper,
+  top=0.75in,
+  bottom=1.25in,
+  left=1.25in,
+  right=1.5in,
+  headheight=14.5pt, % the default is too short
+  heightrounded, % avoids the need of a flexible baselineskip
+}
+
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyhf{} % clear all fields
+\fancyhead[C]{}
+\fancypagestyle{fancy}{%
+  \renewcommand{\headrulewidth}{0.4pt}%
+  \renewcommand{\footrulewidth}{0.4pt}%
+  \fancyhf{}% clear all fields
+  \fancyhead[C]{}%
+  \fancyfoot{}
+}
+
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[CE,C]{ \footnotesize\color{Gray} MARN 5895 |  Research Computing in Marine Sciences | Fall 2021
+             \hfill  {\thepage}/\pageref{LastPage} }
+
+
+\usepackage{lipsum}
+\usepackage{wrapfig,lipsum,booktabs}
+
+
+\usepackage[first=0,last=9]{lcg}
+\newcommand{\ra}{\rand0.\arabic{rand}}
+\usepackage{color, colortbl}
+\definecolor{Gray2}{gray}{0.9}
+\definecolor{LightCyan}{rgb}{0.88,1,1}
+
+\setlength\parindent{0pt}
+\addtolength{\parskip}{\baselineskip}
+
+\newcommand{\alert}[1]{{\color{red} #1}}
+
+
+\begin{document}
+
+
+\parbox{.5\linewidth}
+{
+\begin{flushleft}
+\includegraphics[height=0.6in]{uconn-wordmark-stacked-blue}\\
+\vspace{1em}
+\end{flushleft}
+}
+\parbox{.5\linewidth}
+{
+\begin{flushright}
+{\bf MARN5895-N60 }\\
+    Research Computing in Marine Sciences\\
+    \vspace{.1cm}
+{\footnotesize Department of Marine Sciences\\
+University of Connecticut\\
+}
+\end{flushright}
+}
+
+\vspace{1em}
+
+%
+% Syllabus –– semester year
+%
+\begin{center}
+\textbf{Fall 2021 Syllabus}\\
+{\footnotesize v0.2, \today}
+\end{center}
+\vspace{-.6cm}
+{\footnotesize Excluding materials for purchase, this syllabus may change in the course of the semester. The most up-to-date version will be available on HuskyCT.}
+
+\section*{Course information and intructor}
+
+\textbf{Course title}:  Research Computing in Marine Sciences\\
+\textbf{Credits}:  3\\
+\textbf{Modality}:  Hybrid/synchronous (in-person, but prepared to go online if needed)\\
+\textbf{Prerequisites}:  None\\
+\textbf{Course times and location}: Tuesdays and Thursdays, 8:00-9:20.
+
+\bigskip
+
+\textbf{Instructor}: Cesar B Rocha, Assistant Professor  of Marine Sciences. My
+pronouns are he/him/his, and I prefer that you call me by my first name (pronounced
+{CEH-zar}, unlike the salad; the \emph{e} in the first syllable is vocalized
+as the \textit{e} in \emph{bet} and \emph{met}).  My office is Room 188 in the
+Lowell P. Weicker Jr. building (aka Marine Sciences building), and my email is  \href{mailto:cesar.rocha@uconn.edu}{cesar.rocha@uconn.edu}.
+
+\textbf{Office hours}: TBD.
+
+
+\section*{Course materials}
+
+\textbf{Course Web site}: I will keep the most up-to-date class schedule, including the assignment and suggested reading for each week, on a Github repositoty. Class materials (scripts, Jupyter Notebooks, cheat sheets) will also be shared on this repository. 
+
+\textbf{Required hardware}: Students need a working laptop computer they can bring to class. I recommend a computer with at least 8\,GB of RAM and 20\,GB of available disk space and running Mac OS or Windows or Ubuntu Linux.  Please, let me know if you do not have a laptop that meets these requirements. 
+
+We will work remotely on the Storrs HPC (High-Performance Computing) facility. To register for a free account, students should visit \url{hpc.uconn.edu}, click on the \emph{Storrs Facility} drop-down menu, and select \emph{Get an Account}.  When working off-campus, students will need the \href{https://confluence.uconn.edu/ikb/remote-access/virtual-private-network-vpn/accessing-the-uconn-network-through-a-vpn-client}{UConn VPN} for accessing Storrs HPC.
+
+
+\textbf{Required software}:  This course prioritizes open software freely
+available online. I will set up a Web site with a list of basic software
+requirements and detailed instructions for software installation. Before the
+start of the semester, we will organize an optional
+\href{https://hackathon.guide}{hackathon} for installing software such as
+\href{https://git-scm.com/book/en/v2/Getting-Started-Installing-Git}{git} for
+version control, \href{https://code.visualstudio.com/}{Visual Studio Code} for
+a nice text editor and terminal, \href{https://docs.conda.io/en/latest/miniconda.html}{Miniconda} for the scientific Python stack. I will also use the in-class tutorials to share tips and tricks for installing, troubleshooting, and updating software.
+
+Students may occasionally need University-licensed proprietary software (Excel, Matlab, Mathematica), which are available through \href{https://software.uconn.edu/software}{UConn Information and Technology Services}.
+
+\textbf{Optional materials}: Below is list of optional resources to support your learning. They are all freely available online.
+
+	\begin{itemize}
+		\item The \href{https://jakevdp.github.io/PythonDataScienceHandbook/}{Python Data Analysis Handbook} by Jake VanderPlas.	
+		\item \href{https://github.com/jakevdp/WhirlwindTourOfPython}{Whirlwind Tour of Python} by Jake VanderPlas
+		\item \href{http://greenteapress.com/wp/think-python-2e/}{Think Python} by Allen B. Downey.
+		\item The \href{https://docs.python.org/3/tutorial/}{Official Python Tutorial}.
+		\item The \href{https://software-carpentry.org/lessons/}{Software Carpentry Lessons}.
+		\item The   \href{http://scipy-lectures.org}{Scientific Python Lectures}. 
+		\item The \href{https://github.com/koldunovn/python_for_geosciences}{Python For Geosciences Lectures}.
+		\item \href{https://www.python.org/dev/peps/pep-0008/}{PEP8}: Style Guide for Python Code.
+
+	\end{itemize}
+
+
+%\textbf{Optional textbook}:\\
+
+\section*{Course description}
+
+This course will introduce students to modern computer software, programming
+tools, and best practices for reproducible research, focusing on data-driven
+applications in Marine Sciences. Students will learn how to use the terminal
+shell, work remotely on supercomputers, version control their code, collaborate
+using git/Github, analyze and visualize data in Python. Through practical
+assignments and participatory lessons peppered with tips and tricks, students
+will develop the self-confidence to tackle problems computationally, unlocking
+a potential to harness ever-larger datasets in their research and beyond.
+Students will also employ their newfound computing skills to make their findings
+accessible and reproducible, ensuring that anyone can check their work and build on it. 
+
+Lessons and assignments will use oceanographic datasets, including observations
+collected by in-situ and remote platforms (Argo floats, surface drifters,
+Saildrones, satellites, coastal radars) as well as model reanalysis products
+(CMIP outputs, ECCO, ORAS). Based on my background, this list is
+biased towards physical oceanography. But I’m interested in using non-PO
+datasets for class demos and assignments. \emph{Let me know which datasets you would like to learn how to access and work with.}
+
+This course's pedagogy borrows heavily from \href{https://third-bit.com}{Greg Wilson}'s decades of experience with \href{https://software-carpentry.org}{Software Carpentry}, culminating in his book \href{https://teachtogether.tech/en/index.html}{Teaching Tech Together}.
+
+
+\section*{Course objectives}
+This course's overarching objective is to  \textbf{empower students to use modern computer software to solve problems}, with an emphasis on data-driven applications in Marine Sciences. By the end of the semester, students will be able to 
+
+\begin{enumerate}
+	\item \textbf{Navigate} the computer file system and \textbf{automate} tasks using the Unix shell.
+	\item \textbf{Work} remotely on Storrs HPC and other High-Performance Computing systems.
+	\item \textbf{Read}, \textbf{analyze}, and \textbf{visualize} large datasets using Python/Jupyter Notebooks.
+	\item \textbf{Understand} the advantages and limitations of different programming languages.
+	\item \textbf{Access} and efficiently \textbf{download}  oceanographic datasets that live in the cloud. 
+	\item \textbf{Version-control} and \textbf{backup} computer code and \textbf{collaborate} using git/Github.
+	\item \textbf{Employ} computational workflows for practicing reproducible research.
+\end{enumerate}
+
+\section*{Course structure and schedule}
+
+We will meet twice a week. In the first meeting of the week, I will teach a tutorial-style lesson on the week's topic. This is an \textbf{active-learning course}. Students are required to follow along the tutorials using their laptops, solve in-class exercises, and help their classmates. In the second meeting of the week, we will \textbf{flip the classroom}, organizing hackathon-style sessions where students will work on assignments, interact with other students and me, and present their work in progress.   Students will work in pairs or small groups on these assignments and submit a short report due the following week. 
+
+Here's a rough weekly program:
+
+\textbf{Week 1}\\
+ Lesson: \textit{Introduction to the class, the Unix shell, and \href{https://hpc.uconn.edu/}{Storrs HPC}}.\\
+ Assignment: \textit{Installing miniconda on Storrs HPC}.
+
+\textbf{Week 2}\\
+ Lesson: \textit{More on the Unix shell}.\\
+ Assignment: \textit{Moving and renaming a large number of files}.
+
+\textbf{Week 3} \\
+Lesson: \textit{Python basics and the \href{https://jupyter.org/}{Jupyter Notebook}}.\\
+Assignment:  \textit{Visualizing Temperature, Salinity, and CO$_2$  data collected by Saildrones}.
+
+\textbf{Week 4}\\
+ Lesson: \textit{Version control with Git and Github}.\\
+ Assignment: \textit{Improving the class Web site through a pull request on Github}.
+ 
+ \textbf{Week 5}\\
+ Lesson: \textit{The \href{https://www.scipy.org/about.html}{Python scientific stack}}.\\
+ Assignment: \textit{Analyzing and plotting data from Argo floats.}
+ 
+\textbf{Week 6}\\
+ Lesson: \textit{\href{https://pandas.pydata.org}{Pandas} for tabular data}.\\
+ Assignment: \textit{Estimating the sea-level trend in Connecticut from coastal tide gauges.}
+
+\textbf{Week 7}\\
+ Lesson: \textit{\href{http://xarray.pydata.org/en/stable/}{Xarray} for multidimensional arrays}.\\
+ Assignment: \textit{Estimating the global sea-level trend  from  30 years  of satellite altimetry}.
+
+\textbf{Week 8}\\
+ Lesson: \textit{More on \href{http://xarray.pydata.org/en/stable/}{Xarray} and \href{https://cfconventions.org}{CF-compliant netCDF files}}.\\
+ Assignment: \textit{Estimating the ocean heat content and its trend from Argo products}.
+
+
+\textbf{Week 9}\\
+ Lesson: \textit{\href{https://scitools.org.uk/cartopy/docs/latest/}{Cartopy} for making maps.}\\
+ Assignment: \textit{Making composite plots with several datasets in the Mid-Atlantic Bight (coastal HF radars, satellite SST, Chlorophyll-a)}.
+
+\textbf{Week 10}\\
+ Lesson: \textit{Cloud computing}.\\
+ Assignment: \textit{Analyzing satellite altimetry data with Jupyter Notebooks on \href{https://aws.amazon.com}{Amazon Web Services} and \href{https://cloud.google.com}{Google Cloud}}.
+
+ \textbf{Week 11}:\\
+ Lesson:  \textit{Parallel computing with \href{https://dask.org/}{Dask} and \href{https://pangeo.io/}{Pangeo}}.\\
+  Assignment: \textit{Estimating global warming in a climate model ensemble}.
+
+\textbf{Week 12}\\
+ Lesson: \textit{\href{http://www.practicereproducibleresearch.org/core-chapters/3-basic.html}{Reproducible workflows} (testing, documentation, publication, archiving)}.\\
+ Assignment: \textit{Documenting and publishing your code on \href{https://zenodo.org}{Zenodo}}.
+
+\textbf{Week 13}\\
+ Lesson: \textit{Advantages and limitations of other languages (\href{https://www.r-project.org/about.html}{R}, \href{https://www.mathworks.com/products/matlab.html}{Matlab}, \href{https://julialang.org/}{Julia})}.\\
+ Assignment: \textit{Running R or Julia on Jupyter Notebooks}.
+
+\textbf{Week 14}\\
+Quiet week. Students will work on finalizing their projects; I will be available  in the classroom for help.
+
+\textbf{Week 15}\\
+Final presentations.
+
+
+\section*{Course requirements and grading policy}
+
+
+\begin{wraptable}{r}{0.5\linewidth}
+\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\rowcolor{Gray}
+		Score rage & Letter grade \\
+		\hline
+		$\ge$93.0&  A~  \\		
+		\rowcolor{Gray2}
+		90.0--92.9 &  A-  \\		
+		87.0--89.9 &  ~B\tiny{+}  \\		
+		\rowcolor{Gray2}
+		83.0--86.9 &  B~  \\		
+		80.0--82.9&  B-  \\		
+		\rowcolor{Gray2}
+		77.0--79.9&  ~C\tiny{+} \\
+		73.0--76.9& C~ \\		
+		\rowcolor{Gray2}
+		70.0--72.9& C-\\		
+		67.0--66.9&  ~D\tiny{+} \\
+		\rowcolor{Gray2}
+		63.0--66.9& D~\\
+		60.0--62.9& D-\\
+		\rowcolor{Gray2}
+		$<$60& F~\\
+		\hline
+	\end{tabular}
+\end{wraptable}
+
+\textbf{Assessment}\\
+Students are required to \textit{actively participate in the class} (20\%), complete \textit{weekly assignments} (30\%), and complete and present a \textit{final project} (50\%). The table on the right shows the grading scale for the course. 
+
+ Active participation involves following the tutorials on your computer,
+ engaging in discussions, helping your colleagues, and presenting your
+ in-progress work. For the assignments and final project, students will work in
+ pairs or small groups.  The assignments are small computational projects
+ related to the week's topic. The final project should involve obtaining,
+ processing, and visualizing a large dataset (e.g., satellite altimetry,
+ biogeochemical Argo, coastal high-frequency radar, CMIP outputs) using the
+ tools learned in the course. In consultation with me, student pairs or small
+ groups should choose their dataset by week 7. The final project must be well
+ documented and shared on a Github repository. The other students in the class
+ and I should be able to clone your repository and reproduce your work as you
+ present the final project in Week 15.
+
+\textbf{Due dates and late policy}\\
+All due dates will be identified on the course Web site. Deadlines are 11:59\,pm Eastern Standard Time. I may change dates as the semester progresses.  All changes will be communicated at least one week prior to the new due date. 
+
+If you have a good reason (caregiving, illness, hardships), please do not hesitate to ask for  an extension \emph{prior to the deadline}. No late assignments will be accepted unless previously discussed with me. Students with learning disabilities are eligible for extended due dates and other accommodations through the Center for Students with Disabilities (see Students With Disabilities below).
+
+\textbf{Feedback}\\
+I will strive to provide feedback on your assignments within a week of the due date. I also commit to sharing mid-semester partial grades to help you plan for the second half of the term.
+
+\section*{How to \st{succeed} thrive in this class}
+You will succeed in this class---if you have a desire to learn and are willing
+to roll up your sleeves. Below are a few tips from yours truly (who sat where
+you sit not so long ago) to help you maximize your learning.
+
+\begin{itemize}
+	\item \textbf{Engage} in the class activities 
+	\subitem Engaging with me and your classmates is critical to learning the material and keeping yourself motivated.   When I ask questions, answer them. When you have questions, do not hesitate to speak up. If something is unclear to you, the chances are that it's also unclear to your classmates. Discuss the material with your classmates and comment on their presentations. Take the initiative to present your work in progress. Let me know if the structure and pace of the class are working for you. And please call out my mistakes.
+	
+		\item \textbf{Do NOT multi-task}
+		\subitem Computers are particularly good at executing several threads
+        of tasks in parallel. In Week 11,  we will learn how to leverage tens
+        to hundreds of cores to increase computing performance.    But we are
+        not computers and our brains are not multi-threaded.  Because you will
+        be required to work on your computer, which invites you to multi-task, you must be mindful that multitasking decreases human productivity and generates a constant humming of anxiety. The work we will be doing in this class requires undivided concentration. Do not check your email inbox or social media in class or when working on your assignments. Unless you are expecting an urgent text or call, put your phone on airplane mode and turn off notifications.  Stay focused on the task at hand.
+        
+	
+	\item \textbf{Tinker} with code developed in class
+		\subitem A few hours or a day after each class, review the material covered in the tutorial. That includes re-running the codes developed and used in class. To make sure you understand how a code works, tinker with it. Change parameters and conditions. Generalize specific functions. Apply the code to different datasets. Make different plots.
+	\item \textbf{Help} your colleagues
+	\subitem  Students in this class come with diverse backgrounds and levels of programming experience. Some students may stumble on a particular code during in-class activities or may find completing an assignment challenging.  To avoid frustration getting the most of your colleagues, you should help them out. Helping and teaching classmates and friends is a powerful approach to making sure you understand the material. Of course, when you are helping someone, make sure you are explaining things to them, not doing their work.
+	One of my goals with this class is to show all students that programming can be fun and collaborative, and I count on you to help me realize that goal. 
+	\item \textbf{Incorporate} the tools learned in class into your daily workflow
+	\subitem The best way to make the material stick is applying the concepts and tools learned in class to your daily work. Use the terminal shell more often to navigate the file system and automate tasks. Rewrite an old Matlab or R script in Python. Load and manipulate an Excel spreadsheet using Pandas. Use Python to analyze and plot your research data. Use Github and git to version-control and backup your code. Use Github to collaborate with colleagues in other classes and your lab.
+
+\end{itemize}
+
+\section*{Students Responsibilities and Resources}
+
+
+UConn students are held to certain standards and academic policies. Please, review the following policies: 
+\begin{itemize}
+	\item \href{https://catalog.uconn.edu/academic-regulations/grade-information/#exam-absence}{Absences from Final Examinations}
+	\item \href{https://catalog.uconn.edu/academic-regulations/grade-information/#attendance}{Class Attendance}
+	\item \href{https://policy.uconn.edu/2012/08/22/credit-hour/}{Credit Hour}
+	\item \href{https://policy.uconn.edu/2011/05/24/people-with-disabilities-policy-statement/}{People with Disabilities, Policy Statement}
+	\item \href{https://policy.uconn.edu/2015/12/29/policy-against-discrimination-harassment-and-related-interpersonal-violence/}{Discrimination, Harassment and Related Interpersonal Violence, Policy Against}
+	\item \href{https://community.uconn.edu/the-student-code-preamble/}{The Student Code}
+	\item \href{https://community.uconn.edu/academic-misconduct-procedure-review/}{Academic Misconduct Procedures for Instructors}
+	\item \href{https://policy.uconn.edu/2014/04/11/policy-on-scholarly-integrity-in-graduate-education-and-research/}{Scholarly Integrity in Graduate and Post-Doctoral Education and Research}
+\end{itemize}
+
+\section*{Students with Disabilities}
+
+The University of Connecticut is committed to protecting the rights of individuals with disabilities and assuring that the learning environment is accessible. If you anticipate or experience physical or academic barriers based on disability or pregnancy, please let me know immediately so that we can discuss options. Students who require accommodations should contact the Center for Students with Disabilities, Wilbur Cross Building Room 204, (860) 486-2020 or \href{http://csd.uconn.edu}{csd.uconn.edu}.
+
+\section*{Software Requirements}
+Most of our work will happen on StorrsHPC. To access StorrsHPC smoothly, you should install Microsoft's enhanced text editor \href{https://code.visualstudio.com}{Visual Studio Code} if you use Windows. Visual Studio Code has a Unix-like terminal built in. If you use MacOS or Linux, you only need a terminal running bash, but I recommend that you install Visual Studio Code too (it has a neat text editor). Regardless of your operating system, you will also need a modern internet browser (preferably \href{https://www.google.com/chrome/}{Google Chrome} or  \href{https://www.mozilla.org/en-US/firefox/new/}{Mozilla Firefox}).
+
+\section*{Minimum Technical Skills}
+This is a course on research computing, so you will need to be comfortable working on computers.  To follow along the tutorials and complete the assignments, you should be able to install and open different software on your computer (Visual Studio Code, internet browser),  copy and paste text across different software (e.g., from browser to Visual Studio Code), toggle between different tabs in the browser and terminal. For your assignment reports, you should be also able to generate PDF files. 
+
+If you are unsure whether your technical skills are sufficient to succeed in this class, please contact me.
+
+\section*{Help}
+
+If you have trouble accessing the course Web site,  please contact me. If you have difficulty accessing StorrsHPC, contact their support at \href{https://hpc.uconn.edu/storrs/support/#}{hpc.uconn.edu/storrs/support}. If you have issues with HuskyCT or VPN, contact \href{https://techsupport.uconn.edu}{HuskyTech} during regular business hours. For further assistance, contact \href{https://students.uconn.edu/academic-support-services/}{Course Support}, available 24/7.
+
+\section*{Course Evaluation}
+Students are strongly encouraged to provide feedback on their course experience
+and instruction through the Student Evaluation of Teaching (SET), administered by the Office of Institutional Research and Effectiveness (OIRE).  The SET is used for both formative (self-improvement) and summative (evaluation) purposes.  UConn commits to supporting and enhancing teaching effectiveness and student learning using a variety of methods.  In addition to SETs, two tenured professors will seat in one lecture to observe the instructor. The instructor will also conduct informal mid-semester formative surveys via HuskyCT.
+
+
+
+\end{document}
