@@ -6,7 +6,7 @@ Instructor: Cesar B Rocha
 
 ### Program
 | Date          | Content                              | Remark |
-|:-------------------|:-------------------------:|--------------:|
+|:-------------------:|:-------------------------:|:--------------:|
 | 2021-08-31    | Introduction to the class, the Unix shell, and [Storrs HPC](https://hpc.uconn.edu) [[materials](./lessons/01/)]         |           |
 | 2021-09-02    |            |         |
 | 2021-09-07    |            |         |
@@ -32,7 +32,7 @@ Instructor: Cesar B Rocha
 | 2021-11-16    |            |         |
 | 2021-11-18    |            |         |
 | 2021-11-23    |            |         |
-| 2021-11-25    |            |         |
+| 2021-11-25    |  No class          |  Happy Turkey Day       |
 | 2021-11-30    |            |         |
 | 2021-12-02    |            |         |
 | 2021-12-07    |            |         |
