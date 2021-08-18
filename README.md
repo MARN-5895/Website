@@ -6,6 +6,6 @@ Instructor: Cesar B Rocha
 
 ### Program
 | Lecture | Date          | Content                              | Reading         |     Hand in |
-|:-----------------:|:-------------------|:-------------------------|:-------------------:|--------------|
+|:----:|:-------------------|:-------------------------|:-------------------:|--------------|
 | 01     | 2021-08-31    | Introduction to the class, the Unix shell, and [Storrs HPC](https://hpc.uconn.edu) [[materials](./lessons/01/)]       |  Any reading?              |     ---      |
 | 02 | 2021-09-02    |               |     Any reading?          |    ----     |
