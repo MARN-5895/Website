@@ -11,8 +11,8 @@ Instructor: Cesar B Rocha
 | 2021-09-02    | Assignment: Installing miniconda on Storrs HPC           |         |
 | 2021-09-07    | Lesson: More on the Unix shell           |         |
 | 2021-09-09    | Assignment: Moving and renaming a large number of files    |         |
-| 2021-09-14    |            |         |
-| 2021-09-16    |            |         |
+| 2021-09-14    | Lesson: Jupyter Notebook and Python basics           |         |
+| 2021-09-16    | Assignment: Visualizing Temperature, Salinity, and CO_2 data collected by Saildrones           |         |
 | 2021-09-21    |            |         |
 | 2021-09-23    |            |         |
 | 2021-09-28    |            |         |
