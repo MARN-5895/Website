@@ -13,8 +13,8 @@ Instructor: Cesar B Rocha
 | 2021-09-09    | Assignment: Moving and renaming a large number of files    |         |
 | 2021-09-14    | Lesson: Jupyter Notebook and Python basics           |         |
 | 2021-09-16    | Assignment: Visualizing Saildrone data           |         |
-| 2021-09-21    |            |         |
-| 2021-09-23    |            |         |
+| 2021-09-21    | Lesson: Version control with git and Github           |         |
+| 2021-09-23    | Assignment: Improving the class Web site through a pull request? |         |
 | 2021-09-28    |            |         |
 | 2021-09-30    |            |         |
 | 2021-10-05    |            |         |
