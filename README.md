@@ -35,5 +35,5 @@ Instructor: Cesar B Rocha
 | 2021-11-25    |  No class          |  Happy Turkey Day       |
 | 2021-11-30    |            |         |
 | 2021-12-02    |            |         |
-| 2021-12-07    |            |         |
-| 2021-12-09    |            |         |
+| 2021-12-07    |  Final Presentations          |         |
+| 2021-12-09    |  Final Presentations          |         |
