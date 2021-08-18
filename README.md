@@ -5,7 +5,7 @@ University of Connecticut</br>
 Instructor: Cesar B Rocha
 
 ### Program
-| Meeting | Date          | Content                              | Reading         |     Assignment |
-|:----:|:--------------|:--------------------------------------|:-------------------:|--------------|
-| 01   | 2021-08-31    | Logistics and Introduction [[slides](./lectures/01/01_introduction_slides.pdf), [notes](lectures/01/01_introduction.pdf)]       |  Stewart Chap. 3                 |              |
-| 02   | 2021-09-02    | Physical Properties of Seawater              |     Stewart Chap. 6          |     HW #1    |
+| Meeting | Date          | Content                              | Reading         |     Hand in |
+|:------------:|:--------------|:--------------------------------------|:-------------------:|--------------|
+| Lesson 1     | 2021-08-31    | Introduction to the class, the Unix shell, and [Storrs HPC](https://hpc.uconn.edu) [[materials](./lessons/01/)]       |  Any reading?              |     ---      |
+| Assignment 1 | 2021-09-02    |               |     Any reading?          |    ----     |
