@@ -31,9 +31,9 @@ Instructor: Cesar B Rocha
 | 2021-11-11    |            |         |
 | 2021-11-16    |            |         |
 | 2021-11-18    |            |         |
-| 2021-11-23    |  Catch-up lecture          |         |
+| 2021-11-23    |  Lesson: Advantages and limitations of other languages (R, Matlab, Julia)    |         |
 | 2021-11-25    |  No class          |  Happy Turkey Day       |
-| 2021-11-30    |            |         |
-| 2021-12-02    |            |         |
+| 2021-11-30    |  Students work on finalizing their projects          |  Cesar will be in the classroom for help       |
+| 2021-12-02    |  Students work on finalizing their projects          |  Cesar will be in the classroom for help       |
 | 2021-12-07    |  Final Presentations          |         |
 | 2021-12-09    |  Final Presentations          |         |
