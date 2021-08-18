@@ -33,7 +33,7 @@ Instructor: Cesar B Rocha
 | 2021-11-18    |            |         |
 | 2021-11-23    |  Lesson: Remarks on other languages (R, Matlab, Julia)    |         |
 | 2021-11-25    |  No class          |  Happy Turkey Day       |
-| 2021-11-30    |  Students work on finalizing their projects          |  Cesar will be in the classroom for help       |
-| 2021-12-02    |  Students work on finalizing their projects          |  Cesar will be in the classroom for help       |
+| 2021-11-30    |  Students work on finalizing their projects          |  Cesar will be available for help       |
+| 2021-12-02    |  Students work on finalizing their projects          |  Cesar will be available for help       |
 | 2021-12-07    |  Final Presentations          |         |
 | 2021-12-09    |  Final Presentations          |         |
