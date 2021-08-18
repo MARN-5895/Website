@@ -6,7 +6,7 @@ Instructor: Cesar B Rocha
 
 ### Program
 | Date          | Content                              | Remark |
-|:-------------------:|:-------------------------:|:--------------:|
+|:-------------------|:-------------------------|:--------------|
 | 2021-08-31    | Lesson: Introduction to the Unix shell and [Storrs HPC](https://hpc.uconn.edu) [[materials](./lessons/01/)]         |           |
 | 2021-09-02    | Assignment: Installing miniconda on Storrs HPC           |         |
 | 2021-09-07    | Lesson: More on the Unix shell           |         |
