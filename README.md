@@ -4,6 +4,8 @@ Department of Marine Sciences</br>
 University of Connecticut</br>
 Instructor: Cesar B Rocha
 
+The most up-to-date syllabus is available [here](./syllabus/ResearchComputing_SyllabusFall2021.pdf).
+
 ### Program
 | Date          | Content                              | Remark |
 |:--------------------------|:---------------------------------|:--------------|
