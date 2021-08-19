@@ -9,13 +9,13 @@ The **most up-to-date syllabus** is available [here](./syllabus/ResearchComputin
 ### Program
 | Date          | Content                              | Remark |
 |:--------------------------|:---------------------------------|:--------------|
-| 2021-08-31    | Lesson: Introduction to the Unix shell and [Storrs HPC](https://hpc.uconn.edu) [[materials](./lessons/01/)]         |           |
+| 2021-08-31    | [Lesson 1](lectures/01_unixshell/): Introduction to the Unix shell and [Storrs HPC](https://hpc.uconn.edu)       |           |
 | 2021-09-02    | Assignment: Installing miniconda on Storrs HPC           |         |
-| 2021-09-07    | Lesson: More on the Unix shell           |         |
+| 2021-09-07    | Lesson: Jupyter lab and more the Unix shell           |         |
 | 2021-09-09    | Assignment: Moving and renaming a large number of files    |         |
 | 2021-09-14    | Lesson: Version control with git and Github             |         |
 | 2021-09-16    | Assignment: Improving the class Web site through a pull request?           |         |
-| 2021-09-21    | Lesson: The Jupyter Notebook and Python basics        |         |
+| 2021-09-21    | Lesson: Basics of Python         |         |
 | 2021-09-23    | Assignment: Visualizing Saildrone data |         |
 | 2021-09-28    | Lesson: Pandas for tabular data           |         |
 | 2021-09-30    | Assignment: Estimating the sea-level trend in Connecticut from coastal tide gauges           |         |
