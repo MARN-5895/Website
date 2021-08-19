@@ -27,10 +27,10 @@ Instructor: Cesar B Rocha
 | 2021-10-28    | Assignment: Analyzing satellite altimetry data with  Jupyter Notebooks on Amazon Web Services and Google Cloud           |         |
 | 2021-11-02    | Lesson: Parallel computing with Dask and Pangeo            |         |
 | 2021-11-04    | Assignment: Estimating global warming in a climate model ensemble           |         |
-| 2021-11-09    | Lesson: Reproducible workflows (testing, documentation, publication, archiving)            |         |
-| 2021-11-11    | Assignment: Documenting and publishing your code on Zenodo           |         |
-| 2021-11-16    |            |         |
-| 2021-11-18    |            |         |
+| 2021-11-09    | Catch-up lecture            |         |
+| 2021-11-11    | Catch-up lecture         |         |
+| 2021-11-16    | Lesson: Reproducible workflows (testing, documentation, publication, archiving)           |         |
+| 2021-11-18    | Assignment: Documenting and publishing your code on Zenodo            |         |
 | 2021-11-23    |  Lesson: Remarks on other languages (R, Matlab, Julia)    |         |
 | 2021-11-25    |  No class          |  Happy Turkey Day       |
 | 2021-11-30    |  Students work on finalizing their projects          |  Cesar will be available for help       |
