@@ -9,7 +9,7 @@ The **most up-to-date syllabus** is available [here](./syllabus/ResearchComputin
 ### Program
 | Date          | Content                              | Remark |
 |:--------------------------|:---------------------------------|:--------------|
-| 2021-08-31    | [Lesson 1](lectures/01_unixshell/): Introduction to the Unix shell and Storrs HPC       |           |
+| 2021-08-31    | Lesson 1: [Introduction to the Unix shell and Storrs HPC](lectures/01_unixshell/)       |           |
 | 2021-09-02    | Assignment: Installing miniconda on Storrs HPC           |         |
 | 2021-09-07    | Lesson: Jupyter lab and more the Unix shell           |         |
 | 2021-09-09    | Assignment: Moving and renaming a large number of files    |         |
