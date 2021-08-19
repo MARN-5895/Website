@@ -2,9 +2,9 @@
 Course number: MARN-5895</br>
 Department of Marine Sciences</br>
 University of Connecticut</br>
-Instructor: Cesar B Rocha
+Instructor: [Cesar B Rocha](www.cbrocha.com)
 
-The most up-to-date syllabus is available [here](./syllabus/ResearchComputing_SyllabusFall2021.pdf).
+The **most up-to-date syllabus** is available [here](./syllabus/ResearchComputing_SyllabusFall2021.pdf).
 
 ### Program
 | Date          | Content                              | Remark |
