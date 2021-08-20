@@ -11,6 +11,10 @@ to the MARN5895 class partition.
 
 ## Getting to know the Unix shell
 
+### Linux and MacOS users
+
+### Windows users
+
 ## Logging into Storrs HPC
 
 
