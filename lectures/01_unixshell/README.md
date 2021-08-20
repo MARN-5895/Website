@@ -1,12 +1,17 @@
 # Lesson 1: Introduction to the class, the Unix shell and Storrs HPC
 
 ## Welcome to Research Computing in Marine Sciences
-Welcome to MARN58950-N60, Research Computing in Marine Sciences. This course help
+Welcome to Research Computing in Marine Sciences! This course help
 you learn modern computing tools for research, with application in Marine Sciences.
+You will learn how to navigate the file system using the terminal, anallyze and visualize
+data in Python, and ...
 
 All our work will take place at Storrs High-Performance Computing (HPC) facility.
 By now, you should have an account at Storrs HPC and your netID should be linked
-to the MARN5895 class partition.
+to the MARN-5895 class partition. Working on StorrsHPC has the advantage of ensuring
+that all students have access to the same computer system and programs, regardless of
+the operating system of their...
+
 
 
 ## Getting to know the Unix shell
