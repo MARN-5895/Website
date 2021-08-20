@@ -27,6 +27,9 @@ In addition, the command line is often the easiest way to interact with remote m
 
 
 ### Linux and MacOS users
+Both Linux and MacOS are Unix-based operating systems, and the Unix shell is a
+native application. The most common Unix shell application is called *Terminal*
+
 
 ### Windows users
 
