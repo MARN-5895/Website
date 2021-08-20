@@ -28,4 +28,4 @@ about working remotely on a Unix-based supercomputer.
 
   - This course aims to empower you to use modern computer software to solve research problems in Marine Sciences.
   - The terminal or Unix shell is a computer application that BLABLABLA.
-  - Key point #3.
+  - Secure Shell (SSH) is a network protocol used to access remote computers.
