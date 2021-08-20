@@ -39,7 +39,7 @@ native application. The most common Unix shell application is called *Terminal*
 ## Key points
 
   - This course aims to empower you to use modern computer software to solve research problems in Marine Sciences.
-  - The terminal or Unix shell is a computer application that BLABLABLA.
+  - The terminal or Unix shell is an application for the user to interact with the computer.
   - Secure Shell (SSH) is a network protocol used to access remote computers.
 
   ---
