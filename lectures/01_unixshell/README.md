@@ -17,12 +17,14 @@ working remotely on a Unix-based supercomputer.
 
 ## Getting to know the Unix shell
 
----
-**NOTE**
+The shell is a program where users can type commands. With the shell, it’s possible to invoke complicated programs like climate modeling software or simple commands that create an empty directory with only one line of code. The most popular Unix shell is Bash (the Bourne Again SHell — so-called because it’s derived from a shell written by Stephen Bourne). Bash is the default shell on most modern implementations of Unix and in most packages that provide Unix-like tools for Windows.
 
-It works with almost all markdown flavours (the below blank line matters).
+Using the shell will take some effort and some time to learn. While a GUI presents you with choices to select, CLI choices are not automatically presented to you, so you must learn a few commands like new vocabulary in a language you’re studying. However, unlike a spoken language, a small number of “words” (i.e. commands) gets you a long way, and we’ll cover those essential few today.
 
----
+The grammar of a shell allows you to combine existing tools into powerful pipelines and handle large volumes of data automatically. Sequences of commands can be written into a script, improving the reproducibility of workflows.
+
+In addition, the command line is often the easiest way to interact with remote machines and supercomputers. Familiarity with the shell is near essential to run a variety of specialized tools and resources including high-performance computing systems. As clusters and cloud computing systems become more popular for scientific data crunching, being able to interact with the shell is becoming a necessary skill. We can build on the command-line skills covered here to tackle a wide range of scientific questions and computational challenges.
+
 
 ### Linux and MacOS users
 
@@ -36,3 +38,10 @@ It works with almost all markdown flavours (the below blank line matters).
   - This course aims to empower you to use modern computer software to solve research problems in Marine Sciences.
   - The terminal or Unix shell is a computer application that BLABLABLA.
   - Secure Shell (SSH) is a network protocol used to access remote computers.
+
+  ---
+  **Terminal** (Unix shell)
+
+  It works with almost all markdown flavours (the below blank line matters).
+
+  ---  
