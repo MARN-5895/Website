@@ -3,15 +3,15 @@
 ## Welcome to Research Computing in Marine Sciences
 Welcome to Research Computing in Marine Sciences! This course help
 you learn modern computing tools for research, with application in Marine Sciences.
-You will learn how to navigate the file system using the terminal, anallyze and visualize
-data in Python, and ...
+You will learn how to navigate the file system using the terminal, analyze and visualize
+data in Python, and work collaboratively using git and Github.
 
 All our work will take place at Storrs High-Performance Computing (HPC) facility.
 By now, you should have an account at Storrs HPC and your netID should be linked
 to the MARN-5895 class partition. Working on StorrsHPC has the advantage of ensuring
 that all students have access to the same computer system and programs, regardless of
 the operating system of their personal computer. Plus, you will gain relevant experience
-about working remotely on a Unix-based supercomputer.
+working remotely on a Unix-based supercomputer.
 
 
 
