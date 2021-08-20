@@ -13,8 +13,6 @@ that all students have access to the same computer system and programs, regardle
 the operating system of their personal computer. Plus, you will gain relevant experience
 working remotely on a Unix-based supercomputer.
 
-
-
 ## Getting to know the Unix shell
 
 The shell is a program where users can type commands. With the shell, it’s possible to invoke complicated programs like climate modeling software or simple commands that create an empty directory with only one line of code. The most popular Unix shell is Bash (the Bourne Again SHell — so-called because it’s derived from a shell written by Stephen Bourne). Bash is the default shell on most modern implementations of Unix and in most packages that provide Unix-like tools for Windows.
@@ -28,7 +26,7 @@ In addition, the command line is often the easiest way to interact with remote m
 
 ### Linux and MacOS users
 Both Linux and MacOS are Unix-based operating systems, and the Unix shell is a
-native application. The most common Unix shell application is called *Terminal*
+native application. The most common Unix shell application is called `Terminal`.
 
 
 ### Windows users
