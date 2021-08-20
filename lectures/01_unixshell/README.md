@@ -42,7 +42,7 @@ To log into StorrsHPC, we use the secure shell (ssh) command:
 ssh YourNetID@login.storrs.hpc.uconn.edu
 ```
 where YourNetID is your UConn username. You will be prompted for your password. Note
-that to access StorrsHPC from a computer off campus you will need the [UConn VPN](https://confluence.uconn.edu/ikb/remote-access/virtual-private-network-vpn/accessing-the-uconn-network-through-a-vpn-client).
+that to access StorrsHPC from a computer connect to a network off campus you will need the [UConn VPN](https://confluence.uconn.edu/ikb/remote-access/virtual-private-network-vpn/accessing-the-uconn-network-through-a-vpn-client).
 
 
 
