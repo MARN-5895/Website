@@ -1,5 +1,5 @@
 # Research Computing in Marine Sciences
-Course number: MARN-5895</br>
+Course number: MARN-5895-N60</br>
 Department of Marine Sciences</br>
 University of Connecticut</br>
 Instructor: [Cesar B Rocha](www.cbrocha.com)
@@ -11,7 +11,7 @@ The **most up-to-date syllabus** is available [here](./syllabus/ResearchComputin
 |:--------------------------|:---------------------------------|:--------------|
 | 2021-08-31    | Lesson 1: [Introduction to the Unix shell and Storrs HPC](lectures/01_unixshell/)       |           |
 | 2021-09-02    | Assignment: Installing miniconda on Storrs HPC           |         |
-| 2021-09-07    | Lesson: Jupyter lab and more the Unix shell           |         |
+| 2021-09-07    | Lesson: Jupyter lab and more on the Unix shell           |         |
 | 2021-09-09    | Assignment: Moving and renaming a large number of files    |         |
 | 2021-09-14    | Lesson: Version control with git and Github             |         |
 | 2021-09-16    | Assignment: Improving the class Web site through a pull request   |         |
@@ -27,8 +27,8 @@ The **most up-to-date syllabus** is available [here](./syllabus/ResearchComputin
 | 2021-10-21    |  Assignment: Estimating the ocean heat content and its trend from Argo products    |  Cesar is out of town       |
 | 2021-10-26    |  Remote lesson: Cartopy for making maps          |  Cesar is out of town        |
 | 2021-10-28    |  Assignment: Making composite plots with several datasets in the Mid-Atlantic Bight          |         |
-| 2021-11-02    |  Lesson:  Cloud computing?           |         |
-| 2021-11-04    |  Assignment: Analyzing satellite altimetry data with  Jupyter Notebooks on Amazon Web Services and Google Cloud          |         |
+| 2021-11-02    |  Lesson:  Cloud computing           |         |
+| 2021-11-04    | Assignment: Analyzing satellite altimetry data with Jupyter Notebooks on Amazon Web Services and Google Cloud          |         |
 | 2021-11-09    | Lesson: Parallel computing with Dask and Pangeo           |         |
 | 2021-11-11    | Assignment: Estimating global warming in a climate model ensemble        |         |
 | 2021-11-16    | Lesson: Reproducible workflows (testing, documentation, publication, archiving)           |         |
