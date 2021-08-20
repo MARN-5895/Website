@@ -30,8 +30,16 @@ native application. The most common Unix shell application is called `Terminal`.
 
 
 ### Windows users
+Gitlab? An alternative is to install the text editor `Visual Studio Code`, which
+comes with Unix terminal.
 
 ## Logging into Storrs HPC
+
+<html>
+  <head>
+    ssh Your_NetID@login.storrs.hpc.uconn.edu
+  </head>
+</html>
 
 
 ## Key points
