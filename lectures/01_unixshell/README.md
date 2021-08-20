@@ -18,8 +18,8 @@ to the MARN5895 class partition.
 ## Logging into Storrs HPC
 
 
-## Summary of key points
+## Key points
 
-  - Key point #1.
-  - Key point #2.
+  - This course aims to empower you to use modern computer software to solve research problems in Marine Sciences.
+  - The terminal or Unix shell is a computer application that BLABLABLA.
   - Key point #3.
