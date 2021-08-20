@@ -36,7 +36,7 @@ comes with Unix terminal.
 ## Logging into Storrs HPC
 
 ```Bash
-ssh Your_NetID@login.storrs.hpc.uconn.edu
+ssh YourNetID@login.storrs.hpc.uconn.edu
 ```
 
 
