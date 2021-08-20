@@ -35,11 +35,9 @@ comes with Unix terminal.
 
 ## Logging into Storrs HPC
 
-<html>
-  <head>
-    ssh Your_NetID@login.storrs.hpc.uconn.edu
-  </head>
-</html>
+```shell
+$ ssh Your_NetID@login.storrs.hpc.uconn.edu
+```
 
 
 ## Key points
