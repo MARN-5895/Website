@@ -30,8 +30,9 @@ native application. The most common Unix shell application is called `Terminal`.
 
 
 ### Windows users
-Gitlab? An alternative is to install the text editor `Visual Studio Code`, which
-comes with Unix terminal.
+For Windows users I recommend the Unix terminal that come with `[Visual Studio Code](https://code.visualstudio.com)`,
+a Microsoft text edit that has become the go-to tool for software developers. VSCode
+also works on Linux and MacOS.
 
 ![](img/vsc_terminal.png)
 
