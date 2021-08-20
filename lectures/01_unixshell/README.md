@@ -30,7 +30,7 @@ native application. The most common Unix shell application is called `Terminal`.
 
 
 ### Windows users
-For Windows users I recommend the Unix terminal that come with `[Visual Studio Code](https://code.visualstudio.com)`,
+For Windows users I recommend the Unix terminal that come with [Visual Studio Code](https://code.visualstudio.com),
 a Microsoft text edit that has become the go-to tool for software developers. VSCode
 also works on Linux and MacOS.
 
