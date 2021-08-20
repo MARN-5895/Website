@@ -33,7 +33,7 @@ native application. The most common Unix shell application is called `Terminal`.
 Gitlab? An alternative is to install the text editor `Visual Studio Code`, which
 comes with Unix terminal.
 
-!()[img/vsc_terminal.png]
+![](img/vsc_terminal.png)
 
 ## Logging into Storrs HPC
 
