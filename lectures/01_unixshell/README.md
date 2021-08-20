@@ -17,6 +17,13 @@ working remotely on a Unix-based supercomputer.
 
 ## Getting to know the Unix shell
 
+---
+**NOTE**
+
+It works with almost all markdown flavours (the below blank line matters).
+
+---
+
 ### Linux and MacOS users
 
 ### Windows users
