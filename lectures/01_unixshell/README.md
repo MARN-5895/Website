@@ -10,7 +10,8 @@ All our work will take place at Storrs High-Performance Computing (HPC) facility
 By now, you should have an account at Storrs HPC and your netID should be linked
 to the MARN-5895 class partition. Working on StorrsHPC has the advantage of ensuring
 that all students have access to the same computer system and programs, regardless of
-the operating system of their...
+the operating system of their personal computer. Plus, you will gain relevant experience
+about working remotely on a Unix-based supercomputer.
 
 
 
