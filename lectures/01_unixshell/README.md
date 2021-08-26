@@ -27,7 +27,7 @@ comfortable with the terminal shell will allow you to automate tasks, improve re
 and access remote computers (including cloud-computing systems).
 
 Learning to use the terminal requires memorizing a few commands. We will use a few of these commands today and
-introduce other essential commands as they become necessary to perform our assignments.  
+introduce other essential commands as they become necessary to perform your assignments.  
 
 
 ### Linux and MacOS users
