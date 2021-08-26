@@ -1,15 +1,17 @@
-# Assignment 1: Installing miniconda on Storrs HPC
+# Assignment 1: Setting up conda and Jupyterlab on Storrs HPC
 
-# Setting up conda and jupyterlab on remote clusters
-----------------------------------------------------
 
-A problem that lots of us have to deal with is how to run our python code on a
-cluster (StorrsHPC, Pleiades). On our local laptops, in which we have admin
-privileges, we can manage python package with
-[pip](https://pypi.org/project/pip/) and
-[conda](https://docs.conda.io/en/latest/). But most clusters do not have conda
-available, and the system or module-based python distribution probably lacks packages critical to our work (pandas, xarray, dask, cartopy). The work around
-this limitation involves setting up your own python environment using [miniconda](https://docs.conda.io/en/latest/miniconda.html). Cesar has successfully used this setup on NASA Pleiades and Storrs HPC.
+Most of our work in this class will take place on
+[Jupyterlab](https://jupyterlab.readthedocs.io/en/stable/), an IDE than runs on
+the browser. Jupyterlab was originally developed for Python, but now also
+supports R and other languages. Conviniently, Jupyterlab supports Jupyter
+notebooks, text editors, and a terminal. We will run jupyterlab on Storrs HPC
+but open it on our local browsers, so that we can conviniently work remotely.
+
+The easiest way to install Jupyterlab and Python packages used for
+computational research is to use Anaconda's python distribution. Follow the steps below to
+install a miniconda, create a working environment with basic packages, and
+troubleshoot Python.
 
 ## Step 1: Install [miniconda](https://docs.conda.io/en/latest/miniconda.html) in user space.
 

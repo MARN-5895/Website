@@ -46,7 +46,7 @@ To navigate the file system, we use two commands: `ls` (list) and `cd` (change d
 we also use two commands: `cp` (copy) and `mv` (move). These commands also accept optional flags, which modify the
 output. For example, `ls` lists the name of files and sub-directories in a specific directory, `ls -l` lists the files
 in long-format (showing the size of each file, among other things). I will demonstrate the use of these commands in class and you will
-practice their use in an assignment. Here's a [comprehensive cheatsheet](https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/bash.sh).
+practice their use in an assignment.
 
 ![](img/vsc_terminal.png)
 
@@ -72,3 +72,4 @@ with instructions. Anytime
 ## Further reading
 
   - [Storrs HPC wiki](https://wiki.hpc.uconn.edu/index.php/HPC_Getting_Started).
+  - [Bash cheatsheet](https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/bash.sh)
