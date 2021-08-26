@@ -41,28 +41,23 @@ also works on Linux and MacOS.
 
 ## Basic commands
 
-### Navigating the file system
-
-To navigate the file system, we use two commands: `ls` (list) and `cd` (change directory).
-```Bash
-ls
-```
-
-### Moving files
-
-To move files around, we use two commands: `cp` (copy) and `mv` (move).
-
-
-
+To navigate the file system, we use two commands: `ls` (list) and `cd` (change directory). To move files around,
+we also use two commands: `cp` (copy) and `mv` (move). These commands also accept optional flags, which modify the
+output. For example, `ls` lists the name of files and sub-directories in a specific directory, `ls -l` lists the files
+in long-format (showing the size of each file, among other things). I will demonstrate the use of these commands in class and you will
+practice their use in an assignment.
 
 ![](img/vsc_terminal.png)
 
-## Logging into StorrsHPC
-To log into StorrsHPC, we use the secure shell (ssh) command:
+## SSHing into StorrsHPC
+Before we learn about about how to navigate the file system and move things around, let's
+to log into Storrs HPC. We can do that from the terminal by using a secure shell (SSH), which is a
+network protocol used to connect to remote computers.  To log into Storrs HPC, type on the terminal the following command:
 ```Bash
 ssh YourNetID@login.storrs.hpc.uconn.edu
 ```
-where YourNetID is your UConn username. You will be prompted for your password.
+where YourNetID is your UConn username. You will be prompted for your password. Once you log in, you should see a welcoming message
+with instructions. 
 
 *To access StorrsHPC from a computer connected to a network off campus you will need the [UConn VPN](https://confluence.uconn.edu/ikb/remote-access/virtual-private-network-vpn/accessing-the-uconn-network-through-a-vpn-client).*
 
