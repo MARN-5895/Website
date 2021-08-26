@@ -61,17 +61,14 @@ with instructions. Anytime
 
 *To access StorrsHPC from a computer connected to a network off campus you will need the [UConn VPN](https://confluence.uconn.edu/ikb/remote-access/virtual-private-network-vpn/accessing-the-uconn-network-through-a-vpn-client).*
 
-
-
 ## Key points
 
   - This course aims to empower you to use modern computer software to solve research problems in Marine Sciences.
   - The terminal or Unix shell is an application for the user to interact with the computer.
   - Secure Shell (SSH) is a network protocol used to access remote computers.
 
-  ---
-  **Terminal** (Unix shell)
 
-  It works with almost all markdown flavours (the below blank line matters).
+## Further reading
 
-  ---  
+  - [Storrs HPC wiki](https://wiki.hpc.uconn.edu/index.php/HPC_Getting_Started).
+  
