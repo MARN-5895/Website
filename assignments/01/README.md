@@ -89,7 +89,8 @@ which should output
 
 
 ## Step 3: Create a base custom conda environment
-You now have to the basic python packages we will need. A good way to do this is with a custom [conda environment file](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file). Working with environments helps you keep track of the versions and releases of packages you used for a specific project. Conda helps you toggle back and forth between different environments, thus allowing you to run different software versions that may be required for different projects.  Below is an `marn5895.yml` file that Cesar created for this class:
+You now have to the python packages we will need. By default, anaconda comes with basic
+python packages, but it does not come with some of the packages we use for computational research. A good way to install these packages is to build a custom [conda environment file](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file). Working with environments helps you keep track of the versions and releases of packages you used for a specific project. Conda helps you toggle back and forth between different environments, thus allowing you to run different software versions that may be required for different projects.  Below is an `marn5895.yml` file that Cesar created for this class:
 
 ```BASH
 name: marn5895
@@ -147,6 +148,7 @@ jupyterlab                3.1.9              pyhd8ed1ab_0    conda-forge
 jupyterlab_pygments       0.1.2              pyh9f0ad1d_0    conda-forge
 jupyterlab_server         2.7.2              pyhd8ed1ab_0    conda-forge
 ```
+To list all packages installed in the environment, simply do `conda list`.
 
 ## Extra: Adding packages to the environments (no action needed now)
 
