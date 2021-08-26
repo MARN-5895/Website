@@ -16,18 +16,18 @@ troubleshoot Python.
 ## Step 1: Install [miniconda](https://docs.conda.io/en/latest/miniconda.html) in user space.
 
 Miniconda is a mini version of Anaconda that includes just conda and its dependencies. We will download an
-installation script and run it on Storrs HPC. First, log into Storrs HPC
+installation script and run it on Storrs HPC. First, log into Storrs HPC:
 
     ssh NetID@login.storrs.hpc.uconn.edu
 
-where NetID is you UConn username. Now you landed in you home directory on an Storrs HPC access node. To check
+where NetID is your UConn username. Now you landed in you home directory on an Storrs HPC access node. To check
 that, you can type the command `pwd` (print current directory), which should return:
 
     /home/NetID
 
 We now will download the miniconda installation script, available from the company that developed
 and distributes the Anaconda package. The scripts is available online at an URL. To download a file
-directly from an URL, we use the comman `wget` (Web get):
+directly from an URL, we use the command `wget` (Web get):
 
     wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
 
@@ -35,10 +35,13 @@ The flag `-O` above is changing the name of the downloaded file to miniconda.sh.
 
 ## Step 2: Run Miniconda3
 
-Now you actually run miniconda to install the package manager. The trick is to specify the install directory within your home directory, rather in the default system-wide installation (which you won't have permissions to do). You then have to add this directory to your path. (Miniconda may do this automatically for you when running the bash script.)
+Now you actually run miniconda to install the package manager. The trick is to specify the install directory within your home directory, rather than the default system-wide installation (which you won't have permissions to do). You then have to add this directory to your path. (Miniconda may do this automatically for you when running the bash script.) To run the installation script type (don't forget to change the word NetID with your UConn NetID):
 
-    bash miniconda.sh -b -p $HOME/miniconda
-    export PATH="$HOME/miniconda/bin:$PATH"
+    bash miniconda.sh -b -p /home/NetID/miniconda
+
+Now you can add the directory to you path:
+
+    export PATH="/home/NetID/miniconda/bin:$PATH"
 
 Make sure to check the path to miniconda is correct in the `.bashrc` file which should be in your home directory.
 
