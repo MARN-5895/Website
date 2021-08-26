@@ -147,7 +147,9 @@ jupyterlab                3.1.9              pyhd8ed1ab_0    conda-forge
 jupyterlab_pygments       0.1.2              pyh9f0ad1d_0    conda-forge
 jupyterlab_server         2.7.2              pyhd8ed1ab_0    conda-forge
 ```
-To list all packages installed in the environment, simply do `conda list`.
+(To list all packages installed in the environment, simply do `conda list`.) In lecture 2, you will learn how to launch `jupyterlab`
+on Storrs HPC and tunnel it to your local. This will give us a convenient working environment for this class. 
+
 
 ## Extra: Adding packages to the environments (no action needed now)
 
