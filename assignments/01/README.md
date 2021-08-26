@@ -43,7 +43,30 @@ Now you can add the directory to you path:
 
     export PATH="/home/NetID/miniconda/bin:$PATH"
 
-Make sure to check the path to miniconda is correct in the `.bashrc` file which should be in your home directory.
+Adding something to you path ensures that the terminal shell will recognize where the software (in this case the the Anaconda package manager) is installed, so when you type Anaconda commands, the terminal will recognize and execute them.
+
+Make sure to check the path to miniconda is correct in the `.bashrc` file which should be in your home directory. You can do that by printing the contents of `.bashrc` on the terminal:
+
+    cat ~/.bashrc
+
+where `~/` is a shortcut for `/home/NetID`. The should see an output that looks like this:
+
+```Bash
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/cer19004/miniconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/cer19004/miniconda/etc/profile.d/conda.sh" ]; then
+        . "/home/cer19004/miniconda/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/cer19004/miniconda/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+```
 
 ## Step 3: Create a base custom conda environment
 You now have to define what packages you actually want to install. A good way to do this is with a custom [conda environment file](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file). Working with environments helps you keep track of the versions and releases of packages you used for a specific project. Conda helps you toggle back and forth between different environments, thus allowing you to run different software versions that may be required for different projects.  Below is an `environment.yml` that Cesar used for his undegraduate class MARN-3002:
