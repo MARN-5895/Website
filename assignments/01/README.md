@@ -49,19 +49,19 @@ Make sure to check the path to miniconda is correct in the `.bashrc` file which 
 
     cat ~/.bashrc
 
-where `~/` is a shortcut for `/home/NetID`. The should see an output that looks like this:
+where `~/` is a shortcut for `/home/NetID`. The should see an output whose last few lines look like these:
 
 ```Bash
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/cer19004/miniconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/NetID/miniconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/cer19004/miniconda/etc/profile.d/conda.sh" ]; then
-        . "/home/cer19004/miniconda/etc/profile.d/conda.sh"
+    if [ -f "/home/NetID/miniconda/etc/profile.d/conda.sh" ]; then
+        . "/home/NetID/miniconda/etc/profile.d/conda.sh"
     else
-        export PATH="/home/cer19004/miniconda/bin:$PATH"
+        export PATH="/home/NetID/miniconda/bin:$PATH"
     fi
 fi
 unset __conda_setup
