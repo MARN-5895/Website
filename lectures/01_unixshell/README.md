@@ -35,7 +35,8 @@ Both Linux and MacOS are Unix-based operating systems, and the Unix shell is a
 native application. The most common Unix shell application is called `Terminal`.
 
 ### Windows users
-For Windows users I recommend the Unix terminal that come with [Visual Studio Code](https://code.visualstudio.com),
+For Windows users I recommend Git Bash, [Git for Windows](https://gitforwindows.org)'s terminal. You can also use
+the terminal that comes with [Visual Studio Code](https://code.visualstudio.com),
 a Microsoft text edit that has become the go-to tool for software developers. VSCode
 also works on Linux and MacOS.
 
@@ -71,4 +72,3 @@ with instructions. Anytime
 ## Further reading
 
   - [Storrs HPC wiki](https://wiki.hpc.uconn.edu/index.php/HPC_Getting_Started).
-  
