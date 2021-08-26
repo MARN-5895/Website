@@ -9,7 +9,7 @@ notebooks, text editors, and a terminal. We will run jupyterlab on Storrs HPC
 but open it on our local browsers, so that we can conviniently work remotely.
 
 The easiest way to install Jupyterlab and Python packages used for
-computational research is to use Anaconda's python distribution. Follow the steps below to
+computational research is to use the Anaconda packet manager. Follow the steps below to
 install a miniconda, create a working environment with basic packages, and
 troubleshoot Python.
 
