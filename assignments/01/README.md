@@ -15,9 +15,23 @@ troubleshoot Python.
 
 ## Step 1: Install [miniconda](https://docs.conda.io/en/latest/miniconda.html) in user space.
 
-Miniconda is a mini version of Anaconda that includes just conda and its dependencies. It is a very small download. If you want to use python 3 (recommended) you can call
+Miniconda is a mini version of Anaconda that includes just conda and its dependencies. We will download an
+installation script and run it on Storrs HPC. First, log into Storrs HPC
+
+    ssh NetID@login.storrs.hpc.uconn.edu
+
+where NetID is you UConn username. Now you landed in you home directory on an Storrs HPC access node. To check
+that, you can type the command `pwd` (print current directory), which should return:
+
+    /home/NetID
+
+We now will download the miniconda installation script, available from the company that developed
+and distributes the Anaconda package. The scripts is available online at an URL. To download a file
+directly from an URL, we use the comman `wget` (Web get):
 
     wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+
+The flag `-O` above is changing the name of the downloaded file to miniconda.sh.
 
 ## Step 2: Run Miniconda3
 
@@ -28,8 +42,8 @@ Now you actually run miniconda to install the package manager. The trick is to s
 
 Make sure to check the path to miniconda is correct in the `.bashrc` file which should be in your home directory.
 
-## Step 3: Create a base custom conda environment 
-You now have to define what packages you actually want to install. A good way to do this is with a custom [conda environment file](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file). Working with environments helps you keep track of the versions and releases of packages you used for a specific project. Conda helps you toggle back and forth between different environments, thus allowing you to run different software versions that may be required for different projects.  Below is an `environment.yml` that Cesar used for his undegraduate class MARN-3002: 
+## Step 3: Create a base custom conda environment
+You now have to define what packages you actually want to install. A good way to do this is with a custom [conda environment file](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file). Working with environments helps you keep track of the versions and releases of packages you used for a specific project. Conda helps you toggle back and forth between different environments, thus allowing you to run different software versions that may be required for different projects.  Below is an `environment.yml` that Cesar used for his undegraduate class MARN-3002:
 
     name: marn3002
     dependencies:
@@ -84,10 +98,7 @@ You should replace `marn3002` with whatever environment name you chose in your `
 
 Sometimes we will need to add packages to the environment after it has already been created using the above steps. If possible, one can also update the environment from the environment file. This involves two steps:
 
-    - Update the environment.yml file, adding new package names to it. 
-    - run `conda env update -f environment.yml --prune` 
+    - Update the environment.yml file, adding new package names to it.
+    - run `conda env update -f environment.yml --prune`
 
 If you just want to update the packages that are already there and maybe new versions are available, then use `conda update --all`.
-
-
-
