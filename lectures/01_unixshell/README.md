@@ -43,14 +43,14 @@ also works on Linux and MacOS.
 
 ### Navigating the file system
 
-To navigate the file system, we use two commands: `ls' (list) and `cd' (change directory).
+To navigate the file system, we use two commands: `ls` (list) and `cd` (change directory).
 ```Bash
 ls
 ```
 
 ### Moving files
 
-To move files around, we use two commands: `cp' (copy) and `mv' (move).
+To move files around, we use two commands: `cp` (copy) and `mv` (move).
 
 
 
