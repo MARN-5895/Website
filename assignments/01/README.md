@@ -91,46 +91,37 @@ dependencies:
    - pytest
 ```
 
-And here's another environment Cesar used to run [CODAS](https://currents.soest.hawaii.edu/docs/adcp_doc/), which doesn't work with the most recent matplotlib version:
+You can copy this file from XXX to you home directory:
 
-    name: codas2020
-    channels:
-    - conda-forge
-    dependencies:
-    - mercurial
-    - pip
-    - pyflakes
-    - numpy
-    - flake8
-    - python==3.7.9
-    - matplotlib == 3.0.3
-    - ipython
+    cp /home/cer19004/marn5895.yml /home/NetID
 
-Create a similar files for your projects and save the as
-`<environment_name>.yml`. You should choose a `name` that is descriptive of your project.
+If you are currently in your home directory (i.e., if `pwd` return `/home/NetID`), you could
+replace `/home/NetID` above with `.`, which is a short cut for the path of your current directory.
 
 ## Step 4: Create the conda environment
 
 You should now be able to run the following command
 
      source .bashrc
-     conda env create --file <environment_name>.yml
+     conda env create --file marn5895.yml
 
-This will download and install all the packages and their dependencies.
+This will download and install all the packages listed `marn5805.yml` as well as their dependencies.
 
 ## Step 5: Activate the environments
 
-The environment you created needs to be activated before you can actually use it. To do this, you call
+The environment you created needs to be activated before you can actually use it. You will need to this everytime
+you log into Storrs HPC. To activate the `marn5895` environment, use the command `conda activate`:
 
-     conda activate marn3002
+     conda activate marn5895
 
-You should replace `marn3002` with whatever environment name you chose in your `environment.yml` file. This step needs to be repeated whenever you want to use the environment (i.e. every time you launch an interactive job or call python from within a batch job).
+## Step 6: Adding packages to the environments (no action needed now)
 
-## Step 6: Adding packages to the environments
+Sometimes we will need to add packages to the environment after it has already been created using the above steps. If possible, you can also update the environment from the environment file. This involves two steps:
 
-Sometimes we will need to add packages to the environment after it has already been created using the above steps. If possible, one can also update the environment from the environment file. This involves two steps:
+    - Update the marn5895.yml file, adding new package names to it.
+    - run `conda env update -f marn5895.yml --prune`
 
-    - Update the environment.yml file, adding new package names to it.
-    - run `conda env update -f environment.yml --prune`
+If you just want to update the packages that are already there and maybe new versions are available, then use `conda update --all`. We will come back to installing more packages and updating the environment in the future.
 
-If you just want to update the packages that are already there and maybe new versions are available, then use `conda update --all`.
+
+# Troubleshooting 
