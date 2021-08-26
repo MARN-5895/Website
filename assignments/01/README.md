@@ -76,7 +76,7 @@ which should output the path where conda has been installed
 
     /home/NetID/miniconda/bin/conda
 
-To check the which version of conda you have installed, type
+To check which version of conda you have installed, type
 
     conda --version
 
@@ -130,14 +130,23 @@ This will download and install all the packages listed `marn5805.yml` as well as
 
 ## Step 5: Activate the environments
 
-The environment you created needs to be activated before you can actually use it. You will need to this everytime
+The environment you created needs to be activated before you can actually use it. You will need to do this every time
 you log into Storrs HPC. To activate the `marn5895` environment, use the command `conda activate`:
 
      conda activate marn5895
 
+Now you are in the `marn5895` conda environment as the prefix (marn5895) in your terminal suggests. To check that you have
+`jupyterlab` and its dependencies you have installed in this environment, type
 
+    conda list jupyterlab
 
-
+which should output
+```BASH
+# Name                    Version                   Build  Channel
+jupyterlab                3.1.9              pyhd8ed1ab_0    conda-forge
+jupyterlab_pygments       0.1.2              pyh9f0ad1d_0    conda-forge
+jupyterlab_server         2.7.2              pyhd8ed1ab_0    conda-forge
+```
 
 ## Extra: Adding packages to the environments (no action needed now)
 
