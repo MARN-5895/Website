@@ -68,6 +68,26 @@ unset __conda_setup
 # <<< conda initialize <<<
 ```
 
+We can also check that `conda` has been installed using the shell command `which`:
+
+    which conda
+
+which should output the path where conda has been installed
+
+    /home/NetID/miniconda/bin/conda
+
+To check the which version of conda you have installed, type
+
+    conda --version
+
+which should output
+
+    conda 4.10.3
+
+(the latest version).
+
+
+
 ## Step 3: Create a base custom conda environment
 You now have to the basic python packages we will need. A good way to do this is with a custom [conda environment file](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file). Working with environments helps you keep track of the versions and releases of packages you used for a specific project. Conda helps you toggle back and forth between different environments, thus allowing you to run different software versions that may be required for different projects.  Below is an `marn5895.yml` file that Cesar created for this class:
 
@@ -76,6 +96,7 @@ name: marn5895
 channels:
  - conda-forge
 dependencies:
+ - pip
  - numpy
  - scipy
  - pandas
@@ -105,7 +126,7 @@ You should now be able to run the following command
      source .bashrc
      conda env create --file marn5895.yml
 
-This will download and install all the packages listed `marn5805.yml` as well as their dependencies.
+This will download and install all the packages listed `marn5805.yml` as well as their dependencies. It may take several minutes to complete this step.
 
 ## Step 5: Activate the environments
 
@@ -114,7 +135,11 @@ you log into Storrs HPC. To activate the `marn5895` environment, use the command
 
      conda activate marn5895
 
-## Step 6: Adding packages to the environments (no action needed now)
+
+
+
+
+## Extra: Adding packages to the environments (no action needed now)
 
 Sometimes we will need to add packages to the environment after it has already been created using the above steps. If possible, you can also update the environment from the environment file. This involves two steps:
 
@@ -123,5 +148,7 @@ Sometimes we will need to add packages to the environment after it has already b
 
 If you just want to update the packages that are already there and maybe new versions are available, then use `conda update --all`. We will come back to installing more packages and updating the environment in the future.
 
+## Further resources
 
-# Troubleshooting 
+  - [Conda environments documentation](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activating-an-environment)
+  - [Software Carpentry conda lesson](https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/setup/)
