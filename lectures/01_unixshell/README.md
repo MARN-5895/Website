@@ -45,7 +45,7 @@ To navigate the file system, we use two commands: `ls` (list) and `cd` (change d
 we also use two commands: `cp` (copy) and `mv` (move). These commands also accept optional flags, which modify the
 output. For example, `ls` lists the name of files and sub-directories in a specific directory, `ls -l` lists the files
 in long-format (showing the size of each file, among other things). I will demonstrate the use of these commands in class and you will
-practice their use in an assignment.
+practice their use in an assignment. Here's a [comprehensive cheatsheet](https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/bash.sh).
 
 ![](img/vsc_terminal.png)
 
@@ -57,7 +57,7 @@ network protocol used to connect to remote computers.  To log into Storrs HPC, t
 ssh YourNetID@login.storrs.hpc.uconn.edu
 ```
 where YourNetID is your UConn username. You will be prompted for your password. Once you log in, you should see a welcoming message
-with instructions. 
+with instructions. Anytime
 
 *To access StorrsHPC from a computer connected to a network off campus you will need the [UConn VPN](https://confluence.uconn.edu/ikb/remote-access/virtual-private-network-vpn/accessing-the-uconn-network-through-a-vpn-client).*
 
