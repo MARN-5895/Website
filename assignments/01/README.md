@@ -112,9 +112,9 @@ dependencies:
    - pytest
 ```
 
-You can copy this file from XXX to you home directory:
+You can copy this file from the MARN5895 shared space to you home directory:
 
-    cp /home/cer19004/Teaching/MARN5895/marn5895.yml /home/NetID
+    cp /shared/marn5895/marn5895.yml /home/NetID
 
 If you are currently in your home directory (i.e., if `pwd` return `/home/NetID`), you could
 replace `/home/NetID` above with `.`, which is a short cut for the path of your current directory.
