@@ -33,27 +33,21 @@ directly from an URL, we use the command `wget` (Web get):
 
     wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
 
-The flag `-O` above is changing the name of the downloaded file (the output) to miniconda.sh.
+The flag `-O` above is changing the name of the downloaded file (the output) to miniconda.sh. The download may take several seconds to complete.
 
 ## Step 2: Run Miniconda3
 
-Now you can run the script script `miniconda.sh` to install conda, the Anaconda package manager. The trick is to specify a installation directory within your home directory, rather than the default system-wide installation (which you won't have permissions to do). You then have to add this directory to your path. (Miniconda may do this automatically for you when running the bash script.) To run the installation script type:
+Now you can run the script script `miniconda.sh` to install the Anaconda package manager. The trick is to specify an installation directory within your home directory to avoid attempting to install `miniconda` system-wide (which only HPC IT folks have permission to do). To run the installation script type:
 
     bash miniconda.sh -b -p /home/NetID/miniconda/
 
-This installation may take a few minutes to complete, because `miniconda.sh` will download and install all the basic Anaconda software (just like executing a .exe ).
+This installation may take a few minutes to complete, because `miniconda.sh` will download and install all the basic Anaconda software (just like executing a .exe or .dmg file on you computer).
 
-Now you can add the directory to you path:
-
-    export PATH="/home/NetID/miniconda/bin:$PATH"
-
-Adding something to you path ensures that the terminal shell will recognize where the software (in this case the the Anaconda package manager) is installed, so when you type Anaconda commands, the terminal will recognize and execute them.
-
-Make sure to check the path to miniconda is correct in the `.bashrc` file which should be in your home directory. You can do that by printing the contents of `.bashrc` on the terminal:
+You should now check that the path to miniconda is in your terminal configuration file `.bashrc`,  which lives in your home directory. You can do that by printing the contents of `.bashrc` on the terminal:
 
     cat ~/.bashrc
 
-where `~/` is a shortcut for `/home/NetID`. The should see an output whose last few lines look like these:
+where `~/` is a shortcut for `/home/NetID`. (If you are currently on your home directory, you don't need to add `~/`.) You should see an output whose last few lines look like these:
 
 ```Bash
 # >>> conda initialize >>>
@@ -92,8 +86,8 @@ which should output
 
 
 ## Step 3: Create a base custom conda environment
-You now have to the python packages we will need. By default, anaconda comes with basic
-python packages, but it does not come with some of the packages we use for computational research. A good way to install these packages is to build a custom [conda environment file](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file). Working with environments helps you keep track of the versions and releases of packages you used for a specific project. Conda helps you toggle back and forth between different environments, thus allowing you to run different software versions that may be required for different projects.  Below is a `marn5895.yml` file that Cesar created for this class:
+You now have to install the python packages we will need. By default, miniconda comes with elementary
+python packages, but it does not come with most of the packages we use for computational research. A good way to install these packages is to build a custom [conda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file). Working with environments helps you keep track of the versions and releases of packages you used for a specific project. Conda helps you toggle back and forth between different environments, thus allowing you to run different software versions that may be required for different projects.  Below is a `marn5895.yml` file created for this class:
 
 ```BASH
 name: marn5895
@@ -116,31 +110,33 @@ dependencies:
    - pytest
 ```
 
-You can copy this file from the MARN5895 shared space to you home directory:
+You can copy this file from the course's shared space to your home directory:
 
     cp /shared/marn5895/marn5895.yml /home/NetID
 
-If you are currently in your home directory (i.e., if `pwd` return `/home/NetID`), you could
+If you are currently in your home directory (i.e., if `pwd` returns `/home/NetID`), you could
 replace `/home/NetID` above with `.`, which is a short cut for the path of your current directory.
 
 ## Step 4: Create the conda environment
 
-You should now be able to run the following command
+First, you need to update your terminal session to ensure it cognizant of the recent changes in the bash configuration file. You can do it by "sourcing" `.bashrc`:
 
      source .bashrc
+
+You should now be able to run the following command:
+
      conda env create --file marn5895.yml
 
-This will download and install all the packages listed `marn5805.yml` as well as their dependencies. It may take several minutes to complete this step.
+This will download and install all the packages listed in `marn5805.yml` as well as their dependencies. It may take several minutes to complete this step.
 
 ## Step 5: Activate the environments
 
-The environment you created needs to be activated before you can actually use it. You will need to do this every time
-you log into Storrs HPC. To activate the `marn5895` environment, use the command `conda activate`:
+The environment you created needs to be activated before you can use the packages you installed. You will need to do this every time you log into Storrs HPC. To activate the `marn5895` environment, use the command `conda activate`:
 
      conda activate marn5895
 
 Now you are in the `marn5895` conda environment as the prefix (marn5895) in your terminal suggests. To check that you have
-`jupyterlab` and its dependencies you have installed in this environment, type
+`jupyterlab` and its dependencies installed in this environment, type
 
     conda list jupyterlab
 
@@ -152,7 +148,7 @@ jupyterlab_pygments       0.1.2              pyh9f0ad1d_0    conda-forge
 jupyterlab_server         2.7.2              pyhd8ed1ab_0    conda-forge
 ```
 (To list all packages installed in the environment, simply do `conda list`.) In lecture 2, you will learn how to launch `jupyterlab`
-on Storrs HPC and tunnel it to your local. This will give us a convenient working environment for this class.
+on Storrs HPC and tunnel it to your local, meaning that `jupyterlab` will be running on Storrs HPC but you will be interacting with it on your local browser. This will give us a convenient working environment for this class.
 
 
 ## Extra: Adding packages to the environments (no action needed now)
