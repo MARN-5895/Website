@@ -21,12 +21,12 @@ navigate the file system, move files arounds, and run
 scripts and complicated programs, such as numerical models.
 
 The easiest way to interact with computers is using a GUI (Graphic User Interface), wherein
-we click on programs and folder and drag things around. But the GUI approach is laborious for
+we click on programs and folders and drag things around. But the GUI approach is laborious for
 complicated (sometimes repetitious) set of actions. That's when the terminal comes in handy. Being
 comfortable with the terminal shell will allow you to automate tasks, improve reproducibility of you work,
 and access remote computers (including cloud-computing systems).
 
-Learning to use the terminal requires memorizing a few commands. We will use a few of these commands today and
+Learning to use the terminal requires memorizing a few commands. We will use a few basic commands today and
 introduce other essential commands as they become necessary to perform your assignments.  
 
 
