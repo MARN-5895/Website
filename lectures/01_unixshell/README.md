@@ -106,7 +106,9 @@ Your terminal shell displays which node you are "NetID@cnN", where N is the node
 
           cp /shared/marn5895/launch_bash_slurm_marn5895.sh .
 
-where the period (or point) above means "current directory." In English, the command above reads "copy /shared/marn5895/launch_bash_slurm_marn5895.sh to here." To visualize the content of `launch_bash_slurm_marn5895.sh` use the command `cat` (concatenate)
+where the period (or point) above means "current directory." In English, the command above reads "copy /shared/marn5895/launch_bash_slurm_marn5895.sh to here." 
+
+To visualize the content of `launch_bash_slurm_marn5895.sh` use the command `cat` (concatenate)
 
           cat launch_bash_slurm_marn5895.sh
 which you output
