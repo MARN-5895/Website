@@ -121,7 +121,7 @@ To exceute the bash script `launch_bash_slurm_marn5895.sh`, type
           bash launch_bash_slurm_marn5895.sh
 
 which will execure the `srun` command above and take you from an access node into a work node assigned
-to this course. You should see that your location on the cluster moved into are high-number node, such as `cn344`, which are dedicated solely to this course. On these nodes, we will be able to run code on Storrs HPC. Before we get there, we need to set up Anaconda, a Python package managing system, which will let us install and upgrade Python packages and allow us to more efficiently interact with Storrs HPC using [Jupyter lab](https://jupyter.org). Installing Anaconda and setting up a conda environment is the topic of your [first in-class assignment](../../assignments/01/README.md).
+to this course. You should see that your location on the cluster moved into are high-number node, such as `cn344`, which are dedicated solely to this course. On these nodes, we will be able to run code on Storrs HPC. Before we get there, we need to set up Anaconda, a Python package managing system, which will let us install and upgrade Python packages and allow us to more efficiently interact with Storrs HPC using [Jupyterlab](https://jupyter.org). Installing Anaconda and setting up a conda environment is the topic of your [first in-class assignment](../../assignments/01/README.md).
 
 
 ## Key points
