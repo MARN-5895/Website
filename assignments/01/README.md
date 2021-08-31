@@ -153,7 +153,11 @@ on Storrs HPC and tunnel it to your local, meaning that `jupyterlab` will be run
 
 ## Extra: Adding packages to the environments (no action needed now)
 
-Sometimes we will need to add packages to the environment after it has already been created using the above steps. If possible, you can also update the environment from the environment file. This involves two steps:
+Sometimes we will need to add packages to the environment after it has already been created using the above steps. For example, to install the R kernel packages, do:
+
+    conda install -c r r-irkernel
+
+If needed you can also update the environment from the environment file. This involves two steps:
 
     - Update the marn5895.yml file, adding new package names to it.
     - run `conda env update -f marn5895.yml --prune`
