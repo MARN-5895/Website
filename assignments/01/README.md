@@ -8,9 +8,9 @@ supports R and other languages. Conviniently, jupyterlab runs the Jupyter
 notebook and has a text editor and a Unix terminal. We will run jupyterlab on Storrs HPC
 but open it on our local browser, so that we can easily work remotely.
 
-Using the [Anaconda](https://www.anaconda.com) packet manager is the easiest way to install jupyterlab and other Python packages used for computational research. Please, complete the 5 steps below to
+Using the [Anaconda](https://www.anaconda.com) packet manager is the easiest way to install jupyterlab and other Python packages used for computational research. **Please, complete the 5 steps below to
 install miniconda, create a working environment with basic packages, and
-check that your installation was successful. 
+check that your installation was successful.**
 
 ## Step 1: Install [miniconda](https://docs.conda.io/en/latest/miniconda.html) in user space.
 
