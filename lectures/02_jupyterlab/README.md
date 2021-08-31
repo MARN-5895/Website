@@ -36,7 +36,13 @@ where NODE is the Storrs HPC node where you set up the `jupyterlab` service (e.g
 
 Finally, open your local browser and type `localhost:XXXX`.  You now have a working jupyterlab running on Storrs HPC that you can iterface with on your local browser. 
 
-Jupyterlab is a web-based integrated development environment (IDE) that allows you to run terminal shells, text editors and jupyter notebooks to develop, test and execute code. 
+Jupyterlab is a web-based integrated development environment (IDE) that allows you to run terminals windows, text editors and jupyter notebooks to develop, test and execute code.  We will use the notebook and text edit often in the future weeks. Today, we will do some further work on the terminal.
     
+## Navigating the file system 2.0
 
+Nelle's pipeline.
+
+## Piping a string of commands
+
+## Bash (shell) scripts
 
