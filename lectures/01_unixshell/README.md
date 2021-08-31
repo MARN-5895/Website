@@ -83,6 +83,10 @@ DESCRIPTION
 :
 ```
 
+**In some systems, the option `--help` is used as an alias for `man`. So if `man ls` returned "command not found" on your computer, try `ls --help`, which should yield the same output as above.** 
+
+You can navida the command's manual with the space bar or arrow keys. To get out of the manual, press `q` (quit). 
+
 ![](img/vsc_terminal.png)
 
 ## SSHing into StorrsHPC
