@@ -85,7 +85,7 @@ DESCRIPTION
 
 **In some systems, the option `--help` is used as an alias for `man`. So if `man ls` returned "command not found" on your computer, try `ls --help`, which should yield the same output as above.** 
 
-You can navida the command's manual with the space bar or arrow keys. To get out of the manual, press `q` (quit). 
+You can navigate the command's manual with the space bar or arrow keys. To get out of the manual, press `q` (quit). 
 
 ## SSHing into Storrs HPC
 Before we learn about about how to navigate the file system and move things around, let's
@@ -94,14 +94,33 @@ network protocol used to connect to remote computers.  To log into Storrs HPC, t
 ```Bash
 ssh NetID@login.storrs.hpc.uconn.edu
 ```
-where YourNetID is your UConn username. You will be prompted for your password. Once you log in, you should see a welcoming message with instructions. 
+where NetID is your UConn username. You will be prompted for your password. Once you log in, you should see a welcoming message with instructions. 
 
 *To access Storrs HPC from a computer connected to a network off campus you will need the [UConn VPN](https://confluence.uconn.edu/ikb/remote-access/virtual-private-network-vpn/accessing-the-uconn-network-through-a-vpn-client).*
 
 ## Launching a terminal (bash) session with resources allocated to MARN5895
 Computer clusters such as Storrs HPC operate on a complex allocation system that allows user to schedule and excecute code depending on availability of resources. For this course, we have a partition, with a few computer nodes allocated just for us, and we need to work on the MARN5895 to ensure prompt execution of our programs.
 
-When you SSH into Storrs HPC, you land on an access node, either `cn01` or `cn02` or `cn03` or `cn04`. These access nodes serve as a gateway between your local computer and the rest of the Storrs HPC cluster. To access a different node, we have to "submit a job" (in cluster parlance).
+When you SSH into Storrs HPC, you land on an access node, either `cn01` or `cn02` or `cn03` or `cn04`. These access nodes serve as a gateway between your local computer and the rest of the Storrs HPC cluster. To access a different node, we have to "submit a job" (in cluster jargon) using Storrs HPC's scheduler (`slurm`). You find more information about job submission and `slurm` in the Storrs HPC wiki linked below. To facilitate this procress, I generated script that will do the job submission for you. The script `launch_bash_slurm_marn5895.sh` is stored on MARN5895's shared space and you should copy it to your home directory:
+
+          cp /shared/marn5895/launch_bash_slurm_marn5895.sh .
+
+where the period (or point) above means "current directory." In English, the command above reads "copy /shared/marn5895/launch_bash_slurm_marn5895.sh to here." To visualize the content of `launch_bash_slurm_marn5895.sh` use the command `cat` (concatenate)
+
+          cat launch_bash_slurm_marn5895.sh
+which you output
+
+```BASH
+srun -p general -n 10 -N 1 --mem=12Gb --partition=marn5895 --account=marn5895 --qos=marn5895 --pty bash
+```
+This commands submits a job to the Storrs HPC scheduler requesting access to the MARN5895 resources. The command is cryptic and I don't expect you to memorize it. Just try to remember it does.
+
+To exceute the bash script `launch_bash_slurm_marn5895.sh`, type 
+
+          bash launch_bash_slurm_marn5895.sh
+
+which will execure the `srun` command above and take you from an access node to a work node assigned this course. 
+
 
 ## Key points
 
