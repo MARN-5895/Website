@@ -37,9 +37,9 @@ The flag `-O` above is changing the name of the downloaded file (the output) to 
 
 ## Step 2: Run Miniconda3
 
-Now you run the script script `miniconda.sh` to install the package manager. The trick is to specify the install directory within your home directory, rather than the default system-wide installation (which you won't have permissions to do). You then have to add this directory to your path. (Miniconda may do this automatically for you when running the bash script.) To run the installation script type:
+Now you can run the script script `miniconda.sh` to install conda, the Anaconda package manager. The trick is to specify a installation directory within your home directory, rather than the default system-wide installation (which you won't have permissions to do). You then have to add this directory to your path. (Miniconda may do this automatically for you when running the bash script.) To run the installation script type:
 
-    bash miniconda.sh -b -p /home/NetID/miniconda
+    bash miniconda.sh -b -p /home/NetID/miniconda/
 
 This installation may take a few minutes to complete, because `miniconda.sh` will download and install all the basic Anaconda software (just like executing a .exe ).
 
