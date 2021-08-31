@@ -104,14 +104,14 @@ Computer clusters such as Storrs HPC operate on a complex allocation system that
 When you SSH into Storrs HPC, you land on an access node, either `cn01` or `cn02` or `cn03` or `cn04`.
 Your terminal shell displays which node you are "NetID@cnN", where N is the node number. These access nodes serve as a gateway between your local computer and the rest of the Storrs HPC cluster. To access a different node, we have to "submit a job" (in cluster jargon) using Storrs HPC's scheduler (`slurm`). You find more information about job submission and `slurm` in the Storrs HPC wiki linked below. To facilitate this procress, I generated script that will do the job submission for you. The script `launch_bash_slurm_marn5895.sh` is stored on MARN5895's shared space and you should copy it to your home directory:
 
-          cp /shared/marn5895/launch_bash_slurm_marn5895.sh .
+     cp /shared/marn5895/launch_bash_slurm_marn5895.sh .
 
 where the period (or point) above means "current directory." In English, the command above reads "copy /shared/marn5895/launch_bash_slurm_marn5895.sh to here." 
 
-To visualize the content of `launch_bash_slurm_marn5895.sh` use the command `cat` (concatenate)
+To visualize the content of `launch_bash_slurm_marn5895.sh`, use the command `cat` (concatenate)
 
-          cat launch_bash_slurm_marn5895.sh
-which you output
+     cat launch_bash_slurm_marn5895.sh
+which yields
 
 ```BASH
 srun -p general -n 10 -N 1 --mem=12Gb --partition=marn5895 --account=marn5895 --qos=marn5895 --pty bash
@@ -120,7 +120,7 @@ This commands submits a job to the Storrs HPC scheduler requesting access to the
 
 To exceute the bash script `launch_bash_slurm_marn5895.sh`, type 
 
-          bash launch_bash_slurm_marn5895.sh
+     bash launch_bash_slurm_marn5895.sh
 
 which will execure the `srun` command above and take you from an access node into a work node assigned
 to this course. You should see that your location on the cluster moved into are high-number node, such as `cn344`, which are dedicated solely to this course. On these nodes, we will be able to run code on Storrs HPC. Before we get there, we need to set up Anaconda, a Python package managing system, which will let us install and upgrade Python packages and allow us to more efficiently interact with Storrs HPC using [`jupyterlab`](https://jupyter.org). Installing Anaconda and setting up a conda environment is the topic of your [first in-class assignment](../../assignments/01/README.md).
