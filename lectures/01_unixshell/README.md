@@ -35,7 +35,7 @@ Both Linux and MacOS are Unix-based operating systems, and the Unix shell is a
 native application. The most common Unix shell application is called `Terminal`.
 
 ### Windows users
-For Windows users I recommend Git Bash, [Git for Windows](https://gitforwindows.org)'s terminal. You can also use
+For Windows users, I recommend Git Bash, [Git for Windows](https://gitforwindows.org)'s terminal. You can also use
 the terminal that comes with [Visual Studio Code](https://code.visualstudio.com),
 a Microsoft text edit that has become the go-to tool for software developers. VSCode
 also works on Linux and MacOS.
@@ -87,17 +87,14 @@ DESCRIPTION
 
 You can navida the command's manual with the space bar or arrow keys. To get out of the manual, press `q` (quit). 
 
-![](img/vsc_terminal.png)
-
-## SSHing into StorrsHPC
+## SSHing into Storrs HPC
 Before we learn about about how to navigate the file system and move things around, let's
 to log into Storrs HPC. We can do that from the terminal by using a secure shell (SSH), which is a
 network protocol used to connect to remote computers.  To log into Storrs HPC, type on the terminal the following command:
 ```Bash
-ssh YourNetID@login.storrs.hpc.uconn.edu
+ssh NetID@login.storrs.hpc.uconn.edu
 ```
-where YourNetID is your UConn username. You will be prompted for your password. Once you log in, you should see a welcoming message
-with instructions. Anytime
+where YourNetID is your UConn username. You will be prompted for your password. Once you log in, you should see a welcoming message with instructions. 
 
 *To access StorrsHPC from a computer connected to a network off campus you will need the [UConn VPN](https://confluence.uconn.edu/ikb/remote-access/virtual-private-network-vpn/accessing-the-uconn-network-through-a-vpn-client).*
 
