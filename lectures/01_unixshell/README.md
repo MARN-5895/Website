@@ -48,6 +48,41 @@ output. For example, `ls` lists the name of files and sub-directories in a speci
 in long-format (showing the size of each file, among other things). I will demonstrate the use of these commands in class and you will
 practice their use in an assignment.
 
+To learn about a command syntax and its different options, you can use the
+command `man` (manual), for example `man ls` yields
+
+```BASH
+LS(1)                     BSD General Commands Manual                    LS(1)
+
+NAME
+     ls -- list directory contents
+
+SYNOPSIS
+     ls [-ABCFGHLOPRSTUW@abcdefghiklmnopqrstuwx1%] [file ...]
+
+DESCRIPTION
+     For each operand that names a file of a type other than directory, ls displays its name as well as any
+     requested, associated information.  For each operand that names a file of type directory, ls displays
+     the names of files contained within that directory, as well as any requested, associated information.
+
+     If no operands are given, the contents of the current directory are displayed.  If more than one operand
+     is given, non-directory operands are displayed first; directory and non-directory operands are sorted
+     separately and in lexicographical order.
+
+     The following options are available:
+
+     -@      Display extended attribute keys and sizes in long (-l) output.
+
+     -1      (The numeric digit ``one''.)  Force output to be one entry per line.  This is the default when
+             output is not to a terminal.
+
+     -A      List all entries except for . and ...  Always set for the super-user.
+
+     -a      Include directory entries whose names begin with a dot (.).
+
+:
+```
+
 ![](img/vsc_terminal.png)
 
 ## SSHing into StorrsHPC
