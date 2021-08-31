@@ -37,7 +37,7 @@ native application. The most common Unix shell application is called `Terminal`.
 ### Windows users
 For Windows users, I recommend Git Bash, [Git for Windows](https://gitforwindows.org)'s terminal. You can also use
 the terminal that comes with [Visual Studio Code](https://code.visualstudio.com),
-a Microsoft text edit that has become the go-to tool for software developers. VSCode
+a Microsoft text editor that has become the go-to tool for software developers. VSCode
 also works on Linux and MacOS.
 
 ## Basic commands
@@ -96,12 +96,17 @@ ssh NetID@login.storrs.hpc.uconn.edu
 ```
 where YourNetID is your UConn username. You will be prompted for your password. Once you log in, you should see a welcoming message with instructions. 
 
-*To access StorrsHPC from a computer connected to a network off campus you will need the [UConn VPN](https://confluence.uconn.edu/ikb/remote-access/virtual-private-network-vpn/accessing-the-uconn-network-through-a-vpn-client).*
+*To access Storrs HPC from a computer connected to a network off campus you will need the [UConn VPN](https://confluence.uconn.edu/ikb/remote-access/virtual-private-network-vpn/accessing-the-uconn-network-through-a-vpn-client).*
+
+## Launching a terminal (bash) session with resources allocated to MARN5895
+Computer clusters such as Storrs HPC operate on a complex allocation system that allows user to schedule and excecute code depending on availability of resources. For this course, we have a partition, with a few computer nodes allocated just for us, and we need to work on the MARN5895 to ensure prompt execution of our programs.
+
+When you SSH into Storrs HPC, you land on an access node, either `cn01` or `cn02` or `cn03` or `cn04`. These access nodes serve as a gateway between your local computer and the rest of the Storrs HPC cluster. To access a different node, we have to "submit a job" (in cluster parlance).
 
 ## Key points
 
   - This course aims to empower you to use modern computer software to solve research problems in Marine Sciences.
-  - The terminal or Unix shell is an application for the user to interact with the computer.
+  - The terminal or Unix shell is an application (computer program) for the user to interact with the computer.
   - Secure Shell (SSH) is a network protocol used to access remote computers.
 
 
