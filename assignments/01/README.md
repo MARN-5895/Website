@@ -14,15 +14,18 @@ check that your installation was successful.**
 
 ## Step 1: Install [miniconda](https://docs.conda.io/en/latest/miniconda.html) in user space.
 
-Miniconda is a mini version of Anaconda that includes just conda and its dependencies. We will download an
+Miniconda is a mini version of Anaconda that includes just conda (the package manager) and some elementary Python packages. We will download an
 installation script and run it on Storrs HPC. First, log into Storrs HPC:
 
     ssh NetID@login.storrs.hpc.uconn.edu
 
-where NetID is your UConn username. Now you landed in you home directory on an Storrs HPC access node. To check
-that, you can type the command `pwd` (print current directory), which should return:
+where NetID is your UConn username. Now you landed in you home directory on an Storrs HPC access node. To check that, you can type the command `pwd` (print current directory), which should return:
 
-    /home/NetID
+    /home/NetID/
+
+You should now run the bash script `launch_bash_slurm_marn5895.sh` to move into a work node dedicated to this course:
+
+    bash launch_bash_slurm_marn5895.sh
 
 We now will download the miniconda Linux installation script, available from the company that developed
 and distributes the Anaconda package. (Remember that Storrs HPC uses a Linux Operating System.) The script is available online at [https://repo.continuum.io/miniconda/](https://repo.continuum.io/miniconda/). To download a file
@@ -30,7 +33,7 @@ directly from an URL, we use the command `wget` (Web get):
 
     wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
 
-The flag `-O` above is changing the name of the downloaded file to miniconda.sh.
+The flag `-O` above is changing the name of the downloaded file (the output) to miniconda.sh.
 
 ## Step 2: Run Miniconda3
 
