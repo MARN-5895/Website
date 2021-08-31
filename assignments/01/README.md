@@ -25,8 +25,8 @@ that, you can type the command `pwd` (print current directory), which should ret
 
     /home/NetID
 
-We now will download the miniconda installation script, available from the company that developed
-and distributes the Anaconda package. The scripts is available online at an URL. To download a file
+We now will download the miniconda Linux installation script, available from the company that developed
+and distributes the Anaconda package. (Remember that Storrs HPC uses a Linux Operating System.) The script is available online at [https://repo.continuum.io/miniconda/](https://repo.continuum.io/miniconda/). To download a file
 directly from an URL, we use the command `wget` (Web get):
 
     wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
@@ -35,9 +35,11 @@ The flag `-O` above is changing the name of the downloaded file to miniconda.sh.
 
 ## Step 2: Run Miniconda3
 
-Now you run the script script `miniconda.sh` to install the package manager. The trick is to specify the install directory within your home directory, rather than the default system-wide installation (which you won't have permissions to do). You then have to add this directory to your path. (Miniconda may do this automatically for you when running the bash script.) To run the installation script type (don't forget to change the word NetID with your UConn NetID):
+Now you run the script script `miniconda.sh` to install the package manager. The trick is to specify the install directory within your home directory, rather than the default system-wide installation (which you won't have permissions to do). You then have to add this directory to your path. (Miniconda may do this automatically for you when running the bash script.) To run the installation script type:
 
     bash miniconda.sh -b -p /home/NetID/miniconda
+
+This installation may take a few minutes to complete, because `miniconda.sh` will download and install all the basic Anaconda software (just like executing a .exe ).
 
 Now you can add the directory to you path:
 
