@@ -9,9 +9,9 @@ notebook, a text editor, and a Unix terminal. We will run jupyterlab on Storrs H
 but open it on our local browsers, so that we can conviniently work remotely.
 
 The easiest way to install Jupyterlab and Python packages used for
-computational research is to use the Anaconda packet manager. Follow the steps below to
-install a miniconda, create a working environment with basic packages, and
-troubleshoot Python.
+computational research is to use the Anaconda packet manager. Please, complete the 5 steps below to
+install miniconda, create a working environment with basic packages, and
+check that your installation was successful. 
 
 ## Step 1: Install [miniconda](https://docs.conda.io/en/latest/miniconda.html) in user space.
 
