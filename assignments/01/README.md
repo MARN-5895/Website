@@ -183,8 +183,6 @@ You can also try the `print` function:
 print("\n\nHello world!\n\nI just completed my first MARN5895 in-class assignment, so I'm feeling good \U0001F60E.\n\nI \u2764\ufe0f  coding!\n")
 ```
 
-For some fun about Python coding
-
 ## Extra: Adding packages to the environments (no action needed now)
 
 Sometimes we will need to add packages to the environment after it has already been created using the above steps. For example, to install the R kernel packages, do:
