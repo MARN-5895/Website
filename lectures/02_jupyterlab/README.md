@@ -117,7 +117,7 @@ If we `pwd` or `ls` again, we verify that we are in `data-shell/`.
 
 ##  A few more commands to deal with text files
 
-Let's move into the `molecule` directory. While we could do this with two separate commands (`cd ..`, then `cd moledules`), it's easiest to use a single command by providing the path of where we want to go (one level upward, then into molecules)
+Let's move into the `molecules` directory. While we could do this with two separate commands (`cd ..`, then `cd moledules`), it's easiest to use a single command by providing the path of where we want to go (one level upward, then into molecules)
 
     cd ../moledules
 
@@ -159,7 +159,20 @@ TER      17              1
 END
 ```
 
-`wc` (word count)
+The terminal is a good programs for dealing with text files. For example, to compute of words in a file, use `wc` (word count):
+
+    wc cubane.pdb
+
+which returns
+
+    20  156 1158 cubane.pdb
+
+The first column is the number of lines in `cubane.pdb`., the second columns is the number of words, and the third is the number of bytes in the file. We now this by checking wc's manual with `man wc`. The manual descriptions contains a few options. For example, to print only the number of lines, we use the `-l` option:
+
+    wc -l cubane.pdb
+
+And for displaying only the number of words, we use the the `-w` option.
+
 
 ## Piping a string of commands
 
