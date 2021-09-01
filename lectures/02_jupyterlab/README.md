@@ -19,7 +19,7 @@ First, we log into Storrs HPC and request a MARN5895 node following the two-comm
 
 We should always execute `launch_bash_slurm_marn5895.sh` when logging to work on Storrs HPC during this class.
 
-We are now on our assigned Storrs HPC node, abd we can boot up `jupyterlab` using
+We are now on our assigned Storrs HPC node, and we can boot up `jupyterlab` using
 
     jupyter-lab --no-browser --ip='*' --port=8888
 
@@ -65,8 +65,25 @@ Let's copy a directory that will be used for this lecture and for assignment 2 i
     cp  /shared/marn5895/data/data-shell .
 
 we get an error: "cp: omitting directory `/shared/marn5895/data/data-shell`". That's because 
+`data-shell` in `/shared/marn5895/data/` is not a single file but a directory. To copy directory 
+(and all its contents, including files and subdirectories), we need to add the option `-r` to `cp`:
 
+    cp -r /shared/marn5895/data/data-shell .
 
+If we now `ls`, we see that the directory `data-shell` was copied into our current directory. We can move into this directory and check what's in it:
+
+    cd data-shell
+    ls
+
+That's Nelle's directory tree. Nelle is a ficticious Marine Biology PhD student created by Software Carpentry to teach the Unix shell. Nelle's directory contains several subdirectories (creatures, data, moledules, north-pacific-gyre, writing) and a couple of files (notes.txt, pizza.cfg, solar.pdf).
+
+Let's see what's in `notes.txt`. We can do this with a few different commands. For example, `cat` (concatenate) will print all content of the file into the screen:
+
+```TEXT
+- finish experiments
+- write thesis
+- get post-doc position (pref. with Dr. Horrible)
+```
 
 Nelle's pipeline.
 
