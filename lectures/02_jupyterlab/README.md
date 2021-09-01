@@ -94,6 +94,17 @@ She has some data on two legendary creatures: basilisk and unicorn. If we concat
 
     more basilisk.dat
 
+To display just the first few lines a text file, we use the command `head`. For example, to show only the first 3 lines of `basilisk.dat`, we do
+
+    head -n 3 basilisk.dat
+
+Similarly, to display the last few lines of a text file we use the command `tail`, e.g.:
+
+    tail -n 10 basilisk.dat
+
+shows the last 10 lines of `basilisk.dat`.
+
+
 Let's check what else Nelle has in her directory tree. If we check our currently directory with `pwd` we see that we are in
 
     /home/NetID/MARN5895/Lectures/02/data-shell/creatures
