@@ -12,7 +12,7 @@ Using the [Anaconda](https://www.anaconda.com) packet manager is the easiest way
 install miniconda, create a working environment with basic packages, and
 check that your installation was successful.**
 
-## Step 1: Install [miniconda](https://docs.conda.io/en/latest/miniconda.html) in user space.
+## Step 1: Install [miniconda](https://docs.conda.io/en/latest/miniconda.html) in your home directory
 
 Miniconda is a mini version of Anaconda that includes just conda (the package manager) and some elementary Python packages. We will download an
 installation script and run it on Storrs HPC. First, log into Storrs HPC:
