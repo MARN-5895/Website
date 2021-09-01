@@ -167,14 +167,80 @@ which returns
 
     20  156 1158 cubane.pdb
 
-The first column is the number of lines in `cubane.pdb`., the second columns is the number of words, and the third is the number of bytes in the file. We now this by checking wc's manual with `man wc`. The manual descriptions contains a few options. For example, to print only the number of lines, we use the `-l` option:
+The first column is the number of lines in `cubane.pdb`, the second columns is the number of words, and the third is the number of bytes in the file. We now this by checking wc's manual with `man wc`. The manual descriptions contains a few options. For example, to print only the number of lines, we use the `-l` option:
 
     wc -l cubane.pdb
 
-And for displaying only the number of words, we use the the `-w` option.
+And for displaying only the number of words, we use the the `-w` option. 
 
+To check the number of lines in each file we can use the wildcard `*`:
+
+    wc -l *.pdb
+
+In  this case, `*` is matching all files that end with the extension `.pdb`. The Unix shell created a list of matching filenames ending in `.pdb` and executed the command `wc -l` for each element of that list. 
+
+The default output of any shell command is the screen, but we can change it into a file. For example,
+
+    wc -l *.pdb > number_of_lines.txt
+
+creates a file `number_of_lines.txt` with the output. We can verify this has happened by printing the file contents on the screen:
+
+    cat number_of_lines.txt
+
+which outputs
+
+  20 cubane.pdb
+  12 ethane.pdb
+   9 methane.pdb
+  30 octane.pdb
+  21 pentane.pdb
+  15 propane.pdb
+ 107 total
+
+The file `number_of_lines.txt` is ordered in alphabetical order of the molecules. We may instead want to sort the results by the number of lines in each file:
+
+    sort -n number_of_lines.txt
+
+which outputs
+
+   9 methane.pdb
+  12 ethane.pdb
+  15 propane.pdb
+  20 cubane.pdb
+  21 pentane.pdb
+  30 octane.pdb
+  107 total
 
 ## Piping a string of commands
 
+A powerful shell tool the pipeline `|`, which allows us to feed the output of one command into another command. For example,
+
+    wc -l *.pdb | sort -n 
+
+outputs the same sorted list we obtained in two steps above:
+
+   9 methane.pdb
+  12 ethane.pdb
+  15 propane.pdb
+  20 cubane.pdb
+  21 pentane.pdb
+  30 octane.pdb
+  107 total
+
+We can pipe as many command as we wish. If we want to print only the first 6 lines of the output above, thus ignoring the line with the total nubmer of lines, we can do
+
+    wc -l *.pdb | sort -n | head -n 6
+
+And of course, we can always print the output into a text file:
+
+    wc -l *.pdb | sort -n | head -n 6 > sorted_number_of_lines.txt
+
+word count, then sort, then put sorted output into sorted_number_of_lines.txt. 
+
 ## For loops and bash (shell) scripts
 
+## Key points 
+
+    - The most basic commands to navigate and orgazine the directory tree are: cd (change directory), cp (copy), mv (move), rm (remove), mkdir (make directory).
+    - The wildcard `*` in `*.extension` creates a list of all filenames that end in `.extension` on which a command can operate.
+    - Pipe `|` take the output of one shell command and input it into another.
