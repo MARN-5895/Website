@@ -79,7 +79,7 @@ That's Nelle's directory tree. Nelle is a ficticious PhD student created by Soft
 
 Let's see what's in `notes.txt`. We can do this with a few different commands. For example, `cat` (concatenate) will print all content of the file into the screen:
 
-```TEXT
+```BASH
 - finish experiments
 - write thesis
 - get post-doc position (pref. with Dr. Horrible)
@@ -134,9 +134,9 @@ Let's take a look what is in one of those files:
 
     more cubate.pdb
 
-which returns 
+which returns some data about cubane:
 
-```TEXT
+```BASH
 COMPND      CUBANE
 AUTHOR      DAVE WOODCOCK  95 12 06
 ATOM      1  C           1       0.789  -0.852   0.504  1.00  0.00
