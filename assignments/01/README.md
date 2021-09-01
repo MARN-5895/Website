@@ -150,6 +150,32 @@ jupyterlab_server         2.7.2              pyhd8ed1ab_0    conda-forge
 (To list all packages installed in the environment, simply do `conda list`.) In lecture 2, you will learn how to launch `jupyterlab`
 on Storrs HPC and tunnel it to your local, meaning that `jupyterlab` will be running on Storrs HPC but you will be interacting with it on your local browser. This will give us a convenient working environment for this class.
 
+You should also check that `IPython` (an enhanced interactive Python shell) was installed:
+
+    conda list ipython
+
+which should return 
+
+```BASH
+# packages in environment at /Users/crocha/anaconda3:
+#
+# Name                    Version                   Build  Channel
+ipython                   7.16.1           py38h5ca1d4c_0  
+ipython_genutils          0.2.0                    py38_0  
+```
+
+You can now open `IPython`:
+
+    ipython
+
+and fool around with it a bit. For example, you an do some algebra
+
+```PYTHON
+a = 1
+b = 2 
+a+b
+```
+
 
 ## Extra: Adding packages to the environments (no action needed now)
 
