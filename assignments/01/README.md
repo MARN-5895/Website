@@ -85,7 +85,7 @@ which should output
 (the latest version).
 
 
-## Step 3: Create a base custom conda environment
+## Step 3: Create a custom conda environment
 You now have to install the python packages we will need. By default, miniconda comes with elementary
 python packages, but it does not come with most of the packages we use for computational research. A good way to install these packages is to build a custom [conda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file). Working with environments helps you keep track of the versions and releases of packages you used for a specific project. Conda helps you toggle back and forth between different environments, thus allowing you to run different software versions that may be required for different projects.  Below is a `marn5895.yml` file created for this class:
 
