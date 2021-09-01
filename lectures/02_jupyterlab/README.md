@@ -115,7 +115,24 @@ To go one directory upwards (i.e., back into data-shell) we simply do
 
 If we `pwd` or `ls` again, we verify that we are in `data-shell/`.
 
+##  A few more commands to deal with text files
+
+Let's move into the `molecule` directory. While we could do this with two separate commands (`cd ..`, then `cd moledules`), it's easiest to use a single command by providing the path of where we want to go (one level upward, then into molecules)
+
+    cd ../moledules
+
+Let's see what inside
+
+    ls
+
+returns
+
+    cubane.pdb    ethane.pdb    methane.pdb
+    octane.pdb    pentane.pdb   propane.pdb
+
+`wc` (word count)
+
 ## Piping a string of commands
 
-## Bash (shell) scripts
+## For loops and bash (shell) scripts
 
