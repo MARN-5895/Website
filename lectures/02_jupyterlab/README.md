@@ -36,9 +36,37 @@ where NODE is the Storrs HPC node where you set up the `jupyterlab` service (e.g
 
 Finally, open your local browser and type `localhost:8888`.  You now have a working jupyterlab running on Storrs HPC that you can iterface with on your local browser. 
 
-Jupyterlab is a web-based integrated development environment (IDE) that allows you to run terminals windows, text editors and jupyter notebooks to develop, test and execute code.  We will use the notebook and text edit often in the future weeks. Today, we will do some further work on the terminal.
+Jupyterlab is a web-based integrated development environment (IDE) that allows you to run terminals windows, text editors and jupyter notebooks to develop, test and execute code.  We will use the notebook and text edit often in the future weeks. Today, we will do some further work on the terminal. 
+We will begin coding in python next week. For now, let's use the terminal on jupyterlab to continue our forway into the Unix shell.
     
 ## Navigating the file system 2.0
+We start by checking our current directory:
+
+    pwd
+
+which should return `/home/NetID`, unless you moved around. If you did, please type `cd` to return to you home directory. To create a new directory, use `mkdir` (make directory):
+
+    mkdir MARN5895
+
+If we list what's in this directory `ls MARN5895`, we get an empty list, because we haven't put anything in it yet. Let's `cd` into it an create a new directories and subdirectories:
+
+    cd MARN5895
+    mkdir Lectures
+    cd Lectures
+    mkdir 02
+    cd 02
+
+If we now check the current directory with `pwd` we get:
+
+    /home/NetID/MARN5895/Lectures/02/
+
+Let's copy a directory that will be used for this lecture and for assignment 2 into this current directory. If we try
+
+    cp  /shared/marn5895/data/data-shell .
+
+we get an error: "cp: omitting directory `/shared/marn5895/data/data-shell`". That's because 
+
+
 
 Nelle's pipeline.
 
