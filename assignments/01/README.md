@@ -176,6 +176,12 @@ b = 2
 a+b
 ```
 
+You can also try the `print` function
+
+```PYTHON
+print("\n\nHello world!\n\nI just completed my first MARN5895 in-class assignment, so I'm feeling good \U0001F60E.\n\nI \u2764\ufe0f  coding!\n")
+```
+
 
 ## Extra: Adding packages to the environments (no action needed now)
 
