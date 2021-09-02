@@ -196,7 +196,7 @@ Sometimes we will need to add packages to the environment after it has already b
 
     conda install -c r r-irkernel
 
-If needed you can also update the environment from the environment file. This involves two steps:
+You can also update the environment from the environment file. This involves two steps:
 
     - Update the marn5895.yml file, adding new package names to it.
     - run `conda env update -f marn5895.yml --prune`
