@@ -168,7 +168,7 @@ You can now open `IPython`:
 
     ipython
 
-and fool around with it a bit. For example, you an do some algebra
+and fool around with it a bit. For example, you can do some algebra:
 
 ```PYTHON
 a = 1
