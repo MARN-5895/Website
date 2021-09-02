@@ -65,7 +65,7 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 ```
-**If you don't see this in your, you should copy the code from this page and add it at the bottom of you `.bashrc`. You can do this in the terminal using the text editors `nano` or `vim`**. For example:
+**If you don't see this, you should copy the code above and add it at the bottom of your `.bashrc`. You can do this in the terminal using the text editors `nano` or `vim`**. For example:
 
     nano .bashrc
 
