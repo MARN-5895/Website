@@ -65,8 +65,17 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 ```
+**If you don't see this in your, you should copy the code from this page and add it at the bottom of you `.bashrc`. You can do this in the terminal using the text editors `nano` or `vim`, e.g.:
 
-We can also check that `conda` has been installed using the shell command `which`:
+    nano .bashrc
+
+will open `.bashrc` in the `nano` text editor. Remember to change NetID to your UConn username. In `nano`, to save changes and exit you should use `Crtl+O` and `Crtl+X`, respectively. In `vim`, you should do `esc` and then `:wq`.**
+
+Now that you have the miniconda path in your `.bashrc`, you need to ensure your terminal session is cognizant of the recent changes in the bash configuration file. You can do it by "sourcing" `.bashrc`:
+
+     source .bashrc
+
+We check that this worked using the shell command `which`:
 
     which conda
 
@@ -118,10 +127,6 @@ If you are currently in your home directory (i.e., if `pwd` returns `/home/NetID
 replace `/home/NetID` above with `.`, which is a short cut for the path of your current directory.
 
 ## Step 4: Create the conda environment
-
-First, you need to update your terminal session to ensure it cognizant of the recent changes in the bash configuration file. You can do it by "sourcing" `.bashrc`:
-
-     source .bashrc
 
 You should now be able to run the following command:
 
@@ -182,6 +187,8 @@ You can also try the `print` function:
 ```PYTHON
 print("\n\nHello world!\n\nI just completed my first MARN5895 in-class assignment, so I'm feeling good \U0001F60E.\n\nI \u2764\ufe0f  coding!\n")
 ```
+
+To exit the `IPython` prompt, use `Crtl+d`.
 
 ## Extra: Adding packages to the environments (no action needed now)
 
