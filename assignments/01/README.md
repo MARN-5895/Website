@@ -71,7 +71,7 @@ unset __conda_setup
 
 will open `.bashrc` in the `nano` text editor. Remember to change NetID to your UConn username. In `nano`, to save changes and exit you should use `Crtl+O` and `Crtl+X`, respectively. In `vim`, you should do `esc` and then `:wq`.
 
-Now that you have the miniconda path in your `.bashrc`, you need to ensure your terminal session is cognizant of the recent changes in the bash configuration file. You can do it by "sourcing" `.bashrc`:
+Now that you have the miniconda path in your `.bashrc`, you need to ensure your terminal session is cognizant of the recent changes in the bash configuration file. You can do this by "sourcing" `.bashrc`:
 
      source .bashrc
 
