@@ -201,7 +201,7 @@ If needed you can also update the environment from the environment file. This in
     - Update the marn5895.yml file, adding new package names to it.
     - run `conda env update -f marn5895.yml --prune`
 
-If you just want to update the packages that are already there and maybe new versions are available, then use `conda update --all`. We will come back to installing more packages and updating the environment in the future.
+If you just want to update the packages that are already there and maybe new versions are available, then use `conda update --all`. We will come back to installing more packages and updating the conda environment in the future.
 
 ## Further resources
 
