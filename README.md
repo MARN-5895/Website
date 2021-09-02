@@ -24,8 +24,9 @@ The **most up-to-date syllabus** is available [here](./syllabus/ResearchComputin
 | 2021-10-12    |  Lesson: Xarray for multidimensional arrays          |         |
 | 2021-10-14    |  Assignment: Estimating the global sea-level trend from 30 years of satellite altimetry          |         |
 | 2021-10-19    |  Lesson: More Xarray and CF-compliant netCDF files          |         |
-| 2021-10-21    |  Assignment: Estimating the ocean heat content and its trend from Argo products    |  Cesar is out of town       |
-| 2021-10-26    |  Remote lesson: Cartopy for making maps          |  Cesar is out of town        |
+| 2021-10-21    |  Assignment: Estimating the ocean heat content and its trend
+from Argo products    |       |
+| 2021-10-26    |  Remote lesson: Cartopy for making maps          |     |
 | 2021-10-28    |  Assignment: Making composite plots with several datasets in the Mid-Atlantic Bight          |         |
 | 2021-11-02    |  Lesson:  Cloud computing           |         |
 | 2021-11-04    | Assignment: Analyzing satellite altimetry data with Jupyter Notebooks on Amazon Web Services and Google Cloud          |         |
