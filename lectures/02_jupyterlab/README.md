@@ -235,7 +235,7 @@ And of course, we can always print the output into a text file:
 
     wc -l *.pdb | sort -n | head -n 6 > sorted_number_of_lines.txt
 
-word count, then sort, then put sorted output into sorted_number_of_lines.txt. 
+word count, then sort, then put sorted output into `sorted_number_of_lines.txt`. 
 
 ## For loops and bash (shell) scripts
 
@@ -257,7 +257,7 @@ AUTHOR      DAVE WOODCOCK  96 01 05
 AUTHOR      DAVE WOODCOCK  95 12 18
 AUTHOR      DAVE WOODCOCK  95  12 18
 ```
-It looks like Dave Woodcock did all the work. Breaking down the loop above, the `*.pdb` matched all filenames that end with the extension `.pdb`.
+It looks like Dave Woodcock did all the work. Breaking down the loop above, the `*.pdb` matched all filenames that end with the extension `.pdb` and creates a list of filenames. The variable `molecule` takes the values of each filename in each iteration of the loop. 
 
 
 ## Key points 
