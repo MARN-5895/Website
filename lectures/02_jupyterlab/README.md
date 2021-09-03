@@ -239,6 +239,27 @@ word count, then sort, then put sorted output into sorted_number_of_lines.txt.
 
 ## For loops and bash (shell) scripts
 
+We can also do loops in Unix shell.  For example, if we want to the name of author who analyzed each of the molecules, we can do 
+
+```BASH
+for molecule in *.pdb
+do 
+head -n 2 $molecule | tail -n 1 
+done
+```
+which should output 
+
+```BASH
+AUTHOR      DAVE WOODCOCK  95 12 06
+AUTHOR      DAVE WOODCOCK  95 12 18
+AUTHOR      DAVE WOODCOCK  95 12 18
+AUTHOR      DAVE WOODCOCK  96 01 05
+AUTHOR      DAVE WOODCOCK  95 12 18
+AUTHOR      DAVE WOODCOCK  95  12 18
+```
+It looks like Dave Woodcock did all the work.
+
+
 ## Key points 
 
     - The most basic commands to navigate and orgazine the directory tree are: cd (change directory), cp (copy), mv (move), rm (remove), mkdir (make directory).
