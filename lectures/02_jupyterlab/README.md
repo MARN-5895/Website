@@ -244,22 +244,38 @@ We can also do loops in Unix shell.  For example, if we want to the name of auth
 ```BASH
 for molecule in *.pdb
 do 
-head -n 2 $molecule | tail -n 1 
+head -n 2 $molecule 
 done
 ```
 which should output 
 
 ```BASH
+COMPND      CUBANE
 AUTHOR      DAVE WOODCOCK  95 12 06
+COMPND      ETHANE
 AUTHOR      DAVE WOODCOCK  95 12 18
+COMPND      METHANE
 AUTHOR      DAVE WOODCOCK  95 12 18
+COMPND      OCTANE
 AUTHOR      DAVE WOODCOCK  96 01 05
+COMPND      PENTANE
 AUTHOR      DAVE WOODCOCK  95 12 18
+COMPND      PROPANE
 AUTHOR      DAVE WOODCOCK  95  12 18
 ```
 It looks like Dave Woodcock did all the work!
 
-Breaking down the loop above, the `*.pdb` matched all filenames that end with the extension `.pdb` and creates a list of filenames. At each iteration, the variable `molecule` takes one member of the filename list. The command `head -n 2` takes the first two lines of `molecule`. The result in then piped into the command `tail -n 1`, which will take the last line of those two lines (i.e., the second line of `molecule`). The dollar sign in ...
+Breaking down the loop above, the `*.pdb` matched all filenames that end with the extension `.pdb` and creates a list of filenames. At each iteration, the variable `molecule` takes one member of the filename list. The command `head -n 2` takes the first two lines of `molecule` and prints them to the screen.
+
+We can put those command into a script. For example, we can open `nano` and type
+
+```BASH
+for molecule in *.pdb
+do 
+head -n 2 $molecule 
+done
+```
+With `crtl+o` we can save the file. Let's name it `loop_molecules.sh`. And we can exit `nano` with `crtl+x`.
 
 ## Key points 
 
