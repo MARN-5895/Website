@@ -257,7 +257,7 @@ AUTHOR      DAVE WOODCOCK  96 01 05
 AUTHOR      DAVE WOODCOCK  95 12 18
 AUTHOR      DAVE WOODCOCK  95  12 18
 ```
-It looks like Dave Woodcock did all the work.
+It looks like Dave Woodcock did all the work. Breaking down the loop above, the `*.pdb` matched all filenames that end with the extension `.pdb`.
 
 
 ## Key points 
