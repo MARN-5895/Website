@@ -1,5 +1,5 @@
 # Assignment 2: Automating tasks using the Unix terminal
-Two of the most common basic computational tasks in scientific research are renaming a large number of files and running a script multiple times with different input files. This assignment you help you learn how to leverage the terminal shell to automate these tasks.
+Two of the most common basic computational tasks in scientific research are renaming a large number of files and running a script multiple times with different input files. This assignment you help you learn how to use the terminal shell to automate these tasks.
 
 
 ## Step 1: Launch a terminal shell on a jupyterlab running on Storrs HPC
@@ -45,7 +45,7 @@ sleep 2
 head -3 $1 | cut -d , -f 1 | sort | uniq > $2
 ```
 
-The script takes two arguments: an input file with the protein data and an output file to which the script will save the statistics. For example, to run it on `NPG_NENE01729A.txt` you could do:
+The detailed of the scripts do not matter, but note that it takes two arguments: an input file with the protein data and an output file to which the script will save the statistics. For example, to run it on `NPG_NENE01729A.txt` you could do:
 
     bash goostats.sh NPG_NENE01729A.txt stats_output.txt
 
