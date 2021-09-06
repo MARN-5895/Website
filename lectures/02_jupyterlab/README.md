@@ -284,7 +284,7 @@ whose output should be the same as above.
 ---
 **EXERCISE**
 
-
+Edit the script `loop_molecules.sh` so that it saves the name of the author for each compound into a file named `authors.txt`.
 
 ---
 
