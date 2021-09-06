@@ -290,6 +290,6 @@ Edit the script `loop_molecules.sh` so that it saves the name of the author for 
 
 ## Key points 
 
-- The most basic commands to navigate and orgazine the directory tree are: cd (change directory), cp (copy), mv (move), rm (remove), mkdir (make directory).
+- The most basic commands to navigate and orgazine the directory are: cd (change directory), cp (copy), mv (move), rm (remove), mkdir (make directory).
 - The wildcard `*` in `*.extension` creates a list of all filenames that end in `.extension` on which a command can operate.
 - Pipe `|` take the output of one shell command and input it into another.
