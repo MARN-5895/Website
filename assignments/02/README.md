@@ -62,5 +62,5 @@ Note that `stats_output.txt` is not a good filename, because it says nothing abo
 **Write a shell script that executes goostats.sh for all protein data and save the statistics in properly named output files in a new subdirectory.** You should name your script `run_stats.sh` and your output directory should be named `stats`. 
 
 ## Step 4: Compare scripts and results with other pairs/small groups
-Compare and contrats your two bash scripts written to complete steps 2 and 3 with those of your colleagues and reflect on the potentially different approaches to solving the problems.
+Compare and contrats your two bash scripts written to complete steps 2 and 3 with those of your colleagues and reflect on the potentially different approaches to renaming several files and running a scripts multiple times with different inputs.
 
