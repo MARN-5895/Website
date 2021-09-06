@@ -8,7 +8,7 @@ Now start a terminal on `jupyterlab` and navigate into Nelle's North Pacific Gyr
 
     cd data-shell/north-pacific-gyre/2012-07-03
 
-## Step 2: Launc
+## Step 2: Launch a terminal on jupyterlab and navigate into our working directory for today
 
 
 Our activities for this assignment will take place on navigate into Nelle's North Pacific Gyre directory:
