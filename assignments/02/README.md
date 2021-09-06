@@ -43,7 +43,17 @@ sleep 2
 head -3 $1 | cut -d , -f 1 | sort | uniq > $2
 ```
 
-The script takes two arguments: an input file with the protein data and an output file to which the script will save the statistics. 
+The script takes two arguments: an input file with the protein data and an output file to which the script will save the statistics. For example, to run it on `NPG_NENE01729A.txt` you could do:
+
+    bash goostats.sh NPG_NENE01729A.txt stats_output.txt
+
+If you see the contents of `stats_output.txt` you will notice that it contains three numbers (three statistics):
+
+```BASH
+0.224455411571
+1.03150932862
+1.44755225695
+```
 
 ## Step 4: Check results?
 
