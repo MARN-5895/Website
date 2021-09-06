@@ -21,7 +21,7 @@ Now you can rename the data files. For example, to rename `NENE01729A.txt` and s
 
 Of course you could rename the files one by one. But that's too much work, and it is prone to human error. So you should automate this task using the terminal shell. **Write a shell script that appends the prefix `NPG` (for North Pacific Gyre) to all data filenames**. You can name the script `rename_files.sh`. Run the script and use `ls` to verify all files have been successfully renamed. Now create a new directory named `new_files` and move the renamed file names into it.
 
-## Step 3: Run shell script `goostats.sh`
+## Step 3: Run shell script `goostats`
 
 You are now ready to process Nelle's data  using `goostats.sh`, a shell script written by her advisor. The script calculates some statistics from the protein sample files. To see the contents in it use `cat`:
 
@@ -55,5 +55,10 @@ If you see the contents of `stats_output.txt` you will notice that it contains t
 1.44755225695
 ```
 
-## Step 4: Check results?
+Note that `stats_output.txt` is not a good filename, because it says nothing about original data that was used to generate the statistics. A better filename would be `stats-NPG_NENE01729A.txt`. To avoid confusion below, delete the `stats_output.txt` file using `rm stats_output.txt`.  
+
+**Write a shell script that executes goostats.sh for all protein data and save the statistics in properly named output files in a new subdirectory.** You should name your script `run_stats.sh` and your output directory should be named `stats`. 
+
+## Step 4: Compare scripts and results with other pairs/small groups
+Compare and contrats your two bash scripts written to complete steps 2 and 3 with those of your colleagues and reflect on the potentially different approaches to solving the problems.
 
