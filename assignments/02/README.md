@@ -9,15 +9,41 @@ Now start a terminal on `jupyterlab` and navigate into Nelle's North Pacific Gyr
     cd data-shell/north-pacific-gyre/2012-07-03
 
 ## Step 2: Add a prefix NPG to all `.txt` files in this directory
-This directory contains protein sample data (the `.txt` files) and an analysis script (`goostats.sh`) written by Nelle's advisor. Suppose you want to tag those data filenames with North Pacific Gyre, in case Nelle wants to compare protein sample data across different ocean basins.  You can rename a file using the command `mv` (move). Before attemping to move or rename anything, make a copy of the original data into a new separate sub-directory:
+This directory contains protein sample data (the `.txt` files) and an analysis script (`goostats.sh`) written by Nelle's advisor. Suppose you want to tag those data filenames with North Pacific Gyre, in case Nelle wants to compare protein sample data across different ocean basins.  You can rename a file using the command `mv` (move). Before attemping to move or rename anything, make a copy of the original data into a new sub-directory:
 
     mkdir original_files
     cp *.txt original_files/
 
-Of course you could do this by hand, one f. But that's too much work, and it is prone to human error. You job is to automate this task using the terminal shell. **Write a shell script that appends the prefix `NPG` (for North Pacific Gyre) to all protein sample data**.
+Now you can rename the data files. For example, to rename `NENE01729A.txt` and save  you could do:
+
+    mkdir new_files
+    mv NENE01729A.txt NPG_NENE01729A.txt
+
+Of course you could rename the files one by one. But that's too much work, and it is prone to human error. So you should automate this task using the terminal shell. **Write a shell script that appends the prefix `NPG` (for North Pacific Gyre) to all data filenames**. You can name the script `rename_files.sh`. Run the script and use `ls` to verify all files have been successfully renamed. Now create a new directory named `new_files` and move the renamed file names into it.
 
 ## Step 3: Run shell script `goostats.sh`
 
+You are now ready to process Nelle's data  using `goostats.sh`, a shell script written by her advisor. The script calculates some statistics from the protein sample files. To see the contents in it use `cat`:
+
+    cat goostats.sh
+
+which should output 
+
+```BASH
+while getopts J:r: option
+do
+    case "$option" in
+    J) Jarg="$OPTARG"
+       shift $((OPTIND));;
+    r) shift $((OPTIND-1));;
+    esac
+done
+
+sleep 2
+head -3 $1 | cut -d , -f 1 | sort | uniq > $2
+```
+
+The script takes two arguments: an input file with the protein data and an output file to which the script will save the statistics. 
 
 ## Step 4: Check results?
 
