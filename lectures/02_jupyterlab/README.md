@@ -4,7 +4,7 @@ In this lecture, we will learn how to launch a `jupyterlab` service on Storrs HP
 to our local computer, so that can interact with it through our browsers. This is perhaps the most 
 convinient functional way of interacting with remote computers, and it is especially efficient for running Jupyter Notebooks and Python and R on Storrs HPC.
 
-We will need to terminal windows for making this connection, because we will need to type commands both locally (on our laptops) and on Storrs HPC. You can also open a new terminal tab (`Cmd+t` in MacOS or `Crtl+Shift+t` in Windows) instead of new window. 
+We will need two terminal windows for making this connection, because we will need to type commands both locally (on our laptops) and on Storrs HPC. You can also open a new terminal tab (`Cmd+t` in MacOS or `Crtl+Shift+t` in Windows) instead of new window. 
 
 ## SSHing into Storrs HPC and booting up jupyterlab 
 First, we log into Storrs HPC and request a MARN5895 node following the two-command sequence we learned last week:
