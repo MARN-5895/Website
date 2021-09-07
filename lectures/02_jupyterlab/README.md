@@ -34,7 +34,7 @@ where `NODE` is the Storrs HPC node where you set up the `jupyterlab` service (e
 
 ## Opening jupyterlab on your local browser
 
-Finally, open your local browser and type `localhost:8888`.  You now have a working jupyterlab running on Storrs HPC that you can iterface with on your local browser. 
+Finally, copy the `jupyterlab` link that starts with `http://127.0.0.1` from your remote termal and paste it on your local browser.  You now have a working jupyterlab running on Storrs HPC that you can iterface with on your local browser. 
 
 Jupyterlab is a web-based integrated development environment (IDE) that allows you to run terminals windows, text editors and jupyter notebooks to develop, test and execute code.  We will use the notebook and text edit often in the future weeks. Today, we will do some further work on the terminal. 
 We will begin coding in python next week. For now, let's use the terminal on jupyterlab to continue our forway into the Unix shell.
