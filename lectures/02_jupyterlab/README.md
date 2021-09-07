@@ -7,15 +7,12 @@ Jupyter Notebooks and Python and R on Storrs HPC.
 
 We will need to terminal windows for making this connection, because we will need to type commands both locally (on our laptops) and on Storrs HPC. You can also open a new terminal tab (`Cmd+t` in MacOS or `Crtl+Shift+t` in Windows) instead of new window. 
 
-STOPPED HERE.
-
 ## SSHing into Storrs HPC and booting up jupyterlab 
 First, we log into Storrs HPC and request a MARN5895 node following the two-command sequence we learned last week:
 
-1. 
-    ssh NetID@login.storrs.hpc.uconn.edu
+1. `ssh NetID@login.storrs.hpc.uconn.edu`
 
-2.  bash launch_bash_slurm_marn5895.sh
+2.  `bash launch_bash_slurm_marn5895.sh`
 
 We should always execute `launch_bash_slurm_marn5895.sh` when logging to work on Storrs HPC during this class.
 
