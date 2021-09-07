@@ -15,7 +15,11 @@ First, we log into Storrs HPC and request a MARN5895 node following the two-comm
 
 We should always execute `launch_bash_slurm_marn5895.sh` when logging to work on Storrs HPC during this class.
 
-We are now on our assigned Storrs HPC node, and we can boot up `jupyterlab` using
+We are now on our assigned Storrs HPC node, and we should now activate the `marn5895` conda environment where we installed `jupyterlab` and other Python packages:
+
+    conda activate marn5895
+
+Finally, we can boot up `jupyterlab` using
 
     jupyter-lab --no-browser --ip='*' --port=8888
 
