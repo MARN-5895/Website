@@ -8,7 +8,7 @@ Following the set up commands learned in [Lecture 2](../lectures/02/README.md), 
 
 Now start a terminal on `jupyterlab` and navigate into Nelle's North Pacific Gyre directory:
 
-    cd data-shell/north-pacific-gyre/2012-07-03
+    cd MARN5895/Lectures/02/data-shell/north-pacific-gyre/2012-07-03
 
 ## Step 2: Add a prefix NPG to all `.txt` files in this directory
 This directory contains protein sample data (the `.txt` files) and an analysis script (`goostats.sh`) written by Nelle's advisor. Suppose you want to tag those data filenames with North Pacific Gyre, in case Nelle wants to compare protein sample data across different ocean basins.  You can rename a file using the command `mv` (move). Before attemping to move or rename anything, make a copy of the original data into a new sub-directory:
