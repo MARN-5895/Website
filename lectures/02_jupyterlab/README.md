@@ -288,7 +288,7 @@ do
 head -n 2 $molecule 
 done
 ```
-With `crtl+o` we can save the file. Let's name it `loop_molecules.sh`. And we can exit `nano` with `crtl+x`. If we do an `ls`, we see that a file named `loop_molecules.sh` now exists in our current directory. To execute is, we simply type 
+With `crtl+o` we can save the file. Let's name it `loop_molecules.sh`. And we can exit `nano` with `crtl+x`. If we do an `ls`, we see that a file named `loop_molecules.sh` now exists in our current directory. To execute it, we simply type 
 
     bash loop_molecules.sh
 
