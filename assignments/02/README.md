@@ -75,7 +75,7 @@ Exercise: running a script multiple times with different inputs/outputs
 
 1. Write a shell script that executes goostats.sh for all protein data and save the statistics in properly named output files in a new subdirectory. You should name your script `run_stats.sh` and the output directory should be named `stats`.
 2. Execute the script in the terminal.
-3. Verify that the scripts has generated the statistics in the directory `stats`.
+3. Verify that the script has generated the statistics files in the directory `stats`.
 
 ---
 
