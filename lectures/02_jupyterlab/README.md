@@ -226,7 +226,7 @@ which outputs
 
 ## Piping a string of commands
 
-A powerful shell tool the pipeline `|`, which allows us to feed the output of one command into another command. For example,
+A powerful shell tool is the pipeline `|`, which allows us to feed the output of one command into another command. For example,
 
     wc -l *.pdb | sort -n 
 
@@ -305,4 +305,4 @@ Edit the script `loop_molecules.sh` so that it saves the name of the author for 
 
 - The most basic commands to navigate and orgazine the directory are: cd (change directory), cp (copy), mv (move), rm (remove), mkdir (make directory).
 - The wildcard `*` in `*.extension` creates a list of all filenames that end in `.extension` on which a command can operate.
-- Pipe `|` take the output of one shell command and input it into another.
+- Pipe `|` takes the output of one shell command and input it into another.
