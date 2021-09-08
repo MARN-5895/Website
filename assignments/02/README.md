@@ -36,7 +36,7 @@ Exercise: renaming a large number of files
 
 ## Step 3: Run shell script `goostats`
 
-You are now ready to process Nelle's data  using `goostats.sh`, a shell script written by her advisor. The script calculates some statistics from the protein sample files. To see the contents in it use `cat`:
+You are now ready to process Nelle's data  using `goostats.sh`, a shell script written by her advisor. The script calculates some statistics from the protein sample files. To see the contents of it use `cat`:
 
     cat goostats.sh
 
@@ -56,7 +56,7 @@ sleep 2
 head -3 $1 | cut -d , -f 1 | sort | uniq > $2
 ```
 
-The detailed of the scripts do not matter, but note that it takes two arguments: an input file with the protein data and an output file to which the script will save the statistics. For example, to run it on `NPG_NENE01729A.txt` you could do:
+The details of the script do not matter, but note that it takes two arguments: an input file with the protein data and an output file on which the script will save the statistics. For example, to run `goostats.sh` on `NPG_NENE01729A.txt` you could do:
 
     bash goostats.sh NPG_NENE01729A.txt stats_output.txt
 
@@ -70,8 +70,15 @@ If you see the contents of `stats_output.txt` you will notice that it contains t
 
 Note that `stats_output.txt` is not a good filename, because it says nothing about original data that was used to generate the statistics. A better filename would be `stats-NPG_NENE01729A.txt`. To avoid confusion below, delete the `stats_output.txt` file using `rm stats_output.txt`.  
 
-**Write a shell script that executes goostats.sh for all protein data and save the statistics in properly named output files in a new subdirectory.** You should name your script `run_stats.sh` and your output directory should be named `stats`. 
+---
+Exercise: running a script multiple times with different inputs/outputs
+
+1. Write a shell script that executes goostats.sh for all protein data and save the statistics in properly named output files in a new subdirectory. You should name your script `run_stats.sh` and the output directory should be named `stats`.
+2. Execute the script in the terminal.
+3. Verify that the scripts has generated the statistics in the directory `stats`.
+
+---
 
 ## Step 4: Compare scripts and results with other pairs/small groups
-Compare and contrats your two bash scripts written to complete steps 2 and 3 with those of your colleagues and reflect on the potentially different approaches to renaming several files and running a scripts multiple times with different inputs.
+Compare and contrats your two bash scripts written to complete steps 2 and 3 with those of your colleagues and reflect on the potentially different approaches to renaming several files and running a script multiple times with different inputs.
 
