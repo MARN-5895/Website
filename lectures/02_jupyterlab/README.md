@@ -210,7 +210,7 @@ which outputs
   15 propane.pdb
  107 total
 
-The file `number_of_lines.txt` is ordered in alphabetical order of the molecules. We may instead want to sort the results by the number of lines in each file:
+The molecules in `number_of_lines.txt` are ordered alphabetically. We may instead want to sort the results by the number of lines in each file:
 
     sort -n number_of_lines.txt
 
