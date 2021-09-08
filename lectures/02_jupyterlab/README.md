@@ -21,9 +21,18 @@ We are now on our assigned Storrs HPC node, and we should now activate the `marn
 
 Finally, we can boot up `jupyterlab` using
 
-    jupyter-lab --no-browser --ip='*' --port=8888
+    jupyter-lab --no-browser --ip='*'
 
-The `--ip='*'` option allows for connections from an expanded range of addresses, and `8888` is the default port, which we may have to change if the port is busy.
+The `--ip='*'` option allows for connections from an expanded range of addresses. Storrs HPC will assign a port for your jupyterlab traffic. You can see the number of the assigned port on the address information printed on the terminal screen. For example, your may see a message similar to
+
+```BASH
+[I 2021-09-08 10:30:22.506 ServerApp] Serving notebooks from local directory: /home/NetID
+[I 2021-09-08 10:30:22.506 ServerApp] Jupyter Server 1.10.2 is running at:
+[I 2021-09-08 10:30:22.506 ServerApp] http://cn344:8889/lab?token=6f267d9327cc5aa60cdcd6169ad3ba042ede6fbd8c224ce8
+[I 2021-09-08 10:30:22.506 ServerApp]  or http://127.0.0.1:8889/lab?token=6f267d9327cc5aa60cdcd6169ad3ba042ede6fbd8c224ce8
+```
+
+The port assigned to your jupyterlab service is `8889`. You will need this number to set your ssh tunnel below.
 
 ## Tunneling the jupyterlab service into your local browser
 You now need to forward the jupyterlab service set up on the Storrs HPC node (say, cn344) through port `8888` into port `8888` of your local machine. (You can use a different local port if you want.)  To do that, we now switch to the second terminal window (or tab), on the our local computer, and generate an SSH "tunnel":
