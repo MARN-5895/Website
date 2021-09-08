@@ -278,7 +278,7 @@ AUTHOR      DAVE WOODCOCK  95  12 18
 ```
 It looks like Dave Woodcock did all the work!
 
-Breaking down the loop above, the `*.pdb` matched all filenames that end with the extension `.pdb` and creates a list of filenames. At each iteration, the variable `molecule` takes one member of the filename list. The command `head -n 2` takes the first two lines of `molecule` and prints them to the screen.
+Breaking down the loop above, the `*.pdb` matches all filenames that end with the extension `.pdb` and creates a list of filenames. At each iteration, the variable `molecule` takes one member of the filename list. The command `head -n 2` takes the first two lines of `molecule` and prints them to the screen.
 
 We can put those commands into a script. For example, we can open `nano` and type
 
