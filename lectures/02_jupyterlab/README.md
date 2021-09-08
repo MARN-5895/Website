@@ -32,7 +32,7 @@ The `--ip='*'` option allows for connections from an expanded range of addresses
 [I 2021-09-08 10:30:22.506 ServerApp]  or http://127.0.0.1:8889/lab?token=6f267d9327cc5aa60cdcd6169ad3ba042ede6fbd8c224ce8
 ```
 
-The port assigned to jupyterlab launched above is `8889`. You will need the port number (`8889` in the example above) and the node number (`cn344` in the example above) to set up the ssh tunnel below. **You may be assigned a different port number, and it's important to use your assignment port number below.**
+The port assigned to jupyterlab launched above is `8889`. You will need the port number (`8889` in the example above) and the node number (`cn344` in the example above) to set up the ssh tunnel below. **You may be assigned a different port number, and it's necessary to use your assignment port number below.**
 
 ## Tunneling the jupyterlab service into your local browser
 You now need to forward the jupyterlab service started on the Storrs HPC node (e.g., `cn344`) through a Storrs HPC port (e.g., `8889`) into a port of your local machine. I recommend using the same port number on both local and remote computers to avoid confusion. 
@@ -41,7 +41,9 @@ To forward the jupyterlab traffic into our local browser, we switch to a second 
 
     ssh -X -t -t NetID@login.storrs.hpc.uconn.edu -L 8889:localhost:8889 ssh -X NODE -L 8889:localhost:8889
 
-where `NODE` is the Storrs HPC node where you set up the `jupyterlab` service (e.g., `cn344`). If the tunnel has been successfully set up, this should log you into Storrs HPC (after prompting you for your password).
+where `NODE` is the Storrs HPC node where you set up the `jupyterlab` service (e.g., `cn344`).  **Again, it's critical to use the port number and node number specific to your connection on Storrs HPC.**
+
+If the tunnel has been successfully set up, this should log you into Storrs HPC (after prompting you for your password). 
 
 ## Opening jupyterlab on your local browser
 
