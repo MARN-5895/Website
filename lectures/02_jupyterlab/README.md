@@ -32,7 +32,7 @@ The `--ip='*'` option allows for connections from an expanded range of addresses
 [I 2021-09-08 10:30:22.506 ServerApp]  or http://127.0.0.1:8889/lab?token=6f267d9327cc5aa60cdcd6169ad3ba042ede6fbd8c224ce8
 ```
 
-The port assigned to your jupyterlab service is `8889`. You will need this number to set your ssh tunnel below.
+The port assigned to jupyterlab launched above is `8889`. You will need the port number (`8889` in the example above) and the node number (`cn344` in the example above) to set up the ssh tunnel below.
 
 ## Tunneling the jupyterlab service into your local browser
 You now need to forward the jupyterlab service set up on the Storrs HPC node (say, cn344) through port `8888` into port `8888` of your local machine. (You can use a different local port if you want.)  To do that, we now switch to the second terminal window (or tab), on the our local computer, and generate an SSH "tunnel":
