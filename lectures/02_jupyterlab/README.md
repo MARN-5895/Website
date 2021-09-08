@@ -248,7 +248,7 @@ And of course, we can always print the output into a text file:
 
     wc -l *.pdb | sort -n | head -n 6 > sorted_number_of_lines.txt
 
-word count, then sort, then put sorted output into `sorted_number_of_lines.txt`. 
+word count, then sort, then put  the sorted output into `sorted_number_of_lines.txt`. 
 
 ## For loops and bash (shell) scripts
 
