@@ -94,6 +94,19 @@ EXERCISE: Create a file for a recipe of your choice.
 ## Github
 Github is an internet service for software development with git. It allows users to have remote repositories linked to local repositores, providing a cloud-based platform for storing and tracking changes to code.
 
+
+To begin working with Github, let's visit github.com and create a new repository:
+
+![](img/newgithubrepo.png)
+
+
+
+
+    git remove -v 
+
+    git remote add origin GITHUB_PATH
+
+
 ### Raising issues
 
 ### Pull requests (PRs)
