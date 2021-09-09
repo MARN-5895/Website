@@ -36,7 +36,7 @@ Now we initialize a git repository
 
 
 ## Github
-Github is an internet service for software development with git. It allows users to have cloud-based, remote repositories linked to local repositores
+Github is an internet service for software development with git. It allows users to have remote repositories linked to local repositores, providing a cloud-based platform for storing and tracking changes to code.
 
 ### Raising issues
 
@@ -45,7 +45,7 @@ Github is an internet service for software development with git. It allows users
 
 ## In summary: the difference between git and Github
 
-[![IMAGE ALT TEXT HERE](https://www.youtube.com/watch?v=21Gl97tkbHU/0.jpg)](https://www.youtube.com/watch?v=21Gl97tkbHU)
+[![Git and Github](https://www.youtube.com/watch?v=21Gl97tkbHU/0.jpg)](https://www.youtube.com/watch?v=21Gl97tkbHU)
 
 
 
