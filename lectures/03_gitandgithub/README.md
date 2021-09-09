@@ -9,14 +9,16 @@ This optional [video](https://www.youtube.com/watch?v=21Gl97tkbHU) explains what
 Git is a command-line software that tracks changes in code. Git is now widely used for software development from simple analysis code to complex climate models. When coupled with an online repository service, such as Github, git is a powerful tool for working collaboratively on coding projects. For example, numerical models such as [MOM6](https://github.com/NOAA-GFDL/MOM6) and [MITgcm](https://github.com/MITgcm/MITgcm) are developed collaboratively on Github, with git as the version control software.
 
 
-Let's first set up git:
+Git is already installed on Storrs HPC, and it is also installed on your
+personal computer. Before we begin to explore it, let's first set it up:
 
     git config --global user.name "First and Last Name"
     git config --global email "Email"
 
-You should use the email linked to your Github account.
+You should use the email linked to your Github account. Git will use this
+information to identify who made changes to the files its track.       
 
-To begin working with git, let's create directory for this lecture:
+To begin exploring git, let's create a directory for this lecture:
 
     cd MARN5895/Lectures/
     mkdir 03
@@ -24,7 +26,7 @@ To begin working with git, let's create directory for this lecture:
 
 ### Initializing git repository
 
-Now ... We will create a directory called planets, where we will add some text files:
+We will create a directory called `recipes`, where we will add some text files:
 
     mkdir recipes
     cd recipes
