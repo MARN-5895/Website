@@ -33,11 +33,20 @@ Now we initialize a git repository
 
 ### Creating branches
 
+
+
 ## Github
+Github is an internet service for software development with git. It allows users to have cloud-based, remote repositories linked to local repositores
 
 ### Raising issues
 
 ### Pull requests (PRs)
+
+
+## In summary: the difference between git and Github
+
+[![IMAGE ALT TEXT HERE](https://kinsta.com/knowledgebase/what-is-github//0.jpg)](https://kinsta.com/knowledgebase/what-is-github/)
+
 
 
 ## Key points 
