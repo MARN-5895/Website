@@ -3,6 +3,9 @@
 ![](img/Finaldoc.png)
 
 
+
+This optional [video](https://www.youtube.com/watch?v=21Gl97tkbHU) explains what is git and Github and how to get started.
+
 ## git
 
 Git is a command-line software that tracks changes in code. Git is now widely used for software development from simple analysis code to complex climate models. When coupled with an online repository service, such as Github, git is a powerful tool for working collaboratively on coding projects. For example, numerical models such as [MOM6](https://github.com/NOAA-GFDL/MOM6) and [MITgcm](https://github.com/MITgcm/MITgcm) are developed collaboratively on Github, with git as the version control software.
@@ -45,7 +48,6 @@ Github is an internet service for software development with git. It allows users
 
 ## In summary: the difference between git and Github
 
-[Git and Github](https://www.youtube.com/watch?v=21Gl97tkbHU "link title")
 
 
 
