@@ -2,14 +2,19 @@
 
 ![](img/Finaldoc.png)
 
-
-
 This optional [video](https://www.youtube.com/watch?v=21Gl97tkbHU) explains what is git and Github and how to get started.
 
 ## git
 
 Git is a command-line software that tracks changes in code. Git is now widely used for software development from simple analysis code to complex climate models. When coupled with an online repository service, such as Github, git is a powerful tool for working collaboratively on coding projects. For example, numerical models such as [MOM6](https://github.com/NOAA-GFDL/MOM6) and [MITgcm](https://github.com/MITgcm/MITgcm) are developed collaboratively on Github, with git as the version control software.
 
+
+Let's first set up git:
+
+    git config --global user.name "First and Last Name"
+    git config --global email "Email"
+
+You should use the email linked to your Github account.
 
 To begin working with git, let's create directory for this lecture:
 
@@ -74,6 +79,18 @@ We can check the history of `frosting.txt` using `git log`:
 
     git log frosting.txt
 
+Tracking the HEAD (the most recent version):
+
+    git checkout HEAD frosting.txt
+
+Now let's checkout the commit log:
+
+    git log frosting.txt
+
+
+
+
+
 ---
 EXERCISE: Create a file for a recipe of your choice. 
 
@@ -83,13 +100,6 @@ EXERCISE: Create a file for a recipe of your choice.
 4. Verify you successfully tracked the file changes with `git log`.
 
 ---
-
-
-
-
-### Creating branches
-
-
 
 ## Github
 Github is an internet service for software development with git. It allows users to have remote repositories linked to local repositores, providing a cloud-based platform for storing and tracking changes to code.
@@ -105,14 +115,10 @@ To begin working with Github, let's visit github.com and create a new repository
 
 **You chould change the path above to the path of your repository, which involves your Github username.**
 
-
+<!-- 
 ### Raising issues
 
-### Pull requests (PRs)
-
-
-## In summary: the difference between git and Github
-
+### Pull requests (PRs) -->
 
 ## Key points 
 
