@@ -75,7 +75,12 @@ We can check the history of `frosting.txt` using `git log`:
     git log frosting.txt
 
 ---
-EXERCISE: ...
+EXERCISE: Create a file for a recipe of your choice. 
+
+1. Use the Web to find a recipe of a meal you like.
+2. Create a file with the necessary ingredients and start tracking in with git.
+3. Add instructions for the recipe, then commit the changes.
+4. Verify you successfully tracked the file changes with `git log`.
 
 ---
 
