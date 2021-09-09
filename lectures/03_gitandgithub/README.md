@@ -99,12 +99,11 @@ To begin working with Github, let's visit github.com and create a new repository
 
 ![](img/newgithubrepo.png)
 
-
-
-
     git remove -v 
 
-    git remote add origin GITHUB_PATH
+    git remote add origin https://github.com/cesar-rocha/recipes
+
+**You chould change the path above to the path of your repository, which involves your Github username.**
 
 
 ### Raising issues
