@@ -45,7 +45,8 @@ Github is an internet service for software development with git. It allows users
 
 ## In summary: the difference between git and Github
 
-[![Git and Github](https://www.youtube.com/watch?v=21Gl97tkbHU/0.jpg)](https://www.youtube.com/watch?v=21Gl97tkbHU)
+[Git and Github](https://www.youtube.com/watch?v=21Gl97tkbHU "link title")
+
 
 
 
