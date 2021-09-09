@@ -36,15 +36,51 @@ This generates configuration files stored in a hidden `.git` directory:
 ### Tracking new files
 Let's create a new file:
 
-    nano cappucinno.txt
+    nano frosting.txt
 
-You add some text, e.g., "A cappucino has equal parts of espresso coffee, milk and foam."
+You add some text:
 
-If we do `git status`, we see that `cappuccinno.txt` appears as an untracked file. We need to add it to the tracking system using `git add`:
+```BASH
+Ingredients:
+ - 1/2 cup butter
+ - 2/3 cup cocoa
+ - 3 cups powdered sugar
+ - 1/3 cup milk
+ - 1 teaspoon vanilla extract
+```
 
-    git add cappucinno.txt
+If we do `git status`, we see that `frosting.txt` appears as an untracked file. We need to add it to the tracking system using `git add`:
+
+    git add frosting.txt
 
 Now `git status` returns...
+
+
+Let's add some text with directions:
+
+```BASH
+Directions:
+  1. In a medium saucepan, melt butter and stir in cocoa.
+  2. Alternately add powdered sugar and milk. Beat until light and fluffy.
+  3. Stir in vanilla.  If necessary, add a small amount of additional milk.
+```
+
+We should now add and commit these changes:
+
+    git add frosting.txt
+    git commit -m "Add directions"
+
+We can check the history of `frosting.txt` using `git log`:
+
+    git log frosting.txt
+
+---
+EXERCISE: ...
+
+---
+
+
+
 
 ### Creating branches
 
