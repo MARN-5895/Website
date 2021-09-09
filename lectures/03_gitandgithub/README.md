@@ -11,6 +11,7 @@ This optional [video](https://www.youtube.com/watch?v=21Gl97tkbHU) explains what
 Git is a command-line software that tracks changes in code. Git is now widely used for software development from simple analysis code to complex climate models. When coupled with an online repository service, such as Github, git is a powerful tool for working collaboratively on coding projects. For example, numerical models such as [MOM6](https://github.com/NOAA-GFDL/MOM6) and [MITgcm](https://github.com/MITgcm/MITgcm) are developed collaboratively on Github, with git as the version control software.
 
 
+To begin working with git, let's create directory for this lecture:
 
     cd MARN5895/Lectures/
     mkdir 03
@@ -18,21 +19,28 @@ Git is a command-line software that tracks changes in code. Git is now widely us
 
 ### Initializing git repository
 
-Now ...
+Now ... We will create a directory called planets, where we will add some text files:
 
-    mkdir planets
-    cd planets
+    mkdir recipes
+    cd recipes
 
-Now we initialize a git repository
+To start using git in a directory, you need to initialize the repository:
 
     git init
 
-... and generates a bunch of configuration files
+This generates configuration files stored in a hidden `.git` directory:
 
     ls -a
     ls .git
 
 ### Tracking new files
+Let's create a new file:
+
+    nano cappucinno.txt
+
+You add some text, e.g., "A cappucino has equal parts of espresso coffee, milk and foam."
+
+If do `git status` we see that `cappuccino.txt`.
 
 ### Creating branches
 
