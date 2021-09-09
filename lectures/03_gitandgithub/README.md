@@ -40,7 +40,11 @@ Let's create a new file:
 
 You add some text, e.g., "A cappucino has equal parts of espresso coffee, milk and foam."
 
-If do `git status` we see that `cappuccino.txt`.
+If we do `git status`, we see that `cappuccinno.txt` appears as an untracked file. We need to add it to the tracking system using `git add`:
+
+    git add cappucinno.txt
+
+Now `git status` returns...
 
 ### Creating branches
 
