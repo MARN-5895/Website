@@ -49,13 +49,10 @@ Github is an internet service for software development with git. It allows users
 ## In summary: the difference between git and Github
 
 
-
-
-
 ## Key points 
 
-- `git` is a flexible... version control...
+- `git` is a powerful version control used to track changes in code.
 
-- `Github`
+- `Github` is an internet service used for collaboration and software development.
 
-- `Github` is great tool for backing up, documenting, sharing code.
+- `Github` is also a great tool for backing up, documenting, sharing code.
