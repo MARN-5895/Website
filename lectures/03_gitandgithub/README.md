@@ -182,7 +182,7 @@ To begin working with Github, let's visit github.com and create a new repository
 
     git remove -v 
 
-    git remote add origin git@github.com:GITHUB-USERNAME/recipes-cesar.git
+    git remote add origin git@github.com:GITHUB-USERNAME/recipes.git
 
 where GITHUB-USERNAME is your *Github username*. Before we can synchronize the files in our local and remote repositories, we need to create an SSH key/token. On your Storrs HPC terminal, type:
 
@@ -262,10 +262,6 @@ Now our repository on Storrs HPC is outdated given the latest changes we made on
     git pull
 
 You can now check that `chili.txt` has been fetched and merged into the repository on Storrs HPC.
-
-
-
-
 
 
 <!-- 
