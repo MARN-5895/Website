@@ -21,9 +21,9 @@ We are now on our assigned Storrs HPC node, and we should now activate the `marn
 
 Finally, we can boot up `jupyterlab` using
 
-    jupyter-lab --no-browser --ip='*'
+    jupyter-lab --no-browser --port=XXXX
 
-The `--ip='*'` option allows for connections from an expanded range of addresses. Storrs HPC will assign a port for your jupyterlab traffic. You can see the number of the assigned port on the address information printed on the terminal screen. For example, your may see a message similar to
+where the port `XXXX` is the port assigned to you on the shared GoogleDoc spreadsheet. Storrs HPC will assign a port for your jupyterlab traffic. You can see the number of the assigned port on the address information printed on the terminal screen. For example, if you port were `8889`, you may see a message similar to
 
 ```BASH
 [I 2021-09-08 10:30:22.506 ServerApp] Serving notebooks from local directory: /home/NetID
@@ -32,7 +32,7 @@ The `--ip='*'` option allows for connections from an expanded range of addresses
 [I 2021-09-08 10:30:22.506 ServerApp]  or http://127.0.0.1:8889/lab?token=6f267d9327cc5aa60cdcd6169ad3ba042ede6fbd8c224ce8
 ```
 
-The port assigned to jupyterlab launched above is `8889`. You will need the port number (`8889` in the example above) and the node number (`cn344` in the example above) to set up the ssh tunnel below. **You may be assigned a different port number, and it's necessary to use your assignment port number below.**
+You will need the port number (`8889` in the example above) and the node number (`cn344` in the example above) to set up the ssh tunnel below. **You may be assigned a different port number, and it's necessary to use your assignment port number below.**
 
 ## Tunneling the jupyterlab service into your local browser
 You now need to forward the jupyterlab service started on the Storrs HPC node (e.g., `cn344`) through a Storrs HPC port (e.g., `8889`) into a port of your local machine. I recommend using the same port number on both local and remote computers to avoid confusion. 
