@@ -69,12 +69,31 @@ If we do `git status`, we see that `frosting.txt` appears as an untracked file. 
 
     git add frosting.txt
 
-Now `git status` returns `modified: frosting.txt`, recognizing that we made changes to `frosting.txt`. We now need to "stage" the file and "commit" those changes:
+Now `git status` returns `modified: frosting.txt`, recognizing that we made changes to `frosting.txt`.  To see what's been added or removed from `fronsting.txt`, we use `git diff frosting.txt`, which should return 
+
+```BASH
+diff --git a/frosting.txt b/frosting.txt
+index e69de29..387922e 100644
+--- a/frosting.txt
++++ b/frosting.txt
+@@ -0,0 +1,6 @@
++Ingredients:
++ - 1/2 cup butter
++ - 2/3 cup cocoa
++ - 3 cups powdered sugar
++ - 1/3 cup milk
++ - 1 teaspoon vanilla extract
+```
+
+The message above identifies with a plus sign (+) the lines that were added to `frosting.txt`. If lines were removed, they would be identified with a minus sign (-).
+
+We now need to "stage" the file and "commit" those changes:
 
     git add frosting.txt
     git commit -m "Added ingredients"
 
 A *commit* is a unique identifier added to the tracking system identifying a change to a file or set of files. Each commit should be tagged with a informative "commit message" that briefly explanins the changes. The message above "Added ingredients" is short and punchy and meaningul, an examplar of a good commit message.
+
 
 Now `git status` returns `nothing to commit, working directory clean`. Let's make further modifications to `frosting.txt`, adding some directions to our frosting recipe:
 
@@ -90,21 +109,32 @@ Now `git status` again returns `modified:   frosting.txt`, identifying that we m
     git add frosting.txt
     git commit -m "Add directions"
 
-We can check the commit status of `frosting.txt` using `git log`:
+We can check the frosting.txt commit's log using `git log`:
 
     git log frosting.txt
 
-which returns
+which for me returns
 
 ```BASH
-commit 87543905298729271ea48984a25899244dc6d3b8
+commit c7506d1b81658e70eedaf9a480fb2a3d33904b96
 Author: Cesar B Rocha <rocha.cesarb@protonmail.com>
-Date:   Mon Sep 13 10:29:42 2021 -0400
+Date:   Mon Sep 13 11:05:40 2021 -0400
 
-    Added ingredients
+    Add directions
+
+commit 89a70deb00ed4220a0ef9fed89d6d663d01c37d7
+Author: Cesar B Rocha <rocha.cesarb@protonmail.com>
+Date:   Mon Sep 13 11:05:13 2021 -0400
+
+    Add ingredients
+
 ```
 
-Tracking the HEAD (the most recent version):
+`git log` identifies each commit with a unique long strings of character (numbers and letters), author and date, and the commit messages. The full tracking history can be accessed with `git history`:
+
+    git history frosting.txt
+
+If we wish, we can move back to older commits to check previous versions of `frosting.txt`.  First, we need to "track the HEAD", meaning that we need to record the more recent commit: 
 
     git checkout HEAD frosting.txt
 
@@ -112,8 +142,28 @@ Now let's checkout the commit log:
 
     git log frosting.txt
 
+We can check that the file now is at the stage of "Add ingredients":
 
+    cat frosting.txt
 
+should return
+
+```BASH
+Ingredients:
+ - 1/2 cup butter
+ - 2/3 cup cocoa
+ - 3 cups powdered sugar
+ - 1/3 cup milk
+ - 1 teaspoon vanilla extract
+```
+
+We can of course go back to the most recent commit:
+
+    git checkout master
+
+You can check we are back at the most recent commit with `git log` or you can take a look the `frosting.txt` with `cat`:
+
+    cat frosting.txt
 
 
 ---
