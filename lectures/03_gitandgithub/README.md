@@ -53,7 +53,13 @@ we see that `frosting.txt` is untracked by git. To track it, we simply "add it":
 
     git add frosting.txt
 
-Now `git status` returns `new file:   frosting.txt`, which means that `frosting.txt` has been added to the tracking system of the git repository `recipes`.
+Now `git status` returns `new file:   frosting.txt`, which means that `frosting.txt` has been added to the tracking system of the git repository `recipes`. We can "commit" the first change (file creation):
+
+    git commit -m "Create frosting recipe file"
+
+A *commit* is a unique identifier added to the tracking system identifying a change to a file or set of files. Each commit should be tagged with a informative "commit message" that briefly explanins the changes. The message above "Create frosting recipe file" is short and punchy and meaningul, an examplar of a good commit message.
+
+
 Let's open `frosting.txt` and add some text to it:
 
 ```BASH
@@ -92,7 +98,7 @@ We now need to "stage" the file and "commit" those changes:
     git add frosting.txt
     git commit -m "Added ingredients"
 
-A *commit* is a unique identifier added to the tracking system identifying a change to a file or set of files. Each commit should be tagged with a informative "commit message" that briefly explanins the changes. The message above "Added ingredients" is short and punchy and meaningul, an examplar of a good commit message.
+The message above "Added ingredients" is again an examples of a good commit message, short and punchy and meaningful.
 
 
 Now `git status` returns `nothing to commit, working directory clean`. Let's make further modifications to `frosting.txt`, adding some directions to our frosting recipe:
