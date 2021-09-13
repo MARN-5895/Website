@@ -55,9 +55,9 @@ we see that `frosting.txt` is untracked by git. To track it, we simply "add it":
 
 Now `git status` returns `new file:   frosting.txt`, which means that `frosting.txt` has been added to the tracking system of the git repository `recipes`. We can "commit" the first change (file creation):
 
-    git commit -m "Create frosting recipe file"
+    git commit -m "Created frosting recipe file"
 
-A *commit* is a unique identifier added to the tracking system identifying a change to a file or set of files. Each commit should be tagged with a informative "commit message" that briefly explanins the changes. The message above "Create frosting recipe file" is short and punchy and meaningul, an examplar of a good commit message.
+A *commit* is a unique identifier added to the tracking system identifying a change to a file or set of files. Each commit should be tagged with a informative "commit message" that briefly explanins the changes. The message above "Created frosting recipe file" is short and punchy and meaningul, an examplar of a good commit message.
 
 
 Let's open `frosting.txt` and add some text to it:
@@ -172,29 +172,38 @@ You can check we are back at the most recent commit with `git log` or you can ta
     cat frosting.txt
 
 
+## Github
+Github is an internet service for software development with git. It allows users to have remote repositories linked to local repositores, providing a cloud-based platform for storing and tracking changes to code.
+
+
+To begin working with Github, let's visit github.com and create a new repository `receips-NAME`, where NAME is your name:
+
+![](img/newgithubrepo.png)
+
+    git remove -v 
+
+    git remote add origin git@github.com:GITHUB-USERNAME/recipes-cesar.git
+
+where GITHUB-USERNAME is your *Github username*. Before we can synchronize the files in our local and remote repositories, we need to create a KEY-TOKEN.
+
+Now we can "push" the files tracked in our local repository into the remote repository:
+
+    git branch -M main
+    git push -u origin main
+
+You can check that `frosting.txt` was pushed to the remote repository on Github. All the information, including changes associated with each commit, is also there.
+
 ---
 EXERCISE: Create a file for a recipe of your choice. 
 
 1. Use the Web to find a recipe of a meal you like.
 2. Create a file with the necessary ingredients and start tracking it with git.
 3. Add instructions for the recipe, then commit the changes.
-4. Verify you successfully tracked the file changes with `git log`.
+4. Verify that you successfully tracked the file changes with `git log`.
+5. Push the changes to Github.
 
 ---
 
-## Github
-Github is an internet service for software development with git. It allows users to have remote repositories linked to local repositores, providing a cloud-based platform for storing and tracking changes to code.
-
-
-To begin working with Github, let's visit github.com and create a new repository:
-
-![](img/newgithubrepo.png)
-
-    git remove -v 
-
-    git remote add origin https://github.com/cesar-rocha/recipes
-
-**You chould change the path above to the path of your repository, which involves your Github username.**
 
 <!-- 
 ### Raising issues
