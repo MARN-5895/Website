@@ -6,7 +6,7 @@ This optional [video](https://www.youtube.com/watch?v=21Gl97tkbHU) explains what
 
 ## git
 
-Git is a command-line software that tracks changes in code. Git is now widely used for research software development from simple analysis code to complex climate models. When coupled with an online repository service, such as Github, git is a powerful tool for working collaboratively on coding projects. For example, numerical models such as [MOM6](https://github.com/NOAA-GFDL/MOM6) and [MITgcm](https://github.com/MITgcm/MITgcm) are developed collaboratively on Github, with git as the version control software.
+Git is a command-line software that tracks changes in code. Git is now widely used for research software development from simple analysis code to complex climate models. When coupled with an online repository service, such as Github, git becomes a powerful tool for working collaboratively on coding projects. For example, numerical models such as [MOM6](https://github.com/NOAA-GFDL/MOM6) and [MITgcm](https://github.com/MITgcm/MITgcm) are developed collaboratively on Github, with git as the version control software.
 
 
 Git is already installed on Storrs HPC, and it is also installed on your
