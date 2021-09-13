@@ -184,9 +184,17 @@ To begin working with Github, let's visit github.com and create a new repository
 
     git remote add origin git@github.com:GITHUB-USERNAME/recipes-cesar.git
 
-where GITHUB-USERNAME is your *Github username*. Before we can synchronize the files in our local and remote repositories, we need to create a KEY-TOKEN.
+where GITHUB-USERNAME is your *Github username*. Before we can synchronize the files in our local and remote repositories, we need to create an SSH key/token. On your Storrs HPC terminal, type:
 
-Now we can "push" the files tracked in our local repository into the remote repository:
+    ssh-keygen -t ed25519 -C "EMAIL"
+
+where EMAIL is the email address you used to sign up to Github. Type enter three times. This commands creates a public key that we will provide to Github. On Github, click on your avatar on the upper-right corner, then Setting, then SSH and GPG Keys, then New SSH key. Use `Storrs HPC` as the name of the key. Now pass the public key you created to Storrs HPC. To see the public key, type
+
+    cat ~/.ssh/id_ed25519.pub 
+
+Copy the public key and paste it on the Github SSH key box.
+
+Now that we have an SSH key pair set up, we can "push" the files tracked in our local repository into the remote repository. The first time we are pushing a local repository to Github, we need to create a local main branch and push it to Github:
 
     git branch -M main
     git push -u origin main
@@ -203,6 +211,61 @@ EXERCISE: Create a file for a recipe of your choice.
 5. Push the changes to Github.
 
 ---
+
+### Extra: cloning your remote repository on a different computer
+
+A convinient perk of maintaining your files on a remote repository is that, besides backing up your code, you can clone its contents on a different computer. To learn how that works, open a new terminal tab or windows on your local computer. Now on your Github repository, click on the green buttom `Code` and copy the code line that start with `git@github`. On your local computer terminal type set up the github global username and email following the commands we used in the beginning of this lecture. You should also create an SSH key for you local computer and add it to Github following the steps described above.
+
+Once your set up is finished, you can "clone" the remote repository to your local computer:
+
+    git clone git@github.com:GITHUB-USERNAME/GITHUB-REPOSITORY.git
+
+Remember to change GITHUB_USERNAME and GITHUB_REPOSITORY with you username and repository names.
+
+You now have a copy of your remote repository on your local computer. You can change add new files or change the existing ones. Let's create a new recipe `chili.txt`:
+
+```BASH
+Ingredients:
+ - 2 pounds ground beef
+ - 2 cloves garlic, chopped
+ - One 8-ounce can tomato sauce
+ - 2 tablespoons chili powder
+ - 1 teaspoon ground cumin
+ - 1 teaspoon ground oregano
+ - 1 teaspoon salt
+ - 1/4 teaspoon cayenne pepper
+ - 1/4 cup corn flour
+ - One 15-ounce can kidney beans, drained and rinsed
+ - One 15-ounce can pinto beans, drained and rinsed
+                                                        
+Directions:
+ 1. Brown the ground beef in a large bot and drain off the excess fat.
+ 2. Add the tomato sauce, chili powder, cumin, oregano, salt, and cayenne.
+ 3. Stir, then cover and simmer over low heat for one hour.
+ 4. Mix the corn flour and 1/2 cup water in a small bowl.  Add to chili.
+ 5. Add the beans and simmer for 10 more minutes.
+ ```
+
+We can now add and commit this new recipe:
+
+    git add chili.txt
+    git commit -m "Added chili recipe"
+
+Let's now push these changes to Github:
+
+    git push
+
+You can check on Github that the file `chili.txt` has been added. 
+
+Now our repository on Storrs HPC is outdated given the latest changes we made on our local computer. To update it, we go on the Storrs HPC terminal and "pull" the changes from the remote repository:
+
+    git pull
+
+You can now check that `chili.txt` has been fetched and merged into the repository on Storrs HPC.
+
+
+
+
 
 
 <!-- 
