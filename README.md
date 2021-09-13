@@ -13,7 +13,7 @@ The **most up-to-date syllabus** is available [here](./syllabus/ResearchComputin
 | 2021-09-02    | Assignment 1: [Installing miniconda on StorrsHPC](assignments/01/README.md)           |         |
 | 2021-09-07    | Lesson 2: [Jupyter lab and more on the Unix shell](lectures/02_jupyterlab/README.md)           |         |
 | 2021-09-09    | Assignment 2: [Moving and renaming a large number of files](assignments/02/)    |         |
-| 2021-09-14    | Lesson 3: Version control with git and Github | Turn in report assignment 2|
+| 2021-09-14    | Lesson 3: Version control with git and Github | Turn in scripts assignment 2|
 | 2021-09-16    | Assignment: Improving the class Web site through a pull request   |         |
 | 2021-09-21    | Lesson: Python basics         |         |
 | 2021-09-23    | Assignment: Visualizing Saildrone data |         |
