@@ -176,15 +176,19 @@ You can check we are back at the most recent commit with `git log` or you can ta
 Github is an internet service for software development with git. It allows users to have remote repositories linked to local repositores, providing a cloud-based platform for storing and tracking changes to code.
 
 
-To begin working with Github, let's visit github.com and create a new repository `receips-NAME`, where NAME is your name:
+To begin working with Github, let's visit github.com and create a new repository `receips`:
 
 ![](img/newgithubrepo.png)
 
-    git remove -v 
+We can now add the the Github repository as a remote (upstream) repository:
 
     git remote add origin git@github.com:GITHUB-USERNAME/recipes.git
 
-where GITHUB-USERNAME is your *Github username*. Before we can synchronize the files in our local and remote repositories, we need to create an SSH key/token. On your Storrs HPC terminal, type:
+You can verify that this worked using
+
+    git remote -v
+
+which should list the address of the remote repository used to push and fetch information from. Before we can synchronize the files in our local and remote repositories, we need to create an SSH key/token. On your Storrs HPC terminal, type:
 
     ssh-keygen -t ed25519 -C "EMAIL"
 
@@ -193,6 +197,9 @@ where EMAIL is the email address you used to sign up to Github. Type enter three
     cat ~/.ssh/id_ed25519.pub 
 
 Copy the public key and paste it on the Github SSH key box.
+
+where GITHUB-USERNAME is your *Github username*.
+
 
 Now that we have an SSH key pair set up, we can "push" the files tracked in our local repository into the remote repository. The first time we are pushing a local repository to Github, we need to create a local main branch and push it to Github:
 
