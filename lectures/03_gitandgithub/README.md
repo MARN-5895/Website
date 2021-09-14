@@ -227,7 +227,7 @@ Once your set up is finished, you can "clone" the remote repository to your loca
 
     git clone git@github.com:GITHUB-USERNAME/GITHUB-REPOSITORY.git
 
-Remember to change GITHUB_USERNAME and GITHUB_REPOSITORY with you username and repository names.
+Remember to change GITHUB_USERNAME and GITHUB_REPOSITORY with your username and repository names.
 
 You now have a copy of your remote repository on your local computer. You can change add new files or change the existing ones. Let's create a new recipe `chili.txt`:
 
