@@ -13,7 +13,7 @@ Git is already installed on Storrs HPC, and it is also installed on your
 personal computer. Before we begin to explore it, let's first set it up:
 
     git config --global user.name "First and Last Name"
-    git config --global email "Email"
+    git config --global user.email "Email"
 
 You should use the email address  linked to your Github account. Git will use this
 information to identify who made changes to the files its track.       
