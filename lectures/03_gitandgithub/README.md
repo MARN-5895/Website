@@ -184,6 +184,9 @@ We can now add the the Github repository as a remote (upstream) repository:
 
     git remote add origin git@github.com:GITHUB-USERNAME/recipes.git
 
+**Make sure you are using the remote address that start with `git@github` (i.e., that's an SSH access not an HTTPS access). If your remote address starts with https://github, you need to use **
+
+
 You can verify that this worked using
 
     git remote -v
