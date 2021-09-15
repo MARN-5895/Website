@@ -1,11 +1,11 @@
 # Assignment 3: Improving the course Web site through a Pull Request on Github
-In [Lecture 3](../../lectures/03/README.md) we introduced git and Github for tracking changes to code (simple text files). This assignment will help you learn more about git and Github, specifically how to collaborate on a coding project by forking and cloning a repository, creating a new branch for making and testing changes, and then submitting a pull request to merge those changes into the main repository. We will do that using the course Web site hosted on Github. **Most serious coding projects use development workflow similar to what you will learn in this assignment.**
+In [Lecture 3](../../lectures/03_gitandgithub/README.md) we introduced git and Github for tracking changes to code (simple text files). This assignment will help you learn more about git and Github, specifically how to collaborate on a coding project by forking and cloning a repository, creating a new branch for making and testing changes, and then submitting a pull request to merge those changes into the main repository. We will do that using the course Web site hosted on Github. **Most serious coding projects use development workflow similar to what you will learn in this assignment.**
 
 ## Step 1: Set up git on your local computer
 
 Since Storrs HPC is down today, we have to work on our local laptops. All you need today is a terminal. On Windows, you can use Git Bash for Windows; on MacOS you can use the default Terminal application.
 
-Following the set up commands learned in [Lecture 3](../../lectures/02/README.md), set up `git` on your local computer. Make sure you have an SSH key pair generated on your local computer and connected to Github.
+Following the set up commands learned in [Lecture 3](../../lectures/03_gitandgithub/README.md), set up `git` on your local computer. Make sure you have an SSH key pair generated on your local computer and connected to Github.
 
 Now create a directory for this assignment. Your directory should be named `03` and should be inside a directory named `Assignments`, which should be inside a directory for the MARN5895 course (a directory tree similar to the one we created on Storrs HPC). 
 
