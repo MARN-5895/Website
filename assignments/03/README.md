@@ -18,8 +18,8 @@ https://github.com/cesar-rocha/MARN-5895
 ---
 Exercise: Revise your assigned lecture/assignment notes
 
-1. Clone your forked MARN-5895 repository 
-2. Set your fork to track the original reposiroty (akak upstream): `git remote add upstream git://github.com/pyqg/pyqg.git` 
+1. Clone your forked MARN-5895 repository: `git clone git@github.com:USER-NAME/MARN-5895.git`
+2. Set your fork to track the original reposiroty (aka upstream): `git remote add upstream git://github.com/cesar-rocha/MARN-5895.git` 
 2. Create new git branch with where you will make changes to the orignal content, e.g.: `git checkout -b fix_typos`
 3. Revise your assigned lecture or assignment section.
 4. Commit your changes.
