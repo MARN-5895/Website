@@ -3,7 +3,7 @@ In lecture 3... This assignment will help you learn about how to collaborate on 
 
 ## Step 1: Launch a terminal shell on a jupyterlab running on Storrs HPC
 
-Following the set up commands learned in [Lecture 2](../lectures/02/README.md), start a jupyterlab service on Storrs HPC and tunnel it to your local browser.
+Following the set up commands learned in [Lecture 3](../lectures/02/README.md), set up `git` on your local computer. Make sure you have an SSH key pair generated on your local computer and connected to Github.
 
 Now create a directory for this assignment. Your directory should be named `03` and should be inside a directory named `Assignments`, which should be inside the MARN5895 directory you have already created. 
 
@@ -19,7 +19,7 @@ https://github.com/cesar-rocha/MARN-5895
 Exercise: Revise your assigned lecture/assignment notes
 
 1. Clone your forked MARN-5895 repository: `git clone git@github.com:USER-NAME/MARN-5895.git`
-2. Set your fork to track the original reposiroty (aka upstream): `git remote add upstream git://github.com/cesar-rocha/MARN-5895.git` 
+2. Set your fork to track the original reposiroty (aka upstream): `git remote add upstream git@github.com:cesar-rocha/MARN-5895.git` 
 2. Create new git branch with where you will make changes to the orignal content, e.g.: `git checkout -b fix_typos`
 3. Revise your assigned lecture or assignment section.
 4. Commit your changes.
@@ -41,9 +41,9 @@ Your PR should contain a short description of what changes you made to the files
 Once your branch has been merged into the master branch of the orignal upstream repository, you should update your master branch and delete your branch.
 
 ```BASH
-git checkout master
+git checkout main
 git fetch upstream
-git rebase upstream/master
+git rebase upstream/main
 git branch -d fix_typos
 ```
 
