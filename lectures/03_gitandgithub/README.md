@@ -188,25 +188,48 @@ You can verify that this worked using
 
     git remote -v
 
-which should list the address of the remote repository used to push and fetch information from. Before we can synchronize the files in our local and remote repositories, we need to create an SSH key/token. On your Storrs HPC terminal, type:
+which should list the address of the remote repository used to push and fetch information from. Before we can synchronize the files in our local and remote repositories, we need to create a pair of SSH keys. On your Storrs HPC terminal, type:
 
     ssh-keygen -t ed25519 -C "EMAIL"
 
-where EMAIL is the email address you used to sign up to Github. Type enter three times. This commands creates a public key that we will provide to Github. On Github, click on your avatar on the upper-right corner, then Setting, then SSH and GPG Keys, then New SSH key. Use `Storrs HPC` as the name of the key. Now pass the public key you created to Storrs HPC. To see the public key, type
+where EMAIL is the email address you used to sign up to Github. Type enter three times to generate the keys. This commands creates a public/private key pair that we will provide to Github. **The `-t ed25519` type of key does not work on some Storrs HPC nodes. So we also need to create a basic RSA key pair**:
+
+    ssh-keygen -C "EMAIL"
+
+On Github, click on your avatar on the upper-right corner, then Setting, then SSH and GPG Keys, then New SSH key. Use `Storrs HPC` as the name of the ed25519 key. Now paste the public keys you created on Storrs HPC. To see the public keys, type
 
     cat ~/.ssh/id_ed25519.pub 
 
-Copy the public key and paste it on the Github SSH key box.
+Copy the public key and paste it on the Github SSH key box. Repeat this procedure with the rsa key, calling it `Storrs HPC 2`.
 
-where GITHUB-USERNAME is your *Github username*.
-
-
-Now that we have an SSH key pair set up, we can "push" the files tracked in our local repository into the remote repository. The first time we are pushing a local repository to Github, we need to create a local main branch and push it to Github:
+Now that we have SSH key pairs set up, we can "push" the files tracked in our local repository into the remote repository. The first time we are pushing a local repository to Github, we need to create a local main branch and push it to Github:
 
     git branch -M main
     git push -u origin main
 
+If you are prompted for a login and password, you may need generate a personal access token (see below) and use token as your password.
+
+
+
+---
+Generating a personal access
+
+You may need to create Github [personal access token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token). On Github, click on you avatar on the upper-right corner, then Settings, then Developer Settings, then Personal Access Tokens. Generate a new token, set its experation date. Then select the scope of the token (you can select all boxes). Now copy the token and save it somewhere safe. You will need it to access Github.
+
+----
+
 You can check that `frosting.txt` was pushed to the remote repository on Github. All the information, including changes associated with each commit, is also there.
+
+Instead of using SSH to connect to Github, you could also use HTTPS. This requires that you set your remote host using the https address. On the recipes Github repository, copy the https address from the green button "Code" and set it as the remote repository
+
+    git remote add https://github.com/GIT-USERNAME/recipes.git
+
+You can now proceed to push your files to Github:
+
+    git branch -M main
+    git push -u origin main
+
+If prompted for a password, remember to use your personal access token.
 
 ---
 EXERCISE: Create a file for a recipe of your choice. 
