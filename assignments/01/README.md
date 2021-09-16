@@ -19,7 +19,7 @@ installation script and run it on Storrs HPC. First, log into Storrs HPC:
 
     ssh NetID@login.storrs.hpc.uconn.edu
 
-where NetID is your UConn username. Now you landed in you home directory on an Storrs HPC access node. To check that, you can type the command `pwd` (print current directory), which should return:
+Where NetID is your UConn username. Now you are landed in you home directory on an Storrs HPC access node. To check that, you can type the command `pwd` (print current directory), which should return:
 
     /home/NetID/
 
