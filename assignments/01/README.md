@@ -116,7 +116,7 @@ dependencies:
  - cmocean
  - proplot
  - pip:
-   - pytest
+ - pytest
 ```
 
 You can copy this file from the course's shared space to your home directory:
