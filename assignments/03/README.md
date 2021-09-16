@@ -52,7 +52,7 @@ git rebase upstream/main
 git branch -d fix_typos
 ```
 
-You can now push the changes to you fork:
+You can now push the changes to your fork:
 
     git push -u origin main
 
