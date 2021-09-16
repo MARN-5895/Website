@@ -69,7 +69,7 @@ If we list what's in this directory `ls MARN5895`, we get an empty list, because
     mkdir 02
     cd 02
 
-If we now check the current directory with `pwd` we get:
+If we now check the current directory with `pwd` (print working directory) we get:
 
     /home/NetID/MARN5895/Lectures/02/
 
@@ -88,7 +88,7 @@ If we now `ls`, we see that the directory `data-shell` was copied into our curre
     cd data-shell
     ls
 
-That's Nelle's directory tree. Nelle is a ficticious PhD student created by Software Carpentry to teach the Unix shell. Nelle's directory contains several subdirectories (creatures, data, molecules, north-pacific-gyre, writing) and a couple of files (notes.txt, pizza.cfg, solar.pdf).
+That's Nelle's directory tree. Nelle is a ficticious Ph.D. student created by Software Carpentry to teach the Unix shell. Nelle's directory contains several subdirectories (creatures, data, molecules, north-pacific-gyre, writing) and a couple of files (notes.txt, pizza.cfg, solar.pdf).
 
 Let's see what's in `notes.txt`. We can do this with a few different commands. For example, `cat` (concatenate) will print all content of the file into the screen:
 
@@ -103,7 +103,7 @@ Sounds like a plan. Let's see what Nelle has in `creatures`
     cd creatures
     ls 
 
-She has some data on two legendary creatures: basilisk and unicorn. If we concatenate `basilisk.dat` we get what is lookslike its genetic sequence. A better way to  look at these data is to use the commands `more` or `less`, which will initially print only a number of lines to the screen (more lines in `more`, less in `less`) and let us scroll down the output using the space bar:
+She has some data on two legendary creatures: basilisk and unicorn. If we concatenate `basilisk.dat` we get what looks like its genetic sequence. A better way to look at these data is to use the commands `more` or `less`, which will initially print only a number of lines to the screen (more lines in `more`, less in `less`) and let us scroll down the output using the space bar:
 
     more basilisk.dat
 
