@@ -34,13 +34,12 @@ You should now send your changes back to Github and propose to merge your branch
 Exercise: push your changes to Github and submit a pull request
 
 1. Push your new branch to your forked Github repository, e.g.: `git push origin fix_typos`
-2. Visit your forked repository on Github and submit a pull request (PR) on Github to merge your changes to the original repository on Cesar's profile. (You should see a green buttom "Compare & Merge"). Your PR should contain a short description of what changes you made to the files (e.g., fixed typos and improved wording in section Step 1 of Assignment 1). Cesar will review your PR, accept your changes and merge your branch into the master branch of the original repository.
+2. Visit your forked repository on Github and submit a pull request (PR) on Github to merge your changes to the original repository on Cesar's profile. (You should see a green buttom "Compare & Merge"). Your PR should contain a short description of what changes you made to the files (e.g., fixed typos and improved wording in section Step 1 of Assignment 1). 
 3. Using the option on the menu on the right of you PR, assign your pair to review the PR.
 4. Review the PR of your pair. You should click on the commit to check what changes your pair has made and make a comment on the PR.
 ---
 
-**Notify Cesar that you completed Step 3. He will accept the PR.**
-
+**Notify Cesar that you completed Step 3. HE will review your PR, accept your changes and merge your branch into the master branch of the original repository.**
 
 ## Step 4: Update your fork and local branch
 When Cesar accepts your PR, your branch will be merged into the master branch of the orignal upstream repository. You should now update your main branch and delete your `fix_typos` branch. On your terminal, do:
