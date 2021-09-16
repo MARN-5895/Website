@@ -1,5 +1,5 @@
 # Assignment 3: Improving the course Web site through a Pull Request on Github
-In [Lecture 3](../../lectures/03_gitandgithub/README.md) we introduced git and Github for tracking changes to code (simple text files). This assignment will help you learn more about git and Github, specifically how to collaborate on a coding project by forking and cloning a repository, creating a new branch for making and testing changes, and then submitting a pull request to merge those changes into the main repository. We will do that using the course Web site hosted on Github. **Most serious coding projects use development workflow similar to what you will learn in this assignment.**
+In [Lecture 3](../../lectures/03_gitandgithub/README.md) we introduced git and Github for tracking changes to code (simple text files). This assignment will help you learn more about git and Github, specifically about how to collaborate on a coding project by forking and cloning a repository, creating a new branch for making and testing changes, and then submitting a pull request to merge those changes into the main repository. We will do that using the course Web site hosted on Github. **Most serious coding projects use a development workflow similar to what you will learn in this assignment.**
 
 ## Step 1: Set up git on your local computer
 
