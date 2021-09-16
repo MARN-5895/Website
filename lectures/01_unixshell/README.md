@@ -15,7 +15,7 @@ with remote work on a Unix-based supercomputer.
 
 ## Getting to know the Unix shell
 
-The Unix shell (aka Terminal Shell or simply Terminal) is a program through which users interact with computers by typing commands. The shell can be used to
+The Unix shell (aka terminal shell or simply terminal) is a program through which users interact with computers by typing commands. The shell can be used to
 navigate the file system, move files arounds, and run
 scripts and complicated programs, such as numerical models.
 
