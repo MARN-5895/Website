@@ -15,10 +15,11 @@ with remote work on a Unix-based supercomputer.
 
 ## Getting to know the Unix shell
 
+
 The Unix shell (aka terminal shell or simply terminal) is a program through
 which users interact with computers by typing commands. The shell can be used to
+navigate the file system, move files around, and run scripts and complicated programs, such as numerical models.
 navigate the file system, move files around, and run
-scripts and complicated programs, such as numerical models.
 
 The easiest way to interact with computers is using a GUI (Graphic User Interface), wherein
 we click on programs and folders and drag things around. But the GUI approach is laborious for
