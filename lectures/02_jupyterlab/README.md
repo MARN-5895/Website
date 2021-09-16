@@ -13,7 +13,7 @@ First, we log into Storrs HPC and request a MARN5895 node following the two-comm
 
 2.  `bash launch_bash_slurm_marn5895.sh`
 
-We should always execute `launch_bash_slurm_marn5895.sh` when logging to work on Storrs HPC during this class.
+We should always execute `launch_bash_slurm_marn5895.sh` when logging into work on Storrs HPC during this class.
 
 We are now on our assigned Storrs HPC node, and we should now activate the `marn5895` conda environment where we installed `jupyterlab` and other Python packages:
 
@@ -23,7 +23,7 @@ Finally, we can boot up `jupyterlab` using
 
     jupyter-lab --no-browser --port=XXXX
 
-where the port `XXXX` is the port assigned to you on the shared GoogleDoc spreadsheet. Storrs HPC will assign a port for your jupyterlab traffic. You can see the number of the assigned port on the address information printed on the terminal screen. For example, if you port were `8889`, you may see a message similar to
+where the port `XXXX` is the port assigned to you on the shared GoogleDoc spreadsheet. Storrs HPC will assign a port for your jupyterlab traffic. You can see the number of the assigned port on the address information printed on the terminal screen. For example, if your port was `8889`, you may see a message similar to
 
 ```BASH
 [I 2021-09-08 10:30:22.506 ServerApp] Serving notebooks from local directory: /home/NetID
@@ -69,7 +69,7 @@ If we list what's in this directory `ls MARN5895`, we get an empty list, because
     mkdir 02
     cd 02
 
-If we now check the current directory with `pwd` we get:
+If we now check the current directory with `pwd` (print working directory) we get:
 
     /home/NetID/MARN5895/Lectures/02/
 
@@ -88,7 +88,7 @@ If we now `ls`, we see that the directory `data-shell` was copied into our curre
     cd data-shell
     ls
 
-That's Nelle's directory tree. Nelle is a ficticious PhD student created by Software Carpentry to teach the Unix shell. Nelle's directory contains several subdirectories (creatures, data, molecules, north-pacific-gyre, writing) and a couple of files (notes.txt, pizza.cfg, solar.pdf).
+That's Nelle's directory tree. Nelle is a ficticious Ph.D. student created by Software Carpentry to teach the Unix shell. Nelle's directory contains several subdirectories (creatures, data, molecules, north-pacific-gyre, writing) and a couple of files (notes.txt, pizza.cfg, solar.pdf).
 
 Let's see what's in `notes.txt`. We can do this with a few different commands. For example, `cat` (concatenate) will print all content of the file into the screen:
 
@@ -103,7 +103,7 @@ Sounds like a plan. Let's see what Nelle has in `creatures`
     cd creatures
     ls 
 
-She has some data on two legendary creatures: basilisk and unicorn. If we concatenate `basilisk.dat` we get what is lookslike its genetic sequence. A better way to  look at these data is to use the commands `more` or `less`, which will initially print only a number of lines to the screen (more lines in `more`, less in `less`) and let us scroll down the output using the space bar:
+She has some data on two legendary creatures: basilisk and unicorn. If we concatenate `basilisk.dat` we get what looks like its genetic sequence. A better way to look at these data is to use the commands `more` or `less`, which will initially print only a number of lines to the screen (more lines in `more`, less in `less`) and let us scroll down the output using the space bar:
 
     more basilisk.dat
 
@@ -130,9 +130,9 @@ If we `pwd` or `ls` again, we verify that we are in `data-shell/`.
 
 ##  A few more commands to deal with text files
 
-Let's move into the `molecules` directory. While we could do this with two separate commands (`cd ..`, then `cd moledules`), it's easiest to use a single command by providing the path of where we want to go (one level upward, then into molecules)
+Let's move into the `molecules` directory. While we could do this with two separate commands (`cd ..`, then `cd molecules`), it's easiest to use a single command by providing the path of where we want to go (one level upward, then into molecules)
 
-    cd ../moledules
+    cd ../molecules
 
 Let's see what inside
 
@@ -230,7 +230,7 @@ A powerful shell tool is the pipeline `|`, which allows us to feed the output of
 
     wc -l *.pdb | sort -n 
 
-outputs the same sorted list we obtained in two steps above:
+Outputs the same sorted list we obtained in two steps above:
 
    9 methane.pdb
   12 ethane.pdb
@@ -240,7 +240,7 @@ outputs the same sorted list we obtained in two steps above:
   30 octane.pdb
   107 total
 
-We can pipe as many command as we wish. If we want to print only the first 6 lines of the output above, thus ignoring the line with the total nubmer of lines, we can do
+We can pipe as many commands as we wish. If we want to print only the first 6 lines of the output above, thus ignoring the line with the total nubmer of lines, we can do:
 
     wc -l *.pdb | sort -n | head -n 6
 
@@ -252,7 +252,7 @@ The string of commands above count the number of lines in the `.pdb` files, sort
 
 ## For loops and bash (shell) scripts
 
-We can also do loops in Unix shell.  For example, if we want to the name of author who analyzed each of the molecules, we can do 
+We can also do loops in Unix shell.  For example, if we want to print the name of author who analyzed each of the molecules, we can do 
 
 ```BASH
 for molecule in *.pdb
@@ -288,7 +288,7 @@ do
 head -n 2 $molecule 
 done
 ```
-With `crtl+o` we can save the file. Let's name it `loop_molecules.sh`. And we can exit `nano` with `crtl+x`. If we do an `ls`, we see that a file named `loop_molecules.sh` now exists in our current directory. To execute it, we simply type 
+With `ctrl+o` we can save the file. Let's name it `loop_molecules.sh`. And we can exit `nano` with `ctrl+x`. If we do an `ls`, we see that a file named `loop_molecules.sh` now exists in our current directory. To execute it, we simply type 
 
     bash loop_molecules.sh
 

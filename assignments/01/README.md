@@ -37,11 +37,11 @@ The flag `-O` above is changing the name of the downloaded file (the output) to 
 
 ## Step 2: Run Miniconda3
 
-Now you can run the script script `miniconda.sh` to install the Anaconda package manager. The trick is to specify an installation directory within your home directory to avoid attempting to install `miniconda` system-wide (which only HPC IT folks have permission to do). To run the installation script type:
+Now you can run the script `miniconda.sh` to install the Anaconda package manager. The trick is to specify an installation directory within your home directory to avoid attempting to install `miniconda` system-wide (which only HPC IT folks have permission to do). To run the installation script type:
 
     bash miniconda.sh -b -p /home/NetID/miniconda/
 
-This installation may take a few minutes to complete, because `miniconda.sh` will download and install all the basic Anaconda software (just like executing a .exe or .dmg file on you computer).
+This installation may take a few minutes to complete, because `miniconda.sh` will download and install all the basic Anaconda software (just like executing a .exe or .dmg file on your computer).
 
 You should now check that the path to miniconda is in your terminal configuration file `.bashrc`,  which lives in your home directory. You can do that by printing the contents of `.bashrc` on the terminal:
 
@@ -116,7 +116,7 @@ dependencies:
  - cmocean
  - proplot
  - pip:
-   - pytest
+ - pytest
 ```
 
 You can copy this file from the course's shared space to your home directory:
@@ -124,7 +124,7 @@ You can copy this file from the course's shared space to your home directory:
     cp /shared/marn5895/marn5895.yml /home/NetID
 
 If you are currently in your home directory (i.e., if `pwd` returns `/home/NetID`), you could
-replace `/home/NetID` above with `.`, which is a short cut for the path of your current directory.
+replace `/home/NetID` above with `.`, which is a short cut for the path of your current directory. Pretty cool eh?
 
 ## Step 4: Create the conda environment
 
