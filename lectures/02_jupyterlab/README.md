@@ -252,7 +252,7 @@ The string of commands above count the number of lines in the `.pdb` files, sort
 
 ## For loops and bash (shell) scripts
 
-We can also do loops in Unix shell.  For example, if we want to the name of author who analyzed each of the molecules, we can do 
+We can also do loops in Unix shell.  For example, if we want to print the name of author who analyzed each of the molecules, we can do 
 
 ```BASH
 for molecule in *.pdb
@@ -288,7 +288,7 @@ do
 head -n 2 $molecule 
 done
 ```
-With `crtl+o` we can save the file. Let's name it `loop_molecules.sh`. And we can exit `nano` with `crtl+x`. If we do an `ls`, we see that a file named `loop_molecules.sh` now exists in our current directory. To execute it, we simply type 
+With `ctrl+o` we can save the file. Let's name it `loop_molecules.sh`. And we can exit `nano` with `ctrl+x`. If we do an `ls`, we see that a file named `loop_molecules.sh` now exists in our current directory. To execute it, we simply type 
 
     bash loop_molecules.sh
 
