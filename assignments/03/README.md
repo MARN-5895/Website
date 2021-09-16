@@ -58,5 +58,5 @@ You can now push the changes to your fork:
 
 And you can verify on Github that your fork is up-to-date with the original upstream repository (hosted on Cesar's Github profile).
 
-Congratulations! You just helped Cesar improve the course content. Whenever you identify a few typos or any poorly written section in the course material, please feel free to submit a PR. That would be very much appreciated. *Remember to always update your fork and local repositories first with `git fetch upstream` and `git rebase upstream/main`, because the MARN-5895 Github repository is updated almost daily during the semester.*
+Congratulations! You just helped Cesar improve the course content. Whenever you identify a few typos or any poorly written section in the course material, please feel free to submit a PR. That would be very much appreciated. *Before making changes to the course Web site, remember to update your fork and local repositories  with `git fetch upstream` and `git rebase upstream/main`, because the MARN-5895 Github repository is updated almost daily during the semester, outdating your fork.*
 
