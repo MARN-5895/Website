@@ -130,9 +130,9 @@ If we `pwd` or `ls` again, we verify that we are in `data-shell/`.
 
 ##  A few more commands to deal with text files
 
-Let's move into the `molecules` directory. While we could do this with two separate commands (`cd ..`, then `cd moledules`), it's easiest to use a single command by providing the path of where we want to go (one level upward, then into molecules)
+Let's move into the `molecules` directory. While we could do this with two separate commands (`cd ..`, then `cd molecules`), it's easiest to use a single command by providing the path of where we want to go (one level upward, then into molecules)
 
-    cd ../moledules
+    cd ../molecules
 
 Let's see what inside
 
