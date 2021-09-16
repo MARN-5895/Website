@@ -13,7 +13,7 @@ First, we log into Storrs HPC and request a MARN5895 node following the two-comm
 
 2.  `bash launch_bash_slurm_marn5895.sh`
 
-We should always execute `launch_bash_slurm_marn5895.sh` when logging to work on Storrs HPC during this class.
+We should always execute `launch_bash_slurm_marn5895.sh` when logging into work on Storrs HPC during this class.
 
 We are now on our assigned Storrs HPC node, and we should now activate the `marn5895` conda environment where we installed `jupyterlab` and other Python packages:
 
@@ -23,7 +23,7 @@ Finally, we can boot up `jupyterlab` using
 
     jupyter-lab --no-browser --port=XXXX
 
-where the port `XXXX` is the port assigned to you on the shared GoogleDoc spreadsheet. Storrs HPC will assign a port for your jupyterlab traffic. You can see the number of the assigned port on the address information printed on the terminal screen. For example, if you port were `8889`, you may see a message similar to
+where the port `XXXX` is the port assigned to you on the shared GoogleDoc spreadsheet. Storrs HPC will assign a port for your jupyterlab traffic. You can see the number of the assigned port on the address information printed on the terminal screen. For example, if your port was `8889`, you may see a message similar to
 
 ```BASH
 [I 2021-09-08 10:30:22.506 ServerApp] Serving notebooks from local directory: /home/NetID
