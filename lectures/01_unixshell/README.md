@@ -99,7 +99,7 @@ where NetID is your UConn username. You will be prompted for your password. Once
 *To access Storrs HPC from a computer connected to a network off campus you will need the [UConn VPN](https://confluence.uconn.edu/ikb/remote-access/virtual-private-network-vpn/accessing-the-uconn-network-through-a-vpn-client).*
 
 ## Launching a terminal (bash) session with resources allocated to MARN5895
-Computer clusters such as Storrs HPC operate on a complex allocation system that allows user to schedule and excecute code depending on availability of resources. For this course, we have a partition, with a few computer nodes allocated just for us, and we need to work on the MARN5895 to ensure prompt execution of our programs.
+Computer clusters such as Storrs HPC operate on a complex allocation system that allows user to schedule and execute code depending on availability of resources. For this course, we have a partition, with several  computer nodes allocated just for us, and we need to work on the MARN5895 nodes to ensure prompt execution of our programs.
 
 When you SSH into Storrs HPC, you land on an access node, either `cn01` or `cn02` or `cn03` or `cn04`.
 Your terminal shell displays which node you are "NetID@cnN", where N is the node number. These access nodes serve as a gateway between your local computer and the rest of the Storrs HPC cluster. To access a different node, we have to "submit a job" (in cluster jargon) using Storrs HPC's scheduler (`slurm`). You find more information about job submission and `slurm` in the Storrs HPC wiki linked below. To facilitate this procress, I generated script that will do the job submission for you. The script `launch_bash_slurm_marn5895.sh` is stored on MARN5895's shared space and you should copy it to your home directory:
@@ -116,7 +116,7 @@ which yields
 ```BASH
 srun -p general -n 10 -N 1 --mem=12Gb --partition=marn5895 --account=marn5895 --qos=marn5895 --pty bash
 ```
-This commands submits a job to the Storrs HPC scheduler requesting access to the MARN5895 resources. The command is cryptic and I don't expect you to memorize it. Just try to remember it does.
+This commands submits a job to the Storrs HPC scheduler requesting access to the MARN5895 resources. The command is cryptic and I don't expect you to memorize it. Just try to remember what it does.
 
 To run the bash script `launch_bash_slurm_marn5895.sh`, type 
 
