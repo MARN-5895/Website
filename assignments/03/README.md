@@ -39,7 +39,7 @@ Exercise: push your changes to Github and submit a pull request
 4. Review the PR of your pair. You should click on the commit to check what changes your pair has made and make a comment on the PR.
 ---
 
-**Notify Cesar that you completed Step 3. HE will review your PR, accept your changes and merge your branch into the master branch of the original repository.**
+**Notify Cesar that you completed Step 3. He will review your PR, accept your changes and merge your branch into the master branch of the original repository.**
 
 ## Step 4: Update your fork and local branch
 When Cesar accepts your PR, your branch will be merged into the master branch of the orignal upstream repository. You should now update your main branch and delete your `fix_typos` branch. On your terminal, do:
