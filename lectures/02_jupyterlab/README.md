@@ -230,7 +230,7 @@ A powerful shell tool is the pipeline `|`, which allows us to feed the output of
 
     wc -l *.pdb | sort -n 
 
-outputs the same sorted list we obtained in two steps above:
+Outputs the same sorted list we obtained in two steps above:
 
    9 methane.pdb
   12 ethane.pdb
@@ -240,7 +240,7 @@ outputs the same sorted list we obtained in two steps above:
   30 octane.pdb
   107 total
 
-We can pipe as many command as we wish. If we want to print only the first 6 lines of the output above, thus ignoring the line with the total nubmer of lines, we can do
+We can pipe as many commands as we wish. If we want to print only the first 6 lines of the output above, thus ignoring the line with the total nubmer of lines, we can do:
 
     wc -l *.pdb | sort -n | head -n 6
 
