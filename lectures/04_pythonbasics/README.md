@@ -7,7 +7,7 @@ This optional [video](https://www.youtube.com/watch?v=21Gl97tkbHU) explains what
 Python was developed by a computer scientist and is a general-purpose language. It has a simple syntax
 and runs efficiently.
 
-[Eric Firing](https://github.com/efiring), a geeky oceanographer who contributed code to many scientific Python packages, lists 
+[Eric Firing](https://github.com/efiring), a geeky oceanographer who contributed code to many widely scientific Python packages, lists 
 a number of reasons to use Python instead of Matlab:
 
 1. Python is fundamentally a better computer language in many ways.
