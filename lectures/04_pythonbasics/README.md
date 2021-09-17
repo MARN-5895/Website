@@ -12,10 +12,10 @@ a number of reasons to use Python instead of Matlab:
 
 1. Python is fundamentally a better computer language in many ways.
 
-  a. It is suitable for a wider variety of tasks.
-  b. It scales better from the shortest of scripts to large software projects.
-  c. It facilitates writing clearer and more concise code.
-  d. With associated tools, it makes for easier access to existing high-performance codes in compiled languages, and for using smaller pieces of compiled code to speed up     critical sections.
+    a. It is suitable for a wider variety of tasks.
+    b. It scales better from the shortest of scripts to large software projects.
+    c. It facilitates writing clearer and more concise code.
+    d. With associated tools, it makes for easier access to existing high-performance codes in compiled languages, and for using smaller pieces of compiled code to speed up     critical sections.
 
 2. Because Python is Free and Open Source Software (FOSS), you can install it on any machine without having to deal with a license manager.
 
