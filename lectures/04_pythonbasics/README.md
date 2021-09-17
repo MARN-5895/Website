@@ -24,11 +24,10 @@ a number of reasons to use Python instead of Matlab:
 4. Most Python packages you are likely to want to use are developed in an open environment. The scientific Python ecosystem is dynamic and friendly.
 
 
-Here's why Cesar began using Python and never turned back:
-
-1. Python is [free and open software](https://www.gnu.org/philosophy/free-sw.en.html).
-2. Python is the official language of Data Science.
-3. The online Python community is wonderful and supportive.
+Cesar began using Python when he started his Ph.D. in 2013. For data analysis, he used to code in Matlab. He was passionate about open science and wanted people 
+everything to be able to verify his research results and build on his work (Firing's reason 3). It wasn't easy to make the transtion back then, because most of his 
+friends and colleagues in graduate school used Matlab, whose most primitive version was developed by Geophysicists at IGPP/Scipps.  He got through it with the help 
+of then postdoc [Jinbo Wang](https://science.jpl.nasa.gov/people/jwang2/) and the wonderful online Python community. Today most Oceanography graduate students in the US use Python, because Python is the ...
 
 
 ## Invoking Python
