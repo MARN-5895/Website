@@ -11,6 +11,9 @@ This optional [video](https://www.youtube.com/watch?v=21Gl97tkbHU) explains what
   3. An enhanced python interpreter
   4. The Jupyter notebook
 
+### Running a script
+
+`myfirstscript.py`
 
 ## Basic operations
 
