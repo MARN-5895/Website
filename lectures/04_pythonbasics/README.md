@@ -62,16 +62,17 @@ We can also run python by starting a shell interpreter in the terminal. We do th
 
 ### 3. An enhanced python iterpreter
 
-This standard python interpreter if you want to use python for very basic calculation, such as simple algebra. But it is quite limited is what is offers. For this reason, we installed `iPython`, an enhanced Python interpreter, which is dynamic and contains...
+This standard python interpreter if you want to use python for very basic calculation, such as simple algebra. But it is quite limited is what is offers. For this reason, we installed `iPython`, an enhanced Python interpreter. To start it, we type `ipython` in terminal and press the return:
+
 
 ![](img/ipython.png)
 
+`iPython` has several useful capabilities, including syntax highlighting, advanced help, shell sytax (allows you to type a basic terminal commands). Whenever we need an interpreter, we will use `iPython`.
 
+### 4. Jupyter notebook
+The fourth way to invoke Python is opening a [Jupyter notebook](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html). The notebook allows us to combine code, media, and rich text in the same document. It's probably the most efficient way to work with Python (and many other languages, such as R and Julia), because Jupyter notebook leverages all great capability of a Web browser to enhance our interactive experience. We can quickly visualize our results on the browser itself, without have to open a separate window or save the figure to a file. We can also add documentation to a code using Markdown, a simple html-style markup language for formatted text.
 
-## Basic operations
-
-
-
+For the remainder of this lecture, we will work on a Jupyter notebook.
 
 
 ## Key points 
@@ -81,4 +82,4 @@ This standard python interpreter if you want to use python for very basic calcul
 - Because of its multi-purpose nature, Python is widely used in scientific
   applications.
 
-- The most basic Python data type are: lists, tuples.
+- The most basic Python data type are: lists, tuples, and arrays
