@@ -40,7 +40,9 @@ Python is an interpreted scripting language. That means Python interprets and ex
 
 The oldest and simplest way to use Python is by writing and running a script, just like we wrote and executed "bash scripts" on the Unix terminal shell. For example, the script `myfirstscript.py` can by executed with:
 
-  python myfirstscript.py
+```PYTHON
+python myfirstscript.py
+```
 
 The scripts outputs "Hello world!" to the screen.
 
