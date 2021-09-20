@@ -29,7 +29,11 @@ of then-postdoc [Jinbo Wang](https://science.jpl.nasa.gov/people/jwang2/) and th
 
 ## Invoking Python
 
-Most computers nowadays come with a basic version of Python. Because we need the power to install several scientific packages, we have installed in [Assignment 1](../assignments/01/) the latest version of Anaconda, which packages basic Python as well as Python packages. To check we
+Most computers nowadays come with a basic version of Python. Because we need the power to install several scientific packages, we have installed in [Assignment 1](../assignments/01/) the miniconda, a lite version of Anaconda, which packages basic Python as well as Python packages. We ca verify that miniconda's Python is our default Python:
+
+    which python
+
+which should output `~/miniconda/bin/python`.
 
 
 
