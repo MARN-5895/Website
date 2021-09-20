@@ -22,15 +22,14 @@ a number of reasons to use Python instead of Matlab:
 
 4. Most Python packages you are likely to want to use are developed in an open environment. The scientific Python ecosystem is dynamic and friendly.
 
-
-
-
 Cesar began using Python when he started his Ph.D. in 2013. For data analysis, he used to code in Matlab. He was passionate about open science and wanted people 
 everywhere to be able to verify his research results and build on his work (Firing's reason 3). It wasn't an easy transtion back then, because his advisor and most of his friends and colleagues in graduate school used Matlab, whose most primitive version was developed by geophysicists at IGPP/Scipps.  He got through it with the help 
 of then-postdoc [Jinbo Wang](https://science.jpl.nasa.gov/people/jwang2/) and the wonderful online Python community. Today, Python is probably the programming language most widely used in Data Science applications. In the 2-minute segment of video starting [here](https://youtu.be/gJd-Ohf1FfM?t=1145), physical oceanographer James Munroe explains why Python is probably the most effective programming language for scientific applications. The full video is recommended if you wish to have an overview about "Big Data Oceanography".  There exist many high-quality Python packages for Earth and Marine Sciences mainted by a community of developers in the US and elsewhere. We will several core Python packages and scientific Python packages in the remainder of this course. Your assignments and final projects will use these packages to download, read, and visualize Marine Science data.
 
 
 ## Invoking Python
+
+Python is an interpreted scripting language. That means Python interprets and executes a script essentially line by line. There are four ways to use Python on a computer:
 
   1. Running a script
   2. The standard python interpreter
@@ -39,7 +38,12 @@ of then-postdoc [Jinbo Wang](https://science.jpl.nasa.gov/people/jwang2/) and th
 
 ### Running a script
 
-`myfirstscript.py`
+The oldest and simplest way to use Python is by writing and running a script, just like we wrote and executed "bash scripts" on the Unix terminal shell. For example, the script `myfirstscript.py` can by executed with:
+
+  python myfirstscript.py
+
+The scripts outputs "Hello world!" to the screen.
+
 
 ## Basic operations
 
