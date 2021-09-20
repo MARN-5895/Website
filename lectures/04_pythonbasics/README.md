@@ -29,6 +29,10 @@ of then-postdoc [Jinbo Wang](https://science.jpl.nasa.gov/people/jwang2/) and th
 
 ## Invoking Python
 
+Most computers nowadays come with a basic version of Python. Because we need the power to install several scientific packages, we have installed in [Assignment 1](../assignments/01/) the latest version of Anaconda, which packages basic Python as well as Python packages. To check we
+
+
+
 Python is an interpreted scripting language. That means Python interprets and executes a script essentially line by line. There are four ways to use Python on a computer:
 
   1. Running a script
@@ -38,7 +42,7 @@ Python is an interpreted scripting language. That means Python interprets and ex
 
 ### Running a script
 
-The oldest and simplest way to use Python is by writing and running a script, just like we wrote and executed "bash scripts" on the Unix terminal shell. For example, the script `myfirstscript.py` can by executed with:
+The oldest and simplest way to use Python is by writing and running a script, just like we wrote and executed "bash scripts" on the Unix terminal shell. For example, the script `myfirstscript.py` can by executed in the terminal with:
 
 ```PYTHON
 python myfirstscript.py
