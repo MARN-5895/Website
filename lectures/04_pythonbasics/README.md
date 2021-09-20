@@ -58,7 +58,7 @@ The scripts outputs "Hello world!" to the screen.
 
 We can also run python by starting a shell interpreter in the terminal. We do that python typing `python` and pressing the return key, which will open the basic python interpreter:
 
-[](./img/basicinterpreter.png)
+[!](img/basicinterpreter.png)
 
 
 
