@@ -1,7 +1,7 @@
 # Lecture 4: Python basics
 
 
-## Python vs. Matlab
+## Why Python?
 
 Python was developed by a computer scientist and is a general-purpose language. It has a simple syntax
 and runs efficiently.
