@@ -60,6 +60,12 @@ We can also run python by starting a shell interpreter in the terminal. We do th
 
 ![](img/basicinterpreter.png)
 
+### 3. An enhanced python iterpreter
+
+This standard python interpreter if you want to use python for very basic calculation, such as simple algebra. But it is quite limited is what is offers. For this reason, we installed `iPython`, an enhanced Python interpreter, which is dynamic and contains...
+
+![](img/ipython.png)
+
 
 
 ## Basic operations
