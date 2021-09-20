@@ -70,7 +70,10 @@ This standard python interpreter if you want to use python for very basic calcul
 `iPython` has several useful capabilities, including syntax highlighting, advanced help, shell sytax (allows you to type a basic terminal commands). Whenever we need an interpreter, we will use `iPython`.
 
 ### 4. Jupyter notebook
-The fourth way to invoke Python is opening a [Jupyter notebook](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html). The notebook allows us to combine code, media, and rich text in the same document. It's probably the most efficient way to work with Python (and many other languages, such as R and Julia), because Jupyter notebook leverages all great capability of a Web browser to enhance our interactive experience. We can quickly visualize our results on the browser itself, without have to open a separate window or save the figure to a file. We can also add documentation to a code using Markdown, a simple html-style markup language for formatted text.
+The fourth way to invoke Python is opening a [Jupyter notebook](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html). The notebook allows us to combine code, media, and rich text in the same document. It's probably the most efficient way to work with Python (and many other languages, such as R and Julia), because Jupyter notebook leverages all great capability of a Web browser to enhance our interactive experience. We can quickly visualize our results on the browser itself, without have to open a separate window or save the figure to a file. We can also add documentation to a code using Markdown, a simple html-style markup language for formatted text. We can open a jupyter notebook by clicking on "ipython-kernel" under Notebook:
+
+![](img/notebook.png)
+
 
 For the remainder of this lecture, we will work on a Jupyter notebook.
 
