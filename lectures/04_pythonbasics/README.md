@@ -44,7 +44,7 @@ Python is an interpreted scripting language. That means Python interprets and ex
   3. An enhanced python interpreter
   4. The Jupyter notebook
 
-### Running a script
+### 1. Running a script
 
 The oldest and simplest way to use Python is by writing and running a script, just like we wrote and executed "bash scripts" on the Unix terminal shell. For example, the script `myfirstscript.py` can by executed in the terminal with:
 
@@ -53,6 +53,13 @@ python myfirstscript.py
 ```
 
 The scripts outputs "Hello world!" to the screen.
+
+### 2. The standard python interpreter
+
+We can also run python by starting a shell interpreter in the terminal. We do that python typing `python` and pressing the return key, which will open the basic python interpreter:
+
+[](./img/basicinterpreter.png)
+
 
 
 ## Basic operations
