@@ -75,7 +75,7 @@ The fourth way to invoke Python is opening a [Jupyter notebook](https://jupyter-
 ![](img/notebook.png)
 
 
-For the remainder of this lecture, we will work on a Jupyter notebook.
+For the remainder of this lecture, we will work on a [Jupyter notebook](./04_pythonbasics.ipynb).
 
 
 ## Key points 
