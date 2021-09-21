@@ -15,7 +15,7 @@ The **most up-to-date syllabus** is available [here](./syllabus/ResearchComputin
 | 2021-09-09    | Assignment 2: [Moving and renaming a large number of files](assignments/02/)    |         |
 | 2021-09-14    | Lesson 3: [Version control with git and Github](lectures/03_gitandgithub) | Turn in scripts assignment 2|
 | 2021-09-16    | Assignment 3: [Improving the class Web site through a pull request](assignments/03/)   |         |
-| 2021-09-21    | Lesson: Python basics         |         |
+| 2021-09-21    | Lesson 4: [Python basics](lectures/04_pythonbasics)         |         |
 | 2021-09-23    | Assignment: Visualizing Saildrone data |         |
 | 2021-09-28    | Lesson: The Python scientific stack           |         |
 | 2021-09-30    | Assignment: Analyzing and plotting data from Argo floats           |         |
