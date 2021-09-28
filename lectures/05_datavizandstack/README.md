@@ -1,6 +1,6 @@
 # Lesson 5: The Python scientific stack and data visualization
 
-[!](img/SciPythonStack.png)
+![](img/SciPythonStack.png)
 
 
 The Python scientific stack (aka python scientific ecosystem) is a set of libraries, modules and toolboxes widely used 
