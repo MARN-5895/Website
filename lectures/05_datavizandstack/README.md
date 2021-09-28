@@ -22,7 +22,9 @@ We will learn some of those tools in the coming several weeks. For now, let's op
 ## Introduction to data visualization in Python
 Let's now pivot to matplotlib. To use our time efficiently, let's work on the notebook for assignment 4 `04_saildronedata.ipynb`. Please, open the notebook on your branch inside `~/MARN5895/Assignments/04/`.
 
-Here are a few plotting modules that you may want to checkout:
+### Extra resources
+
+Here's an  [article](https://tos.org/oceanography/assets/docs/29-3_thyng.pdf) led by [Kristen Thyng]https://github.com/kthyng() about `cmocean` and colormaps in general. And here are a few plotting modules that you may want to checkout:
 
 1. [proplot](https://proplot.readthedocs.io/en/latest/) for publication quality graphics.
 2. [seaborn](https://seaborn.pydata.org) and [altair](https://altair-viz.github.io/getting_started/overview.html) for statistical plotting.
