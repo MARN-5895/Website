@@ -20,11 +20,11 @@ builds on all the inner layers.
 We will learn some of those tools in the coming several weeks. For now, open a blank notebook and name it `05_sciencestack.ipynb`. I will work through a quick introduction to numpy and scipy.
 
 ## Introduction to data visualization in Python
-Let's now pivot to matplotlib. To use our time efficiently, let's work on the notebook for assignment 4 `04_saildronedata.ipynb`. Please, open the notebook on your branch inside `~/MARN5895/Assignments/04/`.
+Let's now pivot to matplotlib. To use our time efficiently, let's work on the notebook for assignment 4 [`04_saildronedata.ipynb`](https://github.com/MARN-5895/Assignment-04/blob/main/04_saildronedata.ipynb). Please, open the notebook on your branch inside `~/MARN5895/Assignments/04/`.
 
 ### Extra resources
 
-Here's an  [article](https://tos.org/oceanography/assets/docs/29-3_thyng.pdf) led by [Kristen Thyng](https://github.com/kthyng about `cmocean` and colormaps in general. And here are a few plotting modules that you may want to checkout:
+Here's an  [article](https://tos.org/oceanography/assets/docs/29-3_thyng.pdf) led by [Kristen Thyng](https://github.com/kthyng) about `cmocean` and colormaps in general. And here are a few plotting modules that you may want to checkout:
 
 1. [proplot](https://proplot.readthedocs.io/en/latest/) for publication quality graphics.
 2. [seaborn](https://seaborn.pydata.org) and [altair](https://altair-viz.github.io/getting_started/overview.html) for statistical plotting.
