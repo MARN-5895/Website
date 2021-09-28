@@ -17,7 +17,7 @@ scipy for efficient numerical operations, pandas for manipulating tabular data, 
 specialized packages such as scikit-learn for machine learning and sympy for simbolic mathematics. More specialized packages, which as specific to a field or subdiscipline, 
 builds on all the inner layers.
 
-We will learn some of those tools in the coming several weeks. For now, let's open a jupyter notebook `05_sciencestack.ipynb` for a quick introduction to numpy and scipy.
+We will learn some of those tools in the coming several weeks. For now, open a blank notebook and name it `05_sciencestack.ipynb`. I will work through a quick introduction to numpy and scipy.
 
 ## Introduction to data visualization in Python
 Let's now pivot to matplotlib. To use our time efficiently, let's work on the notebook for assignment 4 `04_saildronedata.ipynb`. Please, open the notebook on your branch inside `~/MARN5895/Assignments/04/`.
