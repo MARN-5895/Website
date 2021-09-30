@@ -24,7 +24,7 @@ Let's now pivot to matplotlib. To use our time efficiently, let's work on the no
 
 ### Extra resources
 
-Here's an  [article](https://tos.org/oceanography/assets/docs/29-3_thyng.pdf) led by [Kristen Thyng](https://github.com/kthyng) about `cmocean` and colormaps in general. And here are a few plotting modules that you may want to checkout:
+Here's an  [article](https://tos.org/oceanography/assets/docs/29-3_thyng.pdf) led by [Kristen Thyng](https://github.com/kthyng) about `cmocean` and colormaps in general. And here are a few plotting modules that you may want to check out:
 
 1. [proplot](https://proplot.readthedocs.io/en/latest/) for publication quality graphics.
 2. [seaborn](https://seaborn.pydata.org) and [altair](https://altair-viz.github.io/getting_started/overview.html) for statistical plotting.
