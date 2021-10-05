@@ -6,6 +6,8 @@ Instructor: [Cesar B Rocha](www.cbrocha.com)
 
 The **most up-to-date syllabus** is available [here](./syllabus/ResearchComputing_SyllabusFall2021.pdf).
 
+[Instructions and ideas of datasets](./final_project/README.md) for final projects.
+
 ### Program
 | Date          | Content                              | Remark |
 |:--------------------------|:---------------------------------|:--------------|
