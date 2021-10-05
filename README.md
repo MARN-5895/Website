@@ -19,7 +19,7 @@ The **most up-to-date syllabus** is available [here](./syllabus/ResearchComputin
 | 2021-09-23    | Assignment 4: [Loading, manupulating, visualizing Saildrone data](https://github.com/MARN-5895/Assignment-04) |         |
 | 2021-09-28    | Lesson 5: [Data visualization and the Python scientific stack](lectures/05_datavizandstack)           |   Turn in notebook for assignment 4      |
 | 2021-09-30    | Assignment 5: [Analyzing and plotting data from Argo floats](https://github.com/MARN-5895/Assignment-05)           |         |
-| 2021-10-05    |  Lesson: Pandas for tabular data          |         |
+| 2021-10-05    |  Lesson 6: [Pandas for tabular data](https://github.com/MARN-5895/Lecture-06)          |  Turn in notebook for assignment 5      |
 | 2021-10-07    |  Assignment: Estimating the sea-level trend in Connecticut from coastal tide gauges           |         |
 | 2021-10-12    |  Lesson: Xarray for multidimensional arrays          |         |
 | 2021-10-14    |  Assignment: Estimating the global sea-level trend from 30 years of satellite altimetry          |         |
