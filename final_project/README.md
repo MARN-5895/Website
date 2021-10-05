@@ -20,6 +20,7 @@ Please, discuss with your pair/small group add your names and dataset to the cou
 - [Ocean color satellite data](https://oceancolor.gsfc.nasa.gov).
 - [Coastal Tide Gauges around the world](https://climatedataguide.ucar.edu/climate-data/tide-gauge-sea-level-data).
 - [Coastal HF Radar data (surface currents)](https://ioos.noaa.gov/project/hf-radar/).
+- [Global Drifter Program (satellite-tracked surface drifters)](https://www.aoml.noaa.gov/global-drifter-program/).
 - [Ocean Surface Currents Analyses Real-time (OSCAR)](http://apdrc.soest.hawaii.edu/datadoc/podaac_oscar.php).
 - [ECCO ocean state estimate](https://www.ecco-group.org/home.cgi).
 - [Ocean Reanalysis System 5 (ORAS5) ](https://www.ecmwf.int/en/forecasts/dataset/ocean-reanalysis-system-5).
