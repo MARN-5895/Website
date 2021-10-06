@@ -2,10 +2,15 @@
 
 The course's final project accounts for half of the course grade. It should involve obtaining, 
 processing, and visualizing a largish dataset (see some suggestions below) using the tools 
-learned in the course and expand upon. In consultation with me, student pairs or small
-groups should choose their dataset by week 7. The final project must be well documented and 
+learned in the course and expand upon. This is not an individual assignment––students will be working in 
+small groups (5 pairs and one group of 3). Students are free to choose their groups. Remember the adage, ``If you want to go quickly, go alone; if you want to go far, go together.''
+
+
+In consultation with me, student 
+small group should choose their dataset by week 7. The final project must be well documented and 
 shared on a Github repository. The other students in the class and I should
-be able to clone your repository and reproduce your work as you present your work in the final week of classes.
+be able to clone your repository and reproduce your work as you present your work in the final week of classes. You presentation/demo 
+should introduce the class to a new dataset or tool or trick.
 
 Please, discuss with your pair/small group add your names and dataset to the course's GoogleDoc spreadsheet.
 
