@@ -25,7 +25,7 @@ The **most up-to-date syllabus** is available [here](./syllabus/ResearchComputin
 | 2021-10-07    |  Assignment 6: [Estimating sea-level rise in New London](https://github.com/MARN-5895/Assignment-06)           |         |
 | 2021-10-12    |  Lesson 7: [Xarray for multidimensional arrays](lectures/07_intro_to_xarray/)          |    Turn in notebook for assignment 6      |
 | 2021-10-14    |  Assignment 7: [Estimating the global sea-level trend from 30 years of satellite altimetry](https://github.com/MARN-5895/Assignment-07)          |        |
-| 2021-10-19    |  Lesson 8: [More Xarray and CF-compliant netCDF files](lecture/08_more_on_xarray)          |    Turn in notebook for assignment 7     |
+| 2021-10-19    |  Lesson 8: [More Xarray and CF-compliant netCDF files](lecture/08_more_on_xarray/README.md)          |    Turn in notebook for assignment 7     |
 | 2021-10-21    |  Assignment 8: Estimating the ocean heat content and its trend from an Argo climatology    |       |
 | 2021-10-26    |  Student presentations         |     |
 | 2021-10-28    |  Student presentations          |         |
