@@ -27,17 +27,17 @@ The **most up-to-date syllabus** is available [here](./syllabus/ResearchComputin
 | 2021-10-14    |  Assignment 7: [Estimating the global sea-level trend from 30 years of satellite altimetry](https://github.com/MARN-5895/Assignment-07)          |        |
 | 2021-10-19    |  Lesson 8: [More Xarray and CF-compliant netCDF files](lectures/08_more_on_xarray/README.md)          |    Turn in notebook for assignment 7     |
 | 2021-10-21    |  Assignment 8: [Estimating the ocean heat content from an Argo data product](https://github.com/MARN-5895/Assignment-08)    |       |
-| 2021-10-26    |  Student presentations         |     |
-| 2021-10-28    |  Student presentations          |         |
-| 2021-11-02    |  Lesson:  Cartopy for making maps           |         |
-| 2021-11-04    | Assignment: Making composite plots with several datasets in the Mid-Atlantic Bight          |         |
-| 2021-11-09    | Lesson: Parallel computing with Dask and Pangeo           |         |
-| 2021-11-11    | Assignment: Estimating global warming in a climate model ensemble        |         |
+| 2021-10-26    | Student presentations         |     |
+| 2021-10-28    | Student presentations          |         |
+| 2021-11-02    | Lesson:  Lesson: Cloud computing with Amazon Web Services            |         |
+| 2021-11-04    | Assignment: Estimating global warming in a climate model ensemble        |         |
+| 2021-11-09    | Cartopy for making maps          |         |
+| 2021-11-11    | Assignment: Making composite plots with several datasets in the Mid-Atlantic Bight        |         |
 | 2021-11-16    | Lesson: Reproducible workflows (testing, documentation, publication, archiving)           |         |
 | 2021-11-18    | Assignment: Documenting and publishing your code on Zenodo            |         |
 | 2021-11-23    |  Lesson: Remarks on other languages (R, Matlab, Julia)    |         |
 | 2021-11-25    |  No class          |  Happy Turkey Day       |
 | 2021-11-30    |  Students work on finalizing their projects          |  Cesar will be available for help       |
-| 2021-12-02    |  Students work on finalizing their projects          |  Cesar will be available for help       |
+| 2021-12-02    |  Students work on finalizing their projects/ Graham and Josie present          |  Cesar will be available for help       |
 | 2021-12-07    |  Final Presentations          |         |
 | 2021-12-09    |  Final Presentations          |         |
