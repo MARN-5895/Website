@@ -32,7 +32,7 @@ The **most up-to-date syllabus** is available [here](./syllabus/ResearchComputin
 | 2021-11-02    | Lesson 9:  Lesson: Cloud computing with Amazon Web Services            |         |
 | 2021-11-04    | Assignment 9: [A bit more on xarray: analyzing data from surface drifters](https://github.com/MARN-5895/Assignment-09)        |         |
 | 2021-11-09    | Lesson 10: [Cartopy for making maps](https://github.com/MARN-5895/Lecture-10)          | Dave and Penny observe the lecture       |
-| 2021-11-11    | Assignment: Making composite plots with several datasets in the Mid-Atlantic Bight        |         |
+| 2021-11-11    | Assignment 10 : [Making composite plots with several datasets in the East Coast](https://github.com/MARN-5895/Assignment-10)        |         |
 | 2021-11-16    | Lesson: Reproducible workflows (testing, documentation, publication, archiving)           |         |
 | 2021-11-18    | Assignment: Documenting and publishing your code on Zenodo            |         |
 | 2021-11-23    |  Lesson: Remarks on other languages (R, Matlab, Julia)    |         |
