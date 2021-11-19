@@ -34,8 +34,8 @@ The **most up-to-date syllabus** is available [here](./syllabus/ResearchComputin
 | 2021-11-09    | Lesson 10: [Cartopy for making maps](https://github.com/MARN-5895/Lecture-10)          | Dave and Penny observe the lecture       |
 | 2021-11-11    | Assignment 10 : [Making composite plots with several datasets in the East Coast](https://github.com/MARN-5895/Assignment-10)        |         |
 | 2021-11-16    | Lecture 11: [Reproducibility in computational research](lectures/11_reproducibility/11_reproducibility.pdf)           |         |
-| 2021-11-18    | Assignment: Documenting and publishing your code on Zenodo            |         |
-| 2021-11-23    |  Lesson: Remarks on other languages (R, Matlab, Julia)    |         |
+| 2021-11-18    | Lecture 12: [Remarks on other languages (R, Matlab, Julia)](lectures/12_otherlanguages/12_otherlanguages.pdf)           |         |
+| 2021-11-23    |  No class     |   Thanksgiving break      |
 | 2021-11-25    |  No class          |  Happy Turkey Day       |
 | 2021-11-30    |  Students work on finalizing their projects          |  Cesar will be available for help       |
 | 2021-12-02    |  Students work on finalizing their projects/ Graham and Josie present          |  Cesar will be available for help       |
