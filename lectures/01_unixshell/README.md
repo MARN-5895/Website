@@ -117,7 +117,7 @@ which yields
 ```BASH
 srun -p general -n 10 -N 1 --mem=12Gb --partition=marn5895 --account=marn5895 --qos=marn5895 --pty bash
 ```
-This commands submits a job to the Storrs HPC scheduler requesting access to the MARN5895 resources. The command is cryptic and I don't expect you to memorize it. Just try to remember what it does.
+This command submits a job to the Storrs HPC scheduler requesting access to the MARN5895 resources. The command is cryptic and I don't expect you to memorize it. Just try to remember what it does.
 
 To run the bash script `launch_bash_slurm_marn5895.sh`, type 
 
