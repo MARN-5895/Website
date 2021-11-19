@@ -129,7 +129,7 @@ to this course. You should see that your location on the cluster moved into a hi
 
 ## Key points
 
-  - This course aims to empower you to use modern computer softwares to solve research problems in Marine Sciences.
+  - This course aims to empower you to use modern computer software to solve research problems in Marine Sciences.
   - The terminal or Unix shell is an application (computer program) for the user to interact with the computer.
   - Secure Shell (SSH) is a network protocol used to access remote computers.
 
