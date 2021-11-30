@@ -38,6 +38,6 @@ The **most up-to-date syllabus** is available [here](./syllabus/ResearchComputin
 | 2021-11-23    |  No class     |   Thanksgiving break      |
 | 2021-11-25    |  No class          |  Happy Turkey Day       |
 | 2021-11-30    |  Students work on finalizing their projects          |  Cesar will be available for help       |
-| 2021-12-02    |  Students work on finalizing their projects/ Graham and Josie present          |  Cesar will be available for help       |
+| 2021-12-02    |  Students work on finalizing their projects/Graham and Josie present          |  Cesar will be available for help       |
 | 2021-12-07    |  Final Presentations          |         |
 | 2021-12-09    |  Final Presentations          |   Course "hotwash"      |
